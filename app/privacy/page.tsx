@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
       <div className="legal-section">
         <p><strong>Effective Date:</strong> July 16, 2026</p>
         <p>
-          At AffiliateHub, we value your privacy. This Privacy Policy details how we collect, use, and safeguard your information when you visit our website.
+          At Pantry &amp; Pan, we value your privacy. This Privacy Policy details how we collect, use, and safeguard your information when you visit our website.
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
       <div className="legal-section">
         <h2>3. Affiliate Disclosure &amp; Links</h2>
         <p>
-          AffiliateHub is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases.
+          Pantry &amp; Pan is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases.
         </p>
       </div>
 
