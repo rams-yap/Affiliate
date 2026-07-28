@@ -21,6 +21,9 @@
 - **Primary Headings & Logo**: `Outfit`, `Plus Jakarta Sans`, or `Montserrat` (Geometric Sans-Serif, Medium Weight `500`, uppercase/titlecase with high tracking `letter-spacing: 0.12em`).
 - **Body Text**: Clean sans-serif, high contrast readability (`#2C3531`).
 
+### Copywriting Rules
+- **NO EM DASHES**: Do not use em dashes (`—`) anywhere in content, headings, metadata, or disclosures. Use colons (`:`), commas (`,`), or periods (`.`) instead.
+
 ---
 
 ## Logo Concept
