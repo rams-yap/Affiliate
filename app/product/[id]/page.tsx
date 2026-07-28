@@ -37,6 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${p.title} : Pantry & Pan Review`,
     description: p.description,
+    alternates: {
+      canonical: `https://pantryandpan.com/product/${p.id}`,
+    },
     openGraph: {
       title: `${p.title} : Pantry & Pan`,
       description: p.description,

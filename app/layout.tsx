@@ -22,9 +22,25 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pantryandpan.com"),
   title: "The Healthy & Happy Kitchen : Non-Toxic Cookware, Curated",
   description:
     "A warm editorial hub for non-toxic, PFAS-free cookware. Curated carbon steel, ceramic, and clay essentials with honest, health-focused guides.",
+  alternates: {
+    canonical: "https://pantryandpan.com",
+  },
+  openGraph: {
+    title: "The Healthy & Happy Kitchen : Non-Toxic Cookware, Curated",
+    description: "Curated non-toxic cookware, PFAS-free ceramic sets, carbon steel woks, and aesthetic pantry organization guides.",
+    url: "https://pantryandpan.com",
+    siteName: "Pantry & Pan",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pantry & Pan — Safe Cookware & Aesthetic Kitchen Essentials",
+    description: "Curated non-toxic, PFAS-free cookware and aesthetic pantry organization guides.",
+  },
   icons: {
     icon: "/favicon.ico",
   },
