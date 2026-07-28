@@ -1,6 +1,7 @@
 interface Env {
   RESEND_API_KEY?: string;
   BREVO_API_KEY?: string;
+  RESEND_AUDIENCE_ID?: string;
   CONTACT_RECEIVER_EMAIL?: string;
 }
 
@@ -85,24 +86,45 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
     let isAlreadySubscribed = false;
 
-    // 2. Integration with Resend Contacts API if autoSubscribe is checked
+    // 2. Integration with Resend Audiences API if autoSubscribe is checked
     if (resendApiKey && autoSubscribe) {
-      const contactRes = await fetch("https://api.resend.com/contacts", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${resendApiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          unsubscribed: false,
-        }),
-      });
+      let audienceId = context.env.RESEND_AUDIENCE_ID;
 
-      if (!contactRes.ok) {
-        const contactErr = await contactRes.json().catch(() => ({}));
-        if (contactRes.status === 409 || (contactErr.name && contactErr.name.includes("already_exists"))) {
-          isAlreadySubscribed = true;
+      // Auto-detect default Audience ID if not explicitly set
+      if (!audienceId) {
+        const audListRes = await fetch("https://api.resend.com/audiences", {
+          headers: { Authorization: `Bearer ${resendApiKey}` },
+        });
+        if (audListRes.ok) {
+          const audData = (await audListRes.json().catch(() => ({}))) as { data?: Array<{ id: string }> };
+          if (audData.data && audData.data.length > 0) {
+            audienceId = audData.data[0].id;
+          }
+        }
+      }
+
+      if (audienceId) {
+        const contactRes = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${resendApiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            unsubscribed: false,
+          }),
+        });
+
+        if (!contactRes.ok) {
+          const contactErr = (await contactRes.json().catch(() => ({}))) as { name?: string; message?: string };
+          if (
+            contactRes.status === 409 ||
+            (contactErr.name && contactErr.name.includes("already_exists")) ||
+            (contactErr.message && contactErr.message.toLowerCase().includes("already exists"))
+          ) {
+            isAlreadySubscribed = true;
+          }
         }
       }
     }
@@ -139,7 +161,7 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
       const promises: Promise<Response>[] = [adminPromise];
 
-      // Send Welcome Email ONLY if autoSubscribe is checked AND contact is NEW!
+      // Send Welcome Email ONLY if autoSubscribe is checked AND contact is BRAND NEW!
       if (autoSubscribe && !isAlreadySubscribed) {
         const welcomeHtml = `
           <!DOCTYPE html>

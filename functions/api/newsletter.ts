@@ -1,6 +1,7 @@
 interface Env {
   RESEND_API_KEY?: string;
   BREVO_API_KEY?: string;
+  RESEND_AUDIENCE_ID?: string;
   CONTACT_RECEIVER_EMAIL?: string;
 }
 
@@ -62,25 +63,45 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
     let isAlreadySubscribed = false;
 
-    // 2. Integration with Resend Contacts API & Audience Deduplication
+    // 2. Integration with Resend Audiences API & Audience Deduplication
     if (resendApiKey) {
-      const contactRes = await fetch("https://api.resend.com/contacts", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${resendApiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          unsubscribed: false,
-        }),
-      });
+      let audienceId = context.env.RESEND_AUDIENCE_ID;
 
-      if (!contactRes.ok) {
-        const contactErr = await contactRes.json().catch(() => ({}));
-        // If Resend returns 409 or contact_already_exists, user is already in your Audience list!
-        if (contactRes.status === 409 || (contactErr.name && contactErr.name.includes("already_exists"))) {
-          isAlreadySubscribed = true;
+      // Auto-detect default Audience ID if not explicitly set
+      if (!audienceId) {
+        const audListRes = await fetch("https://api.resend.com/audiences", {
+          headers: { Authorization: `Bearer ${resendApiKey}` },
+        });
+        if (audListRes.ok) {
+          const audData = (await audListRes.json().catch(() => ({}))) as { data?: Array<{ id: string }> };
+          if (audData.data && audData.data.length > 0) {
+            audienceId = audData.data[0].id;
+          }
+        }
+      }
+
+      if (audienceId) {
+        const contactRes = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${resendApiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            unsubscribed: false,
+          }),
+        });
+
+        if (!contactRes.ok) {
+          const contactErr = (await contactRes.json().catch(() => ({}))) as { name?: string; message?: string };
+          if (
+            contactRes.status === 409 ||
+            (contactErr.name && contactErr.name.includes("already_exists")) ||
+            (contactErr.message && contactErr.message.toLowerCase().includes("already exists"))
+          ) {
+            isAlreadySubscribed = true;
+          }
         }
       }
     }
