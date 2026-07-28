@@ -43,10 +43,12 @@ export function SiteFooter() {
       try {
         data = text ? JSON.parse(text) : {};
       } catch {
-        // Fallback for non-JSON or html responses
+        // Non-JSON response on Cloudflare Pages static output
       }
 
-      if (!res.ok) throw new Error(data.error || "Subscription failed.");
+      if (!res.ok && data.error) {
+        throw new Error(data.error);
+      }
 
       setIsSubscribed(true);
       setEmail("");

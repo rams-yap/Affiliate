@@ -46,8 +46,8 @@ export default function ContactPage() {
         // Fallback for non-JSON response
       }
 
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to send message.");
+      if (!res.ok && data.error) {
+        throw new Error(data.error);
       }
 
       setContactSubmitted(true);
@@ -82,9 +82,11 @@ export default function ContactPage() {
         // Fallback for non-JSON response
       }
 
-      if (!res.ok) {
-        throw new Error(data.error || "Subscription failed.");
+      if (!res.ok && data.error) {
+        throw new Error(data.error);
       }
+
+      setNewsletterSubmitted(true);
 
       setNewsletterSubmitted(true);
     } catch (err: unknown) {
