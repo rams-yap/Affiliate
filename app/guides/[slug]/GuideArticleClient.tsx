@@ -6,6 +6,11 @@ import { ArrowRight, ArrowUpRight, ChevronRight, Clock, Quote } from "lucide-rea
 
 import { SageBadge } from "@/components/site/SageBadge";
 import { AmazonButton } from "@/components/site/AmazonButton";
+import { PantryStapleCalculator } from "@/components/tools/PantryStapleCalculator";
+import { HeirloomPanQuiz } from "@/components/tools/HeirloomPanQuiz";
+import { NonToxicPanDecoder } from "@/components/tools/NonToxicPanDecoder";
+import { OilSprayerCalculator } from "@/components/tools/OilSprayerCalculator";
+import { SpaceSavingCalculator } from "@/components/tools/SpaceSavingCalculator";
 import { getGuide, getProduct, GUIDES, type Article } from "@/lib/catalog";
 
 function useActiveSection(ids: string[]) {
@@ -153,6 +158,17 @@ export function GuideArticleClient({ guide: g }: { guide: Article }) {
                 </section>
               );
             })}
+
+            {/* Embedded Interactive Tools */}
+            {g.slug === "aesthetic-pantry-organization-guide" && <PantryStapleCalculator />}
+            {g.slug === "plastic-free-sunday-meal-prep-workflow" && <PantryStapleCalculator defaultStaple="rice" initialWeight={5} />}
+            {g.slug === "cast-iron-vs-carbon-steel-vs-enameled" && <HeirloomPanQuiz />}
+            {g.slug === "wok-cooking-toxin-free" && <HeirloomPanQuiz />}
+            {g.slug === "ceramic-granite-stone-cookware-explained" && <NonToxicPanDecoder />}
+            {g.slug === "non-toxic-kitchen-blueprint" && <NonToxicPanDecoder />}
+            {g.slug === "clean-morning-rituals" && <NonToxicPanDecoder />}
+            {g.slug === "multifunctional-kitchen-gadgets-guide" && <OilSprayerCalculator />}
+            {g.slug === "space-saving-cookware-guide" && <SpaceSavingCalculator />}
 
             {/* AEO FAQ Section */}
             {g.faqs && g.faqs.length > 0 && (

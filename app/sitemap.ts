@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-import { CATEGORIES } from "@/lib/categories";
-import { PRODUCTS } from "@/lib/products";
+import { CATEGORIES, PRODUCTS, GUIDES } from "@/lib/catalog";
 
 export const dynamic = "force-static";
 
@@ -35,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
   const productPages: MetadataRoute.Sitemap = PRODUCTS.map((prod) => ({
     url: `${baseUrl}/product/${prod.id}`,
     lastModified: new Date(),
@@ -42,5 +48,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...categoryPages, ...productPages];
+  return [...staticPages, ...categoryPages, ...guidePages, ...productPages];
 }

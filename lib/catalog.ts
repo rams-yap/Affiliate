@@ -830,18 +830,47 @@ export const GUIDES: Article[] = [
     "publishDate": "Updated May 28, 2026",
     "sections": [
       {
-        "id": "morning-pan-choice",
-        "title": "Choosing the clean breakfast skillet",
+        "id": "microplastic-hazards",
+        "title": "Morning Microplastic Hazards & Thermal Degradation",
         "paragraphs": [
-          "Morning eggs demand delicate temperature control and slick release. Mineral ceramic skillets like Sensarte and Caraway provide effortless frying using minimal butter."
+          "The morning rush often leads to high-heat cooking on the stove. When traditional PTFE-coated pans are overheated past 500°F, they degrade rapidly, off-gassing chemical fluoropolymer fumes into your kitchen environment.",
+          "Transitioning to clean morning rituals means eliminating legacy nonstick coatings and adopting cookware designed for stable thermal conductivity. This shift protects indoor air quality and ensures breakfast remains free from synthetic fluoropolymer compounds."
+        ]
+      },
+      {
+        "id": "non-toxic-egg-skillet",
+        "title": "The Non-Toxic Egg Skillet Blueprint",
+        "paragraphs": [
+          "Achieving delicate, slide-out-of-the-pan morning eggs requires advanced material science, not harmful synthetic chemicals. Mineral ceramic and granite stone coatings provide a naturally slick surface completely free of PFAS, PFOA, and heavy metals.",
+          "By utilizing a Swiss-engineered granite skillet or a high-quality ceramic pan, home chefs gain exceptional heat retention. This ensures even cooking for delicate proteins like eggs while keeping cookware non-toxic."
         ],
         "productId": "sensarte-granite"
+      },
+      {
+        "id": "plastic-free-prep",
+        "title": "Plastic-Free Prep & Whole Food Morning Treats",
+        "paragraphs": [
+          "A clean morning extends beyond the skillet. Storing overnight oats or prepped fruits in plastic containers exposes food to microplastics and chemical leaching over time. Upgrading to durable borosilicate glass containers locks in freshness without chemical transfer.",
+          "Furthermore, creating your own frozen smoothie bowls with whole-food ingredients eliminates reliance on processed, plastic-packaged breakfast items. This approach maximizes nutrient density and supports a zero-waste morning workflow."
+        ],
+        "productId": "ninja-creami"
+      },
+      {
+        "id": "temperature-and-oil-synergy",
+        "title": "Temperature Control & Oil Mister Synergy",
+        "paragraphs": [
+          "The secret to longevity for clean cookware is precise temperature control paired with pure oil application. Commercial aerosol cooking sprays contain chemical propellants (butane and propane) and soy lecithin that bake onto ceramic surfaces, ruining nonstick release.",
+          "Utilizing a refillable glass oil sprayer allows you to mist pure avocado or olive oil evenly across the pan. Paired with low to medium heat settings, this synergy preserves nonstick glaze integrity for years."
+        ],
+        "productId": "glass-oil-sprayer"
       }
     ],
     "relatedProductIds": [
       "sensarte-granite",
       "caraway-12pc",
-      "ninja-creami"
+      "ninja-creami",
+      "joyjolt-glass-containers",
+      "glass-oil-sprayer"
     ],
     "faqs": [
       {
@@ -876,16 +905,44 @@ export const GUIDES: Article[] = [
     "publishDate": "Updated May 3, 2026",
     "sections": [
       {
-        "id": "why-carbon-steel",
-        "title": "Why carbon steel for high heat stir-fry",
+        "id": "wok-hei-physics-ptfe-dangers",
+        "title": "The Wok Hei Physics & PTFE Dangers",
         "paragraphs": [
-          "Carbon steel woks like Yosukata are the original non-stick cookware surface, seasoned with natural oil to create a smooth, toxin-free patina."
+          "Achieving authentic wok hei, or breath of the wok, requires stove temperatures exceeding 500°F. At these extreme temperatures, traditional nonstick PTFE coatings degrade rapidly, off-gassing toxic fluoropolymer fumes into your kitchen environment.",
+          "Carbon steel is the original non-toxic alternative. It withstands intense thermal shock and searing heat without peeling, providing that signature smoky wok flavor safely."
+        ]
+      },
+      {
+        "id": "carbon-steel-wok-selection",
+        "title": "Carbon Steel Wok Selection & Heat Responsiveness",
+        "paragraphs": [
+          "Choosing the right wok depends on your cooktop type and cooking style. Round-bottom woks are traditional for gas flames, while flat-bottom woks provide essential contact area and stability for induction and glass stoves.",
+          "Heavy-gauge carbon steel offers unmatched heat responsiveness, heating up and cooling down in seconds. Consider options like the Yosukata Carbon Steel Wok for authentic stir-fries or the De Buyer Mineral B Carbon Steel Frying Pan for versatile searing."
         ],
         "productId": "yosukata-wok"
+      },
+      {
+        "id": "initial-seasoning-ritual-patina-science",
+        "title": "The Initial Seasoning Ritual & Oil Patina Science",
+        "paragraphs": [
+          "Transforming raw carbon steel into a naturally slick nonstick surface requires an initial seasoning ritual. The first step, bluing the steel, alters its surface oxide layer to prevent rust.",
+          "Next, applying microscopic layers of high-smoke-point oils like avocado or grapeseed oil under intense heat induces oil polymerization. This process bonds oil to the metal, creating a smooth, dark, non-toxic patina that improves with every meal."
+        ],
+        "productId": "de-buyer-carbon-steel-pan"
+      },
+      {
+        "id": "cleaning-maintenance-re-seasoning",
+        "title": "Cleaning, Maintenance, and Re-Seasoning Care",
+        "paragraphs": [
+          "Proper maintenance preserves your wok's natural nonstick patina for decades. Never use harsh dish soap or place carbon steel in a dishwasher. Instead, use a traditional bamboo brush and hot water to gently scrub away residue.",
+          "After washing, immediately dry the wok on a warm burner to evaporate ambient moisture and prevent rust. Finish by rubbing a tiny drop of avocado oil over the interior surface before storage."
+        ]
       }
     ],
     "relatedProductIds": [
       "yosukata-wok",
+      "de-buyer-carbon-steel-pan",
+      "lodge-cast-iron-skillet",
       "lodge-dutch-oven",
       "greenpan-valencia"
     ],
@@ -964,16 +1021,35 @@ export const GUIDES: Article[] = [
     "authorName": "Dr. Elena Vance",
     "authorInitials": "EV",
     "authorRole": "Materials Researcher & Home Chef",
-    "readMinutes": 7,
-    "publishDate": "Updated July 18, 2026",
+    "readMinutes": 8,
+    "publishDate": "Updated July 28, 2026",
     "sections": [
       {
         "id": "glass-dispensers",
-        "title": "Ditching plastic containers for high borosilicate glass",
+        "title": "Ditching Plastic Bags for Borosilicate Glass Storage",
         "paragraphs": [
-          "Borosilicate glass dispensers and Vtopmart bulk canisters provide airtight protection while keeping dry staples visible."
+          "Commercial dry rice, flour, and grain packages are typically sold in thin plastic or paper bags that absorb ambient humidity and leach microplastics into dry food over time.",
+          "Transitioning to high-borosilicate glass dispensers and airtight canisters provides an inert, crystal-clear storage barrier that withstands thermal shock while keeping dry staples visible on open pantry shelving."
         ],
         "productId": "glass-rice-dispenser"
+      },
+      {
+        "id": "weevil-defense",
+        "title": "Rice Weevil & Pest Defense: Stopping Infestations Before They Start",
+        "paragraphs": [
+          "Grain weevils (Sitophilus oryzae) are a common headache in home pantries. Microscopic weevil eggs often exist inside commercial grain packaging and hatch when exposed to warmth, ambient oxygen, and humidity.",
+          "Standard cardboard boxes and thin plastic bags offer zero protection. Storing dry rice in a heavy-duty borosilicate glass dispenser sealed with a food-grade silicone ring creates an airtight, moisture-free environment that starves pests and prevents dormant eggs from hatching."
+        ],
+        "productId": "vtopmart-bulk-containers"
+      },
+      {
+        "id": "portion-yields",
+        "title": "Standard Portion Metrics: How Many Meals Does a 5L Dispenser Yield?",
+        "paragraphs": [
+          "Understanding container volume simplifies bulk grocery shopping. A standard 5-Liter glass rice dispenser holds approximately 10 lbs (4.5 kg) of dry white or brown rice, which equals roughly 24.5 dry measuring cups.",
+          "Since 1 cup of dry white rice triples into ~3 cups of cooked rice, a single filled 5L dispenser yields 73 to 75 standard 1-cup cooked meal portions. For a 2-person household eating rice daily, one full 5L dispenser provides over 5 weeks of meals."
+        ],
+        "productId": "joyjolt-glass-containers"
       }
     ],
     "relatedProductIds": [
@@ -988,15 +1064,15 @@ export const GUIDES: Article[] = [
       },
       {
         "question": "How much dry rice fits in a 5-Liter glass dispenser?",
-        "answer": "A 5-Liter glass grain dispenser holds approximately 10 lbs (4.5 kg) of dry white or brown rice."
+        "answer": "A 5-Liter glass grain dispenser holds approximately 10 lbs (4.5 kg) of dry white or brown rice, yielding 73 to 75 cooked portions."
+      },
+      {
+        "question": "How does glass storage prevent grain weevils?",
+        "answer": "Airtight borosilicate glass containers with food-grade silicone seals block ambient moisture and oxygen, preventing dormant grain weevil eggs from hatching."
       },
       {
         "question": "Are Vtopmart bulk canisters airtight enough to prevent pantry pests?",
         "answer": "Yes, Vtopmart canisters feature 4-side locking lids with thick silicone gaskets that block moisture and pantry moths."
-      },
-      {
-        "question": "How do you label glass storage jars cleanly?",
-        "answer": "Use reusable vinyl chalkboard labels or liquid chalk markers that wipe clean with a damp cloth when changing pantry ingredients."
       }
     ]
   },
