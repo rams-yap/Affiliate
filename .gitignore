@@ -44,3 +44,6 @@ next-env.d.ts
 # local agent temp files
 .tmp/
 
+# private local documentation
+directives/domain_email_sop.md
+

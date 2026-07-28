@@ -38,7 +38,14 @@ export default function ContactPage() {
         body: JSON.stringify({ name, email, topic, message, autoSubscribe }),
       });
 
-      const data = await res.json();
+      const text = await res.text();
+      let data: { error?: string; success?: boolean; message?: string } = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        // Fallback for non-JSON response
+      }
+
       if (!res.ok) {
         throw new Error(data.error || "Failed to send message.");
       }
@@ -67,7 +74,14 @@ export default function ContactPage() {
         body: JSON.stringify({ email, topics: selectedTopics }),
       });
 
-      const data = await res.json();
+      const text = await res.text();
+      let data: { error?: string; success?: boolean; message?: string } = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        // Fallback for non-JSON response
+      }
+
       if (!res.ok) {
         throw new Error(data.error || "Subscription failed.");
       }

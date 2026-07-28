@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+
 function sanitizeHtml(str: string): string {
   return str
     .replace(/&/g, "&amp;")
@@ -11,7 +14,7 @@ function sanitizeHtml(str: string): string {
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    const body = await request.json().catch(() => ({}));
 
     // Honeypot spam check
     if (body.b_hp_check) {
@@ -40,7 +43,7 @@ export async function POST(request: Request) {
 
     const resendApiKey = process.env.RESEND_API_KEY;
     const brevoApiKey = process.env.BREVO_API_KEY;
-    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || "editorial@pantryandpan.com";
+    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
 
     const sanitizedTopics = topics.map(sanitizeHtml);
 
@@ -64,14 +67,14 @@ export async function POST(request: Request) {
 
     // 3. Integration with Resend (if RESEND_API_KEY exists)
     if (resendApiKey) {
-      await fetch("https://api.resend.com/emails", {
+      const resendRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${resendApiKey}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "Pantry & Pan Newsletter <newsletter@pantryandpan.com>",
+          from: "Kristy - Pantry & Pan <kristy@pantryandpan.com>",
           to: [receiverEmail],
           subject: `[New Subscriber] ${email} joined Non-Toxic Kitchen Journal`,
           html: `
@@ -83,6 +86,11 @@ export async function POST(request: Request) {
           `,
         }),
       });
+
+      if (!resendRes.ok) {
+        const errorData = await resendRes.json().catch(() => ({}));
+        console.error("Resend API Error:", errorData);
+      }
     }
 
     // 4. Log to Server Console

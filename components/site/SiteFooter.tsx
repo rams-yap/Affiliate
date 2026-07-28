@@ -38,7 +38,14 @@ export function SiteFooter() {
         body: JSON.stringify({ email, topics: ["All Categories"] }),
       });
 
-      const data = await res.json();
+      const text = await res.text();
+      let data: { error?: string; success?: boolean; message?: string } = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        // Fallback for non-JSON or html responses
+      }
+
       if (!res.ok) throw new Error(data.error || "Subscription failed.");
 
       setIsSubscribed(true);
