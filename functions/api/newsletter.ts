@@ -1,7 +1,13 @@
-import { NextResponse } from "next/server";
+interface Env {
+  RESEND_API_KEY?: string;
+  BREVO_API_KEY?: string;
+  CONTACT_RECEIVER_EMAIL?: string;
+}
 
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
+interface CloudflarePagesContext {
+  request: Request;
+  env: Env;
+}
 
 function sanitizeHtml(str: string): string {
   return str
@@ -12,16 +18,17 @@ function sanitizeHtml(str: string): string {
     .replace(/'/g, "&#039;");
 }
 
-export async function POST(request: Request) {
+export const onRequestPost = async (context: CloudflarePagesContext): Promise<Response> => {
+  const headers = { "Content-Type": "application/json" };
   try {
-    const body = await request.json().catch(() => ({}));
+    const body = (await context.request.json().catch(() => ({}))) as Record<string, unknown>;
 
     // Honeypot spam check
     if (body.b_hp_check) {
-      return NextResponse.json({ success: true, message: "Subscribed." }, { status: 200 });
+      return new Response(JSON.stringify({ success: true, message: "Subscribed." }), { status: 200, headers });
     }
 
-    const rawEmail = body.email || "";
+    const rawEmail = String(body.email || "");
     const rawTopics = Array.isArray(body.topics) ? body.topics : [];
 
     const email = rawEmail.trim().toLowerCase();
@@ -31,19 +38,25 @@ export async function POST(request: Request) {
 
     const topics = validTopics.length > 0 ? validTopics : ["All Categories"];
 
-    // 1. Server Validation
+    // 1. Validation
     if (!email) {
-      return NextResponse.json({ error: "Email address is required." }, { status: 400 });
+      return new Response(
+        JSON.stringify({ error: "Email address is required." }),
+        { status: 400, headers }
+      );
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email) || email.length > 254) {
-      return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
+      return new Response(
+        JSON.stringify({ error: "Please enter a valid email address." }),
+        { status: 400, headers }
+      );
     }
 
-    const resendApiKey = process.env.RESEND_API_KEY;
-    const brevoApiKey = process.env.BREVO_API_KEY;
-    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
+    const resendApiKey = context.env.RESEND_API_KEY;
+    const brevoApiKey = context.env.BREVO_API_KEY;
+    const receiverEmail = context.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
 
     const sanitizedTopics = topics.map(sanitizeHtml);
 
@@ -93,22 +106,15 @@ export async function POST(request: Request) {
       }
     }
 
-    // 4. Log to Server Console
-    console.log("----------------------------------------");
-    console.log("📰 NEW NEWSLETTER SUBSCRIBER:");
-    console.log(`Email: ${email}`);
-    console.log(`Topics: ${topics.join(", ")}`);
-    console.log("----------------------------------------");
-
-    return NextResponse.json(
-      { success: true, message: "Successfully subscribed to The Non-Toxic Kitchen Journal!" },
-      { status: 200 }
+    return new Response(
+      JSON.stringify({ success: true, message: "Successfully subscribed to The Non-Toxic Kitchen Journal!" }),
+      { status: 200, headers }
     );
   } catch (error) {
-    console.error("Newsletter API Handler Error:", error);
-    return NextResponse.json(
-      { error: "Internal server error. Please try again later." },
-      { status: 500 }
+    console.error("Newsletter Function Error:", error);
+    return new Response(
+      JSON.stringify({ error: "Internal server error. Please try again later." }),
+      { status: 500, headers }
     );
   }
-}
+};

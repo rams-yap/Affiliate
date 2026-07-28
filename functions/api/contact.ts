@@ -1,7 +1,13 @@
-import { NextResponse } from "next/server";
+interface Env {
+  RESEND_API_KEY?: string;
+  BREVO_API_KEY?: string;
+  CONTACT_RECEIVER_EMAIL?: string;
+}
 
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
+interface CloudflarePagesContext {
+  request: Request;
+  env: Env;
+}
 
 function sanitizeHtml(str: string): string {
   return str
@@ -16,19 +22,20 @@ function stripNewlines(str: string): string {
   return str.replace(/[\r\n]/g, " ");
 }
 
-export async function POST(request: Request) {
+export const onRequestPost = async (context: CloudflarePagesContext): Promise<Response> => {
+  const headers = { "Content-Type": "application/json" };
   try {
-    const body = await request.json().catch(() => ({}));
+    const body = (await context.request.json().catch(() => ({}))) as Record<string, unknown>;
 
     // Honeypot spam check
     if (body.b_hp_check) {
-      return NextResponse.json({ success: true, message: "Message sent." }, { status: 200 });
+      return new Response(JSON.stringify({ success: true, message: "Message sent." }), { status: 200, headers });
     }
 
-    const rawName = body.name || "";
-    const rawEmail = body.email || "";
-    const rawTopic = body.topic || "General Inquiry";
-    const rawMessage = body.message || "";
+    const rawName = String(body.name || "");
+    const rawEmail = String(body.email || "");
+    const rawTopic = String(body.topic || "General Inquiry");
+    const rawMessage = String(body.message || "");
     const autoSubscribe = Boolean(body.autoSubscribe);
 
     const name = rawName.trim();
@@ -36,33 +43,33 @@ export async function POST(request: Request) {
     const topic = rawTopic.trim() || "General Inquiry";
     const message = rawMessage.trim();
 
-    // 1. Server Validation
+    // 1. Validation
     if (!name || !email || !message) {
-      return NextResponse.json(
-        { error: "Please fill in all required fields (name, email, and message)." },
-        { status: 400 }
+      return new Response(
+        JSON.stringify({ error: "Please fill in all required fields (name, email, and message)." }),
+        { status: 400, headers }
       );
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email) || email.length > 254) {
-      return NextResponse.json(
-        { error: "Please enter a valid email address." },
-        { status: 400 }
+      return new Response(
+        JSON.stringify({ error: "Please enter a valid email address." }),
+        { status: 400, headers }
       );
     }
 
     if (message.length < 5) {
-      return NextResponse.json(
-        { error: "Message is too short. Please enter at least 5 characters." },
-        { status: 400 }
+      return new Response(
+        JSON.stringify({ error: "Message is too short. Please enter at least 5 characters." }),
+        { status: 400, headers }
       );
     }
 
     if (message.length > 1000) {
-      return NextResponse.json(
-        { error: "Message is too long (maximum 1000 characters)." },
-        { status: 400 }
+      return new Response(
+        JSON.stringify({ error: "Message is too long (maximum 1000 characters)." }),
+        { status: 400, headers }
       );
     }
 
@@ -72,11 +79,11 @@ export async function POST(request: Request) {
     const safeSubjectTopic = stripNewlines(topic);
     const safeSubjectName = stripNewlines(name);
 
-    const resendApiKey = process.env.RESEND_API_KEY;
-    const brevoApiKey = process.env.BREVO_API_KEY;
-    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
+    const resendApiKey = context.env.RESEND_API_KEY;
+    const brevoApiKey = context.env.BREVO_API_KEY;
+    const receiverEmail = context.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
 
-    // 2. Email Notification via Resend
+    // 2. Resend Email Dispatch
     if (resendApiKey) {
       const resendRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -112,7 +119,7 @@ export async function POST(request: Request) {
       }
     }
 
-    // 3. Auto-subscribe user to Brevo CRM if requested
+    // 3. Brevo CRM Auto-Subscribe
     if (autoSubscribe && brevoApiKey) {
       await fetch("https://api.brevo.com/v3/contacts", {
         method: "POST",
@@ -131,26 +138,16 @@ export async function POST(request: Request) {
       });
     }
 
-    // 4. Log to Server Console
-    console.log("----------------------------------------");
-    console.log("📨 NEW CONTACT FORM SUBMISSION:");
-    console.log(`Name: ${name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Topic: ${topic}`);
-    console.log(`Message: ${message}`);
-    console.log(`Auto-Subscribed: ${autoSubscribe ? "YES" : "NO"}`);
-    console.log("----------------------------------------");
-
     const successMessage = autoSubscribe
       ? "Thank you! Your message has been sent, and you are subscribed to our Non-Toxic Kitchen Journal."
       : "Thank you! Your message has been sent successfully.";
 
-    return NextResponse.json({ success: true, message: successMessage }, { status: 200 });
+    return new Response(JSON.stringify({ success: true, message: successMessage }), { status: 200, headers });
   } catch (error) {
-    console.error("Contact API Handler Error:", error);
-    return NextResponse.json(
-      { error: "Internal server error. Please try again later." },
-      { status: 500 }
+    console.error("Contact Function Error:", error);
+    return new Response(
+      JSON.stringify({ error: "Internal server error. Please try again later." }),
+      { status: 500, headers }
     );
   }
-}
+};
