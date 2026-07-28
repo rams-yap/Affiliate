@@ -1,25 +1,84 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Mail, MessageSquare, Send, CheckCircle2, Sparkles, ShieldCheck } from "lucide-react";
+import { Mail, MessageSquare, Send, CheckCircle2, Sparkles, ShieldCheck, Loader2, AlertCircle } from "lucide-react";
 import { SageBadge } from "@/components/site/SageBadge";
 
 export default function ContactPage() {
   const [contactSubmitted, setContactSubmitted] = useState(false);
+  const [isContactLoading, setIsContactLoading] = useState(false);
+  const [contactError, setContactError] = useState<string | null>(null);
+
   const [newsletterSubmitted, setNewsletterSubmitted] = useState(false);
+  const [isNewsletterLoading, setIsNewsletterLoading] = useState(false);
+  const [newsletterError, setNewsletterError] = useState<string | null>(null);
+
   const [selectedTopics, setSelectedTopics] = useState<string[]>([
     "Non-Toxic Cookware Alerts",
     "Aesthetic Pantry Organization",
   ]);
 
-  const handleContactSubmit = (e: FormEvent) => {
+  const [autoSubscribe, setAutoSubscribe] = useState(true);
+
+  const handleContactSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setContactSubmitted(true);
+    setIsContactLoading(true);
+    setContactError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const topic = formData.get("topic") as string;
+    const message = formData.get("message") as string;
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, topic, message, autoSubscribe }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to send message.");
+      }
+
+      setContactSubmitted(true);
+    } catch (err: unknown) {
+      const errorMsg = err instanceof Error ? err.message : "Something went wrong.";
+      setContactError(errorMsg);
+    } finally {
+      setIsContactLoading(false);
+    }
   };
 
-  const handleNewsletterSubmit = (e: FormEvent) => {
+  const handleNewsletterSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setNewsletterSubmitted(true);
+    setIsNewsletterLoading(true);
+    setNewsletterError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email") as string;
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, topics: selectedTopics }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Subscription failed.");
+      }
+
+      setNewsletterSubmitted(true);
+    } catch (err: unknown) {
+      const errorMsg = err instanceof Error ? err.message : "Something went wrong.";
+      setNewsletterError(errorMsg);
+    } finally {
+      setIsNewsletterLoading(false);
+    }
   };
 
   const toggleTopic = (topic: string) => {
@@ -56,6 +115,13 @@ export default function ContactPage() {
             </div>
           </div>
 
+          {contactError && (
+            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-destructive/10 p-4 text-xs font-semibold text-destructive">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              <span>{contactError}</span>
+            </div>
+          )}
+
           {contactSubmitted ? (
             <div className="mt-8 rounded-2xl bg-sage/15 p-6 text-center text-foreground">
               <CheckCircle2 className="mx-auto h-10 w-10 text-sage" />
@@ -72,6 +138,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   id="name"
+                  name="name"
                   required
                   type="text"
                   placeholder="e.g. Sarah Jenkins"
@@ -85,6 +152,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   required
                   type="email"
                   placeholder="sarah@example.com"
@@ -98,6 +166,7 @@ export default function ContactPage() {
                 </label>
                 <select
                   id="topic"
+                  name="topic"
                   className="mt-2 w-full rounded-2xl border border-hairline bg-background px-4 py-3 text-sm text-foreground focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/20"
                 >
                   <option>Product Recommendation Question</option>
@@ -113,18 +182,39 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={4}
+                  maxLength={1000}
                   placeholder="Tell us about the kitchen item or question..."
                   className="mt-2 w-full rounded-2xl border border-hairline bg-background px-4 py-3 text-sm text-foreground focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/20"
                 ></textarea>
               </div>
 
+              <label className="flex items-center gap-2.5 text-xs text-muted-foreground cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={autoSubscribe}
+                  onChange={(e) => setAutoSubscribe(e.target.checked)}
+                  className="h-4 w-4 rounded border-hairline text-terracotta focus:ring-terracotta/20 accent-terracotta"
+                />
+                <span>Also subscribe me to weekly non-toxic cookware alerts & kitchen guides</span>
+              </label>
+
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-terracotta py-3.5 text-sm font-semibold text-terracotta-foreground transition-opacity hover:opacity-90 shadow-sm"
+                disabled={isContactLoading}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-terracotta py-3.5 text-sm font-semibold text-terracotta-foreground transition-opacity hover:opacity-90 disabled:opacity-50 shadow-sm"
               >
-                <Send className="h-4 w-4" /> Send Message
+                {isContactLoading ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" /> Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="h-4 w-4" /> Send Message
+                  </>
+                )}
               </button>
             </form>
           )}
@@ -146,6 +236,13 @@ export default function ContactPage() {
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Join over 15,000 home cooks receiving our bi-weekly reviews, non-toxic pan care tutorials, and aesthetic pantry restock guides.
             </p>
+
+            {newsletterError && (
+              <div className="mt-6 flex items-center gap-2 rounded-2xl bg-destructive/10 p-4 text-xs font-semibold text-destructive">
+                <AlertCircle className="h-4 w-4 shrink-0" />
+                <span>{newsletterError}</span>
+              </div>
+            )}
 
             {newsletterSubmitted ? (
               <div className="mt-8 rounded-2xl bg-sage/15 p-6 text-center text-foreground">
@@ -187,6 +284,7 @@ export default function ContactPage() {
 
                 <div>
                   <input
+                    name="email"
                     required
                     type="email"
                     placeholder="Enter your email"
@@ -196,9 +294,16 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 shadow-sm"
+                  disabled={isNewsletterLoading}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50 shadow-sm"
                 >
-                  Subscribe to Journal
+                  {isNewsletterLoading ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" /> Subscribing...
+                    </>
+                  ) : (
+                    "Subscribe to Journal"
+                  )}
                 </button>
               </form>
             )}
