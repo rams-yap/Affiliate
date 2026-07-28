@@ -103,8 +103,8 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
                     <!-- Header Banner -->
                     <tr>
                       <td style="background-color: #2C3531; padding: 30px 40px; text-align: center;">
-                        <h1 style="color: #FDFBF7; font-size: 24px; margin: 0; font-weight: 700; letter-spacing: 1px;">PANTRY & PAN</h1>
-                        <p style="color: #D48C70; font-size: 12px; margin: 6px 0 0 0; text-transform: uppercase; letter-spacing: 2px;">The Intentional Pantry (Intentional Health &amp; Happiness</p>
+                        <h1 style="color: #FDFBF7; font-size: 24px; line-height: 1.6; margin: 0; font-weight: 700; letter-spacing: 1px;">PANTRY & PAN</h1>
+                        <p style="color: #D48C70; font-size: 12px; margin: 6px 0 0 0; text-transform: uppercase; letter-spacing: 2px;">The Intentional Pantry <br>For Intentional Health &amp; Happiness</p>
                       </td>
                     </tr>
 
