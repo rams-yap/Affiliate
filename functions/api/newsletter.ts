@@ -80,28 +80,6 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
     // 3. Integration with Resend (if RESEND_API_KEY exists)
     if (resendApiKey) {
-      // A. Notification to Admin (creative@ramsyap.com)
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${resendApiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "Kristy - Pantry & Pan <kristy@pantryandpan.com>",
-          to: [receiverEmail],
-          subject: `[New Subscriber] ${email} joined Non-Toxic Kitchen Journal`,
-          html: `
-            <div style="font-family: sans-serif; padding: 20px; color: #2C3531;">
-              <h2 style="color: #8A9A86;">New Newsletter Subscriber!</h2>
-              <p><strong>Email:</strong> ${sanitizeHtml(email)}</p>
-              <p><strong>Selected Preferences:</strong> ${sanitizedTopics.join(", ")}</p>
-            </div>
-          `,
-        }),
-      });
-
-      // B. Automated Welcome Email to Subscriber (e.g. edson00yap@gmail.com)
       const welcomeHtml = `
         <!DOCTYPE html>
         <html>
@@ -202,7 +180,28 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
         </html>
       `;
 
-      await fetch("https://api.resend.com/emails", {
+      // Concurrent execution: Admin notification + Subscriber welcome email
+      const adminPromise = fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "Kristy - Pantry & Pan <kristy@pantryandpan.com>",
+          to: [receiverEmail],
+          subject: `[New Subscriber] ${email} joined Non-Toxic Kitchen Journal`,
+          html: `
+            <div style="font-family: sans-serif; padding: 20px; color: #2C3531;">
+              <h2 style="color: #8A9A86;">New Newsletter Subscriber!</h2>
+              <p><strong>Email:</strong> ${sanitizeHtml(email)}</p>
+              <p><strong>Selected Preferences:</strong> ${sanitizedTopics.join(", ")}</p>
+            </div>
+          `,
+        }),
+      });
+
+      const subscriberPromise = fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${resendApiKey}`,
@@ -215,6 +214,8 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
           html: welcomeHtml,
         }),
       });
+
+      await Promise.allSettled([adminPromise, subscriberPromise]);
     }
 
     return new Response(
