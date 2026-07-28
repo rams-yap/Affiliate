@@ -92,9 +92,25 @@ export default async function GuidePage({ params }: Props) {
     ],
   };
 
+  const faqSchema = g.faqs && g.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: g.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer,
+      },
+    })),
+  } : null;
+
+  const schemas: Array<Record<string, unknown>> = [articleSchema, breadcrumbSchema];
+  if (faqSchema) schemas.push(faqSchema);
+
   return (
     <>
-      <JsonLd data={[articleSchema, breadcrumbSchema]} />
+      <JsonLd data={schemas} />
       <GuideArticleClient guide={g} />
     </>
   );

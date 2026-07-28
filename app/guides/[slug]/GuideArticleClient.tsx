@@ -153,6 +153,30 @@ export function GuideArticleClient({ guide: g }: { guide: Article }) {
                 </section>
               );
             })}
+
+            {/* AEO FAQ Section */}
+            {g.faqs && g.faqs.length > 0 && (
+              <section id="faq-section" className="mt-14 scroll-mt-48 rounded-3xl border border-hairline bg-surface p-8 soft-shadow">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-terracotta">
+                  <Quote className="h-3.5 w-3.5" /> Frequently Asked Questions
+                </div>
+                <h2 className="mt-2 font-display text-2xl font-semibold text-foreground sm:text-3xl">
+                  Expert Answers & Material Science Q&A
+                </h2>
+                <div className="mt-8 space-y-6">
+                  {g.faqs.map((faq, idx) => (
+                    <div key={idx} className="rounded-2xl bg-secondary/60 p-6">
+                      <h3 className="font-display text-lg font-semibold text-foreground">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
         </article>
 
@@ -190,6 +214,24 @@ export function GuideArticleClient({ guide: g }: { guide: Article }) {
                   </li>
                 );
               })}
+              {g.faqs && g.faqs.length > 0 && (
+                <li>
+                  <a
+                    href="#faq-section"
+                    className={
+                      "flex items-start gap-3 rounded-2xl px-3 py-2.5 text-sm transition-all " +
+                      (active === "faq-section"
+                        ? "bg-sage/10 text-foreground"
+                        : "text-muted-foreground hover:bg-secondary hover:text-foreground")
+                    }
+                  >
+                    <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-terracotta/15 text-xs font-semibold text-terracotta">
+                      ?
+                    </span>
+                    <span className="pt-0.5 font-semibold">Frequently Asked Questions</span>
+                  </a>
+                </li>
+              )}
             </ol>
           </div>
         </aside>

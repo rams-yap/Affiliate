@@ -669,327 +669,651 @@ export type Article = {
     productId?: string;
   }[];
   relatedProductIds: string[];
+  faqs?: {
+    question: string;
+    answer: string;
+  }[];
 };
 
 export const GUIDES: Article[] = [
   {
-    slug: "multifunctional-kitchen-gadgets-guide",
-    category: "Multi-Functional Gadgets",
-    categoryKey: "multifunctional-gadgets",
-    title: "Essential Multi-Functional Kitchen Gadgets for Healthy, Space-Saving Prep",
-    excerpt:
-      "Eliminate chemical aerosol cans, cut meal prep time in half, and customize non-toxic frozen treats with versatile modern kitchen tools.",
-    heroImage: "/assets/glass_oil_sprayer.jpg",
-    authorName: "Sarah Jenkins",
-    authorInitials: "SJ",
-    authorRole: "Founder, Pantry & Pan",
-    readMinutes: 6,
-    publishDate: "Updated July 27, 2026",
-    sections: [
+    "slug": "multifunctional-kitchen-gadgets-guide",
+    "category": "Multi-Functional Gadgets",
+    "categoryKey": "multifunctional-gadgets",
+    "title": "Essential Multi-Functional Kitchen Gadgets for Healthy, Space-Saving Prep",
+    "excerpt": "Eliminate chemical aerosol cans, cut meal prep time in half, and customize non-toxic frozen treats with versatile modern kitchen tools.",
+    "heroImage": "/assets/glass_oil_sprayer.jpg",
+    "authorName": "Sarah Jenkins",
+    "authorInitials": "SJ",
+    "authorRole": "Founder, Pantry & Pan",
+    "readMinutes": 6,
+    "publishDate": "Updated July 27, 2026",
+    "sections": [
       {
-        id: "why-multifunctional-gadgets",
-        title: "The Multi-Functional Kitchen Revolution",
-        paragraphs: [
+        "id": "why-multifunctional-gadgets",
+        "title": "The Multi-Functional Kitchen Revolution",
+        "paragraphs": [
           "Single-purpose plastic kitchen clutter is quickly being replaced by intelligent, multi-functional tools. Modern home cooks are seeking non-toxic, space-saving gadgets that accomplish multiple prep tasks without taking up valuable counter space.",
-          "Investing in versatile tools crafted from food-grade glass, stainless steel, and BPA-free materials ensures clean food prep while dramatically cutting daily meal prep time.",
-        ],
+          "Investing in versatile tools crafted from food-grade glass, stainless steel, and BPA-free materials ensures clean food prep while dramatically cutting daily meal prep time."
+        ]
       },
       {
-        id: "glass-oil-sprayer-vs-aerosol",
-        title: "Ditching Chemical Aerosol Spray Cans for Refillable Glass Misters",
-        paragraphs: [
+        "id": "glass-oil-sprayer-vs-aerosol",
+        "title": "Ditching Chemical Aerosol Spray Cans for Refillable Glass Misters",
+        "paragraphs": [
           "Commercial cooking spray cans rely on chemical propellants like isobutane and propane, along with anti-foaming additives that leave a sticky residue on ceramic and nonstick cookware.",
-          "Transitioning to a 2-in-1 glass oil sprayer and dispenser lets you use pure avocado or olive oil with zero chemical additives. The dual-function nozzle allows you to switch between a fine fan mist for air fryers and a steady pour for skillet searing, reducing oil usage by up to 50%.",
+          "Transitioning to a 2-in-1 glass oil sprayer and dispenser lets you use pure avocado or olive oil with zero chemical additives. The dual-function nozzle allows you to switch between a fine fan mist for air fryers and a steady pour for skillet searing, reducing oil usage by up to 50%."
         ],
-        productId: "glass-oil-sprayer",
+        "productId": "glass-oil-sprayer"
       },
       {
-        id: "healthy-frozen-desserts-creami",
-        title: "Custom Healthy Frozen Desserts Without Preservatives",
-        paragraphs: [
+        "id": "healthy-frozen-desserts-creami",
+        "title": "Custom Healthy Frozen Desserts Without Preservatives",
+        "paragraphs": [
           "Store-bought ice cream is often packed with artificial gums, emulsifiers, and excess refined sugar. Multi-functional appliances like the Ninja CREAMi allow you to transform protein shakes, almond milk, and fresh fruit into smooth gelato or sorbet in minutes.",
-          "With total control over ingredients, you can craft dairy-free, keto, or high-protein frozen treats tailored to your family's dietary needs.",
+          "With total control over ingredients, you can craft dairy-free, keto, or high-protein frozen treats tailored to your family's dietary needs."
         ],
-        productId: "ninja-creami",
+        "productId": "ninja-creami"
       },
       {
-        id: "fast-clean-meal-prep-chopper",
-        title: "Cutting Prep Time in Half Without Tear Fumes",
-        paragraphs: [
+        "id": "fast-clean-meal-prep-chopper",
+        "title": "Cutting Prep Time in Half Without Tear Fumes",
+        "paragraphs": [
           "Dicing onions, peppers, and root vegetables is one of the most time-consuming parts of daily cooking. Heavy-duty 4-in-1 vegetable choppers equipped with razor-sharp German 420 stainless steel blades allow you to dice an entire onion in 3 seconds.",
-          "The enclosed 1.2L catch tray keeps counter space clean while sealing in onion tear fumes, making healthy dinner prep effortless and mess-free.",
+          "The enclosed 1.2L catch tray keeps counter space clean while sealing in onion tear fumes, making healthy dinner prep effortless and mess-free."
         ],
-        productId: "fullstar-veggie-chopper",
-      },
+        "productId": "fullstar-veggie-chopper"
+      }
     ],
-    relatedProductIds: ["glass-oil-sprayer", "ninja-creami", "fullstar-veggie-chopper", "carote-11pc", "caraway-12pc"],
+    "relatedProductIds": [
+      "glass-oil-sprayer",
+      "ninja-creami",
+      "fullstar-veggie-chopper",
+      "carote-11pc",
+      "caraway-12pc"
+    ],
+    "faqs": [
+      {
+        "question": "Are glass oil misters better than commercial cooking sprays?",
+        "answer": "Yes, refillable glass oil misters use pure avocado or olive oil with zero chemical propellants (such as butane or propane) or anti-foaming agents, preventing sticky residue build-up on nonstick cookware."
+      },
+      {
+        "question": "Can you make dairy-free ice cream in the Ninja CREAMi?",
+        "answer": "Yes, the Ninja CREAMi handles almond milk, oat milk, coconut cream, and protein shakes, shaving frozen blocks into smooth dairy-free gelato and sorbet in minutes."
+      },
+      {
+        "question": "Is a vegetable chopper safe to clean in the dishwasher?",
+        "answer": "While catch trays are usually top-rack dishwasher safe, hand washing the stainless steel blades preserves their razor sharpness and prevents edge corrosion."
+      },
+      {
+        "question": "How much oil does a fan-mist oil sprayer save?",
+        "answer": "Fan-mist oil misters distribute a thin, even layer of oil, reducing total oil consumption by up to 50% per dish compared to pouring directly from a bottle."
+      }
+    ]
   },
   {
-    slug: "non-toxic-kitchen-blueprint",
-    category: "Non-Toxic Ceramic & Clay",
-    categoryKey: "ceramic-clay",
-    title: "The Non-Toxic Kitchen Blueprint: How to Swap PTFE for Safe Materials",
-    excerpt:
-      "A step-by-step audit of common kitchen chemical hazards, and the exact cookware materials that keep your food clean.",
-    heroImage: "/assets/hero-kitchen.jpg",
-    authorName: "Dr. Elena Vance",
-    authorInitials: "EV",
-    authorRole: "Materials Researcher & Home Chef",
-    readMinutes: 8,
-    publishDate: "Updated June 12, 2026",
-    sections: [
+    "slug": "non-toxic-kitchen-blueprint",
+    "category": "Non-Toxic Ceramic & Clay",
+    "categoryKey": "ceramic-clay",
+    "title": "The Non-Toxic Kitchen Blueprint: How to Swap PTFE for Safe Materials",
+    "excerpt": "A step-by-step audit of common kitchen chemical hazards, and the exact cookware materials that keep your food clean.",
+    "heroImage": "/assets/hero-kitchen.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 8,
+    "publishDate": "Updated June 12, 2026",
+    "sections": [
       {
-        id: "the-problem-with-ptfe",
-        title: "The problem with traditional nonstick",
-        paragraphs: [
+        "id": "the-problem-with-ptfe",
+        "title": "The problem with traditional nonstick",
+        "paragraphs": [
           "For decades, PTFE and PFAS fluoropolymers provided convenient food release. But when heated past 500°F, synthetic coatings degrade and off-gas chemical compounds into your home environment.",
-          "Swapping to mineral ceramic coatings like Caraway or GreenPan ensures zero synthetic fumes at high temperatures.",
-        ],
+          "Swapping to mineral ceramic coatings like Caraway or GreenPan ensures zero synthetic fumes at high temperatures."
+        ]
       },
       {
-        id: "ceramic-vs-carbon-steel",
-        title: "Ceramic vs. Carbon Steel: Which is right for you?",
-        paragraphs: [
+        "id": "ceramic-vs-carbon-steel",
+        "title": "Ceramic vs. Carbon Steel: Which is right for you?",
+        "paragraphs": [
           "Ceramic sets like the Caraway 12-Piece Ceramic Set and GreenPan Valencia Pro offer effortless release for morning eggs without seasoning routines.",
-          "For high-heat searing and lifelong heirloom durability, heavy carbon steel and enameled cast iron like Lodge offer unmatched thermal mass.",
+          "For high-heat searing and lifelong heirloom durability, heavy carbon steel and enameled cast iron like Lodge offer unmatched thermal mass."
         ],
-        productId: "caraway-12pc",
+        "productId": "caraway-12pc"
       },
       {
-        id: "ditching-plastic-storage",
-        title: "Ditching plastic in grain and food storage",
-        paragraphs: [
-          "Microplastics leach fastest into foods when stored long-term in soft plastics. Transitioning to borosilicate glass dispensers and JoyJolt glass containers preserves ingredient freshness while elevating pantry aesthetics.",
+        "id": "ditching-plastic-storage",
+        "title": "Ditching plastic in grain and food storage",
+        "paragraphs": [
+          "Microplastics leach fastest into foods when stored long-term in soft plastics. Transitioning to borosilicate glass dispensers and JoyJolt glass containers preserves ingredient freshness while elevating pantry aesthetics."
         ],
-        productId: "joyjolt-glass-containers",
-      },
+        "productId": "joyjolt-glass-containers"
+      }
     ],
-    relatedProductIds: ["caraway-12pc", "greenpan-valencia", "sensarte-granite", "joyjolt-glass-containers", "ninja-creami"],
+    "relatedProductIds": [
+      "caraway-12pc",
+      "greenpan-valencia",
+      "sensarte-granite",
+      "joyjolt-glass-containers",
+      "ninja-creami"
+    ],
+    "faqs": [
+      {
+        "question": "At what temperature does traditional Teflon become unsafe?",
+        "answer": "Traditional PTFE (Teflon) coatings begin to break down at temperatures above 500°F (260°C), releasing chemical fumes. Mineral ceramics remain stable up to 550°F or 600°F without degradation."
+      },
+      {
+        "question": "What is the difference between ceramic and carbon steel cookware?",
+        "answer": "Ceramic cookware features a slick silica glaze for low-maintenance egg and pancake frying. Carbon steel is an indestructible heirloom metal requiring natural oil seasoning for high-heat searing."
+      },
+      {
+        "question": "Are glass food storage containers safer than plastic Tupperware?",
+        "answer": "Yes, borosilicate glass containers do not leach microplastics or endocrine-disrupting chemicals like BPA and phthalates into hot food or acidic sauces."
+      },
+      {
+        "question": "What utensils should be used on mineral ceramic pans?",
+        "answer": "Always use wood, bamboo, or food-grade silicone utensils to protect delicate ceramic glazes from microscopic surface scratches."
+      }
+    ]
   },
   {
-    slug: "clean-morning-rituals",
-    category: "Non-Toxic Ceramic & Clay",
-    categoryKey: "ceramic-clay",
-    title: "Clean Morning Rituals: Plastic-Free Cooking & Healthy Treats",
-    excerpt:
-      "How to eliminate synthetic non-stick fumes and microplastics from your breakfast routine.",
-    heroImage: "/assets/sensarte_frying_pan.jpg",
-    authorName: "Sarah Jenkins",
-    authorInitials: "SJ",
-    authorRole: "Founder, Pantry & Pan",
-    readMinutes: 5,
-    publishDate: "Updated May 28, 2026",
-    sections: [
+    "slug": "clean-morning-rituals",
+    "category": "Non-Toxic Ceramic & Clay",
+    "categoryKey": "ceramic-clay",
+    "title": "Clean Morning Rituals: Plastic-Free Cooking & Healthy Treats",
+    "excerpt": "How to eliminate synthetic non-stick fumes and microplastics from your breakfast routine.",
+    "heroImage": "/assets/sensarte_frying_pan.jpg",
+    "authorName": "Sarah Jenkins",
+    "authorInitials": "SJ",
+    "authorRole": "Founder, Pantry & Pan",
+    "readMinutes": 5,
+    "publishDate": "Updated May 28, 2026",
+    "sections": [
       {
-        id: "morning-pan-choice",
-        title: "Choosing the clean breakfast skillet",
-        paragraphs: [
-          "Morning eggs demand delicate temperature control and slick release. Mineral ceramic skillets like Sensarte and Caraway provide effortless frying using minimal butter.",
+        "id": "morning-pan-choice",
+        "title": "Choosing the clean breakfast skillet",
+        "paragraphs": [
+          "Morning eggs demand delicate temperature control and slick release. Mineral ceramic skillets like Sensarte and Caraway provide effortless frying using minimal butter."
         ],
-        productId: "sensarte-granite",
-      },
+        "productId": "sensarte-granite"
+      }
     ],
-    relatedProductIds: ["sensarte-granite", "caraway-12pc", "ninja-creami"],
+    "relatedProductIds": [
+      "sensarte-granite",
+      "caraway-12pc",
+      "ninja-creami"
+    ],
+    "faqs": [
+      {
+        "question": "Why do morning eggs stick to traditional nonstick pans?",
+        "answer": "Eggs stick when pans lose their slick surface due to worn synthetic coatings or high heat damage. Mineral ceramic skillets provide effortless release with minimal butter at low-to-medium heat."
+      },
+      {
+        "question": "Is it safe to heat ceramic skillets on high heat?",
+        "answer": "It is best to cook on low-to-medium heat with ceramic skillets. High heat is unnecessary because ceramic glazes conduct heat efficiently, and excess heat degrades nonstick longevity."
+      },
+      {
+        "question": "How do you remove burnt food from a ceramic frying pan?",
+        "answer": "Fill the pan with warm water and 2 tablespoons of baking soda, let it soak for 15 minutes, then gently wipe with a soft non-abrasive sponge."
+      },
+      {
+        "question": "Can ceramic breakfast pans go in the dishwasher?",
+        "answer": "Hand washing with warm soapy water is strongly recommended to preserve the natural mineral ceramic release coating for years."
+      }
+    ]
   },
   {
-    slug: "wok-cooking-toxin-free",
-    category: "Heirloom Iron & Carbon Steel",
-    categoryKey: "carbon-steel-woks",
-    title: "Wok Cooking, Toxin-Free: A Beginner's Blueprint",
-    excerpt:
-      "Everything you need to know about seasoning, cooking, and caring for a traditional carbon steel wok.",
-    heroImage: "/assets/yosukata_wok.jpg",
-    authorName: "Maya Chen",
-    authorInitials: "MC",
-    authorRole: "Editor, Whole-Home Kitchens",
-    readMinutes: 6,
-    publishDate: "Updated May 3, 2026",
-    sections: [
+    "slug": "wok-cooking-toxin-free",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Wok Cooking, Toxin-Free: A Beginner's Blueprint",
+    "excerpt": "Everything you need to know about seasoning, cooking, and caring for a traditional carbon steel wok.",
+    "heroImage": "/assets/yosukata_wok.jpg",
+    "authorName": "Maya Chen",
+    "authorInitials": "MC",
+    "authorRole": "Editor, Whole-Home Kitchens",
+    "readMinutes": 6,
+    "publishDate": "Updated May 3, 2026",
+    "sections": [
       {
-        id: "why-carbon-steel",
-        title: "Why carbon steel for high heat stir-fry",
-        paragraphs: [
-          "Carbon steel woks like Yosukata are the original non-stick cookware surface, seasoned with natural oil to create a smooth, toxin-free patina.",
+        "id": "why-carbon-steel",
+        "title": "Why carbon steel for high heat stir-fry",
+        "paragraphs": [
+          "Carbon steel woks like Yosukata are the original non-stick cookware surface, seasoned with natural oil to create a smooth, toxin-free patina."
         ],
-        productId: "yosukata-wok",
-      },
+        "productId": "yosukata-wok"
+      }
     ],
-    relatedProductIds: ["yosukata-wok", "lodge-dutch-oven", "greenpan-valencia"],
+    "relatedProductIds": [
+      "yosukata-wok",
+      "lodge-dutch-oven",
+      "greenpan-valencia"
+    ],
+    "faqs": [
+      {
+        "question": "Why is carbon steel preferred over nonstick for wok cooking?",
+        "answer": "Wok cooking requires extreme heat (over 500°F) for authentic 'wok hei' flavor. Synthetic nonstick coatings break down at these temperatures, whereas carbon steel thrives under high heat."
+      },
+      {
+        "question": "Can you use a carbon steel wok on an induction cooktop?",
+        "answer": "Yes, flat-bottom carbon steel woks are magnetic and work exceptionally well on induction, electric glass, and gas stoves."
+      },
+      {
+        "question": "How do you clean a seasoned carbon steel wok after cooking?",
+        "answer": "Rinse with hot water and a soft bamboo brush (avoid dish soap), dry thoroughly on a warm burner, and rub a tiny drop of high-smoke-point oil over the interior."
+      },
+      {
+        "question": "What oils are best for seasoning a carbon steel wok?",
+        "answer": "High-smoke-point neutral oils like grapeseed, avocado, or canola oil are ideal for building a durable black patina."
+      }
+    ]
   },
   {
-    slug: "space-saving-cookware-guide",
-    category: "Space-Saving & Detachable",
-    categoryKey: "space-saving-detachable",
-    title: "Modular Cooking: The Ultimate Space-Saving Cookware Guide",
-    excerpt:
-      "How stackable cookware sets with click-off handles maximize cabinet organization in modern kitchens.",
-    heroImage: "/assets/carote_stackable_set.jpg",
-    authorName: "Sarah Jenkins",
-    authorInitials: "SJ",
-    authorRole: "Founder, Pantry & Pan",
-    readMinutes: 6,
-    publishDate: "Updated July 10, 2026",
-    sections: [
+    "slug": "space-saving-cookware-guide",
+    "category": "Space-Saving & Detachable",
+    "categoryKey": "space-saving-detachable",
+    "title": "Modular Cooking: The Ultimate Space-Saving Cookware Guide",
+    "excerpt": "How stackable cookware sets with click-off handles maximize cabinet organization in modern kitchens.",
+    "heroImage": "/assets/carote_stackable_set.jpg",
+    "authorName": "Sarah Jenkins",
+    "authorInitials": "SJ",
+    "authorRole": "Founder, Pantry & Pan",
+    "readMinutes": 6,
+    "publishDate": "Updated July 10, 2026",
+    "sections": [
       {
-        id: "detachable-handles",
-        title: "Why detachable handles change small kitchen prep",
-        paragraphs: [
-          "Eliminating long rigid handles allows pans like the CAROTE 11-Piece set to nest completely flat, saving up to 70% cabinet volume.",
+        "id": "detachable-handles",
+        "title": "Why detachable handles change small kitchen prep",
+        "paragraphs": [
+          "Eliminating long rigid handles allows pans like the CAROTE 11-Piece set to nest completely flat, saving up to 70% cabinet volume."
         ],
-        productId: "carote-11pc",
-      },
+        "productId": "carote-11pc"
+      }
     ],
-    relatedProductIds: ["carote-11pc", "caraway-12pc", "fullstar-veggie-chopper"],
+    "relatedProductIds": [
+      "carote-11pc",
+      "caraway-12pc",
+      "fullstar-veggie-chopper"
+    ],
+    "faqs": [
+      {
+        "question": "How do click-off removable handles stay secure during cooking?",
+        "answer": "Removable handles use dual-action safety latches engineered to lock tightly around pan rims, supporting heavy loads up to 22 lbs without slipping."
+      },
+      {
+        "question": "Can stackable cookware with detachable handles go into the oven?",
+        "answer": "The cookware bodies are oven safe up to 480°F, but removable handles must be clicked off before placing pots or pans into the oven."
+      },
+      {
+        "question": "How much cabinet storage space do detachable handle sets save?",
+        "answer": "Nesting pots and pans flat without rigid long handles saves up to 70% of cabinet storage volume compared to traditional cookware sets."
+      },
+      {
+        "question": "Are CAROTE detachable handle pans compatible with induction stoves?",
+        "answer": "Yes, CAROTE stackable sets feature stainless steel induction bases compatible with gas, electric, ceramic, and induction cooktops."
+      }
+    ]
   },
   {
-    slug: "aesthetic-pantry-organization-guide",
-    category: "Pantry & Aesthetic Storage",
-    categoryKey: "aesthetic-storage",
-    title: "Aesthetic Pantry Blueprint: Glass & Bamboo Storage Solutions",
-    excerpt:
-      "Transform open pantry shelving with borosilicate glass dispensers, silicone seals, and natural wood accents.",
-    heroImage: "/assets/glass_rice_dispenser.jpg",
-    authorName: "Dr. Elena Vance",
-    authorInitials: "EV",
-    authorRole: "Materials Researcher & Home Chef",
-    readMinutes: 7,
-    publishDate: "Updated July 18, 2026",
-    sections: [
+    "slug": "aesthetic-pantry-organization-guide",
+    "category": "Pantry & Aesthetic Storage",
+    "categoryKey": "aesthetic-storage",
+    "title": "Aesthetic Pantry Blueprint: Glass & Bamboo Storage Solutions",
+    "excerpt": "Transform open pantry shelving with borosilicate glass dispensers, silicone seals, and natural wood accents.",
+    "heroImage": "/assets/glass_rice_dispenser.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 7,
+    "publishDate": "Updated July 18, 2026",
+    "sections": [
       {
-        id: "glass-dispensers",
-        title: "Ditching plastic containers for high borosilicate glass",
-        paragraphs: [
-          "Borosilicate glass dispensers and Vtopmart bulk canisters provide airtight protection while keeping dry staples visible.",
+        "id": "glass-dispensers",
+        "title": "Ditching plastic containers for high borosilicate glass",
+        "paragraphs": [
+          "Borosilicate glass dispensers and Vtopmart bulk canisters provide airtight protection while keeping dry staples visible."
         ],
-        productId: "glass-rice-dispenser",
-      },
+        "productId": "glass-rice-dispenser"
+      }
     ],
-    relatedProductIds: ["glass-rice-dispenser", "joyjolt-glass-containers", "vtopmart-bulk-containers"],
+    "relatedProductIds": [
+      "glass-rice-dispenser",
+      "joyjolt-glass-containers",
+      "vtopmart-bulk-containers"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between borosilicate glass and regular glass storage?",
+        "answer": "Borosilicate glass contains boron trioxide, making it resistant to thermal shock so it can withstand rapid temperature shifts without cracking."
+      },
+      {
+        "question": "How much dry rice fits in a 5-Liter glass dispenser?",
+        "answer": "A 5-Liter glass grain dispenser holds approximately 10 lbs (4.5 kg) of dry white or brown rice."
+      },
+      {
+        "question": "Are Vtopmart bulk canisters airtight enough to prevent pantry pests?",
+        "answer": "Yes, Vtopmart canisters feature 4-side locking lids with thick silicone gaskets that block moisture and pantry moths."
+      },
+      {
+        "question": "How do you label glass storage jars cleanly?",
+        "answer": "Use reusable vinyl chalkboard labels or liquid chalk markers that wipe clean with a damp cloth when changing pantry ingredients."
+      }
+    ]
   },
   {
-    slug: "cast-iron-vs-carbon-steel-vs-enameled",
-    category: "Heirloom Iron & Carbon Steel",
-    categoryKey: "carbon-steel-woks",
-    title: "Cast Iron vs. Carbon Steel vs. Enameled: Which Heirloom Pan Is Best?",
-    excerpt:
-      "A complete material science comparison of heat retention, seasoning care, and non-toxic searing performance across classic pan materials.",
-    heroImage: "/assets/lodge_skillet.jpg",
-    authorName: "Dr. Elena Vance",
-    authorInitials: "EV",
-    authorRole: "Materials Researcher & Home Chef",
-    readMinutes: 8,
-    publishDate: "Updated July 28, 2026",
-    sections: [
+    "slug": "cast-iron-vs-carbon-steel-vs-enameled",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Cast Iron vs. Carbon Steel vs. Enameled: Which Heirloom Pan Is Best?",
+    "excerpt": "A complete material science comparison of heat retention, seasoning care, and non-toxic searing performance across classic pan materials.",
+    "heroImage": "/assets/lodge_skillet.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 8,
+    "publishDate": "Updated July 28, 2026",
+    "sections": [
       {
-        id: "ditching-ptfe-for-heirloom-metals",
-        title: "Ditching PTFE for Lifelong Heirloom Metals",
-        paragraphs: [
+        "id": "ditching-ptfe-for-heirloom-metals",
+        "title": "Ditching PTFE for Lifelong Heirloom Metals",
+        "paragraphs": [
           "Synthetic nonstick coatings have a short shelf life and carry risk of chemical off-gassing when overheated. In contrast, heirloom metals like raw cast iron, carbon steel, and enameled cast iron improve with age and provide lifetime non-toxic cooking.",
-          "Choosing the right heirloom metal comes down to your cooking technique: raw cast iron excels at extreme heat retention, carbon steel delivers high-heat agility, and enameled cast iron provides acid-safe braising without any seasoning maintenance.",
-        ],
+          "Choosing the right heirloom metal comes down to your cooking technique: raw cast iron excels at extreme heat retention, carbon steel delivers high-heat agility, and enameled cast iron provides acid-safe braising without any seasoning maintenance."
+        ]
       },
       {
-        id: "raw-cast-iron-thermal-mass",
-        title: "Raw Cast Iron: Unmatched Thermal Mass & Searing Power",
-        paragraphs: [
+        "id": "raw-cast-iron-thermal-mass",
+        "title": "Raw Cast Iron: Unmatched Thermal Mass & Searing Power",
+        "paragraphs": [
           "Raw cast iron pans, such as the classic Lodge 10.25 Inch Skillet, possess immense thermal mass. Once heated, they hold their temperature remarkably well when cold steaks or vegetables enter the pan.",
-          "Over time, cooking with natural fats creates a slick polymer patina that releases fried eggs effortlessly while completely avoiding PTFE and PFAS chemicals.",
+          "Over time, cooking with natural fats creates a slick polymer patina that releases fried eggs effortlessly while completely avoiding PTFE and PFAS chemicals."
         ],
-        productId: "lodge-cast-iron-skillet",
+        "productId": "lodge-cast-iron-skillet"
       },
       {
-        id: "carbon-steel-lightweight-agility",
-        title: "Carbon Steel: Lightweight Agility for Stir-Frying & Eggs",
-        paragraphs: [
+        "id": "carbon-steel-lightweight-agility",
+        "title": "Carbon Steel: Lightweight Agility for Stir-Frying & Eggs",
+        "paragraphs": [
           "Carbon steel shares the natural seasoning chemistry of cast iron but contains less carbon, allowing it to be forged thinner and lighter. Pans like the De Buyer Mineral B carbon steel skillet heat up and cool down rapidly.",
-          "This responsiveness makes carbon steel the ideal choice for high-heat wok toss cooking, French omelets, and quick searing where precise temperature control is required.",
+          "This responsiveness makes carbon steel the ideal choice for high-heat wok toss cooking, French omelets, and quick searing where precise temperature control is required."
         ],
-        productId: "de-buyer-carbon-steel-pan",
+        "productId": "de-buyer-carbon-steel-pan"
       },
       {
-        id: "enameled-cast-iron-low-maintenance",
-        title: "Enameled Cast Iron: Non-Reactive Braising Without Seasoning",
-        paragraphs: [
+        "id": "enameled-cast-iron-low-maintenance",
+        "title": "Enameled Cast Iron: Non-Reactive Braising Without Seasoning",
+        "paragraphs": [
           "For slow-simmered stews, tomato sauces, and acidic braises, vitreous enamel coatings offer the massive heat retention of cast iron without reacting to acidic ingredients.",
-          "Dutch ovens like the Lodge 6-Quart Enameled Dutch Oven feature a non-porous glass glaze that requires zero seasoning and transitions seamlessly from stovetop to high-heat ovens.",
+          "Dutch ovens like the Lodge 6-Quart Enameled Dutch Oven feature a non-porous glass glaze that requires zero seasoning and transitions seamlessly from stovetop to high-heat ovens."
         ],
-        productId: "lodge-dutch-oven",
+        "productId": "lodge-dutch-oven"
       },
       {
-        id: "heirloom-cookware-verdict",
-        title: "The Heirloom Pan Verdict: Which Surface Belongs in Your Kitchen?",
-        paragraphs: [
-          "If you want a budget-friendly indestructible pan for heavy searing, start with raw cast iron. If you prefer agile tossing and fast response, choose carbon steel like Yosukata or De Buyer. For soup and stew braises, enameled cast iron remains unbeatable.",
+        "id": "heirloom-cookware-verdict",
+        "title": "The Heirloom Pan Verdict: Which Surface Belongs in Your Kitchen?",
+        "paragraphs": [
+          "If you want a budget-friendly indestructible pan for heavy searing, start with raw cast iron. If you prefer agile tossing and fast response, choose carbon steel like Yosukata or De Buyer. For soup and stew braises, enameled cast iron remains unbeatable."
         ],
-        productId: "yosukata-wok",
-      },
+        "productId": "yosukata-wok"
+      }
     ],
-    relatedProductIds: [
+    "relatedProductIds": [
       "lodge-cast-iron-skillet",
       "de-buyer-carbon-steel-pan",
       "lodge-dutch-oven",
       "yosukata-wok",
-      "caraway-12pc",
+      "caraway-12pc"
     ],
+    "faqs": [
+      {
+        "question": "Can you cook acidic foods like tomatoes in raw cast iron?",
+        "answer": "Avoid cooking highly acidic dishes in raw cast iron for long periods, as acid breaks down the seasoning patina. Use enameled cast iron or stainless steel instead."
+      },
+      {
+        "question": "How do you season a carbon steel pan for the first time?",
+        "answer": "Wash off factory wax, dry thoroughly, apply a thin coat of high-smoke-point oil, and heat on the stovetop until the metal turns dark brown or blue-black."
+      },
+      {
+        "question": "Is carbon steel lighter than cast iron?",
+        "answer": "Yes, carbon steel is 40% to 50% lighter than traditional cast iron because carbon steel can be forged thinner while retaining strength."
+      },
+      {
+        "question": "Can enameled cast iron go in the oven at high heat?",
+        "answer": "High-quality enameled cast iron is oven safe up to 500°F (260°C). Check phenolic handle knobs, which should be upgraded to stainless steel for high heat."
+      }
+    ]
   },
   {
-    slug: "plastic-free-sunday-meal-prep-workflow",
-    category: "Pantry & Aesthetic Storage",
-    categoryKey: "aesthetic-storage",
-    title: "The Plastic-Free Sunday Meal Prep Workflow",
-    excerpt:
-      "How to build a streamlined weekend batch cooking system using borosilicate glass, platinum silicone, and precision prep tools.",
-    heroImage: "/assets/joyjolt_glass_containers.jpg",
-    authorName: "Sarah Jenkins",
-    authorInitials: "SJ",
-    authorRole: "Founder, Pantry & Pan",
-    readMinutes: 7,
-    publishDate: "Updated July 28, 2026",
-    sections: [
+    "slug": "plastic-free-sunday-meal-prep-workflow",
+    "category": "Pantry & Aesthetic Storage",
+    "categoryKey": "aesthetic-storage",
+    "title": "The Plastic-Free Sunday Meal Prep Workflow",
+    "excerpt": "How to build a streamlined weekend batch cooking system using borosilicate glass, platinum silicone, and precision prep tools.",
+    "heroImage": "/assets/joyjolt_glass_containers.jpg",
+    "authorName": "Sarah Jenkins",
+    "authorInitials": "SJ",
+    "authorRole": "Founder, Pantry & Pan",
+    "readMinutes": 7,
+    "publishDate": "Updated July 28, 2026",
+    "sections": [
       {
-        id: "microplastics-in-kitchen-prep",
-        title: "The Microplastics Hazard: Why Heating Food in Plastic Is Risky",
-        paragraphs: [
+        "id": "microplastics-in-kitchen-prep",
+        "title": "The Microplastics Hazard: Why Heating Food in Plastic Is Risky",
+        "paragraphs": [
           "Reheating meals in soft plastic Tupperware accelerates chemical migration and microplastic shed directly into hot foods. Eliminating synthetic storage containers is one of the most effective non-toxic swaps a household can make.",
-          "By organizing a dedicated Sunday meal prep workflow centered on high-durability glass, stainless steel, and food-grade silicone, you keep prep clean while saving hours during busy weeknights.",
-        ],
+          "By organizing a dedicated Sunday meal prep workflow centered on high-durability glass, stainless steel, and food-grade silicone, you keep prep clean while saving hours during busy weeknights."
+        ]
       },
       {
-        id: "rapid-prep-chopping-station",
-        title: "Station 1: Rapid Prep, Uniform Dicing, and Controlled Misting",
-        paragraphs: [
+        "id": "rapid-prep-chopping-station",
+        "title": "Station 1: Rapid Prep, Uniform Dicing, and Controlled Misting",
+        "paragraphs": [
           "Vegetable prep is often the main bottleneck in meal prepping. Multi-blade tools like the Fullstar 4-in-1 Chopper dice onions, peppers, and zucchini in seconds into uniform pieces that cook evenly.",
-          "Pairing your prep station with a refillable glass oil mister allows precise oil coating over sheet pans without relying on propellant-laden commercial cooking sprays.",
+          "Pairing your prep station with a refillable glass oil mister allows precise oil coating over sheet pans without relying on propellant-laden commercial cooking sprays."
         ],
-        productId: "fullstar-veggie-chopper",
+        "productId": "fullstar-veggie-chopper"
       },
       {
-        id: "batch-cooking-and-portioning",
-        title: "Station 2: Non-Toxic Batch Cooking & Precision Portioning",
-        paragraphs: [
+        "id": "batch-cooking-and-portioning",
+        "title": "Station 2: Non-Toxic Batch Cooking & Precision Portioning",
+        "paragraphs": [
           "When mixing dressings, sauces, and grain bases, switch to tempered borosilicate glass measuring cups like Pyrex. They withstand boiling liquids without leaching chemicals or absorbing food odors.",
-          "Distribute batch-cooked grains and roasted vegetables into equal portions while hot, ensuring rapid cooling and safe food storage.",
+          "Distribute batch-cooked grains and roasted vegetables into equal portions while hot, ensuring rapid cooling and safe food storage."
         ],
-        productId: "pyrex-glass-measuring-cups",
+        "productId": "pyrex-glass-measuring-cups"
       },
       {
-        id: "airtight-cold-storage-solutions",
-        title: "Station 3: Airtight Glass & Platinum Silicone Cold Storage",
-        paragraphs: [
+        "id": "airtight-cold-storage-solutions",
+        "title": "Station 3: Airtight Glass & Platinum Silicone Cold Storage",
+        "paragraphs": [
           "Store cooked proteins and roasted vegetables in JoyJolt JoyFul borosilicate glass containers with leakproof silicone seals. Glass body containers transition directly from fridge to oven or microwave safely.",
-          "For cut fruits, snacks, and liquid marinades, platinum silicone bags like Stasher offer an airtight, reusable plastic-baggie alternative that stands up to dishwasher washing.",
+          "For cut fruits, snacks, and liquid marinades, platinum silicone bags like Stasher offer an airtight, reusable plastic-baggie alternative that stands up to dishwasher washing."
         ],
-        productId: "joyjolt-glass-containers",
-      },
+        "productId": "joyjolt-glass-containers"
+      }
     ],
-    relatedProductIds: [
+    "relatedProductIds": [
       "joyjolt-glass-containers",
       "fullstar-veggie-chopper",
       "glass-oil-sprayer",
       "stasher-silicone-bags",
-      "pyrex-glass-measuring-cups",
+      "pyrex-glass-measuring-cups"
     ],
+    "faqs": [
+      {
+        "question": "Is borosilicate glass safer for food prep than tempered glass?",
+        "answer": "Borosilicate glass offers superior thermal shock resistance, allowing transitions from freezer to preheated 400°F oven without cracking."
+      },
+      {
+        "question": "Are platinum silicone storage bags truly non-toxic?",
+        "answer": "Yes, 100% platinum food-grade silicone contains zero BPA, BPS, phthalates, or microplastics and does not leach under microwave heating."
+      },
+      {
+        "question": "How long does batch-cooked food stay fresh in glass containers?",
+        "answer": "Meals stored in borosilicate glass containers with airtight silicone snap lids stay fresh for 4 to 5 days in the fridge or up to 3 months frozen."
+      },
+      {
+        "question": "Can glass meal prep containers go in the freezer?",
+        "answer": "Yes, borosilicate glass containers are freezer safe. Leave 0.5 inches of headspace for food expansion when freezing liquids."
+      }
+    ]
   },
+  {
+    "slug": "ceramic-granite-stone-cookware-explained",
+    "category": "Non-Toxic Ceramic & Clay",
+    "categoryKey": "ceramic-clay",
+    "title": "Ceramic, Granite, and Stone Cookware Explained: A Non-Toxic Safety Audit",
+    "excerpt": "Decoding marketing buzzwords, speckled coatings, and true sol-gel silica ceramic safety so you can audit your kitchen with confidence.",
+    "heroImage": "/assets/caraway_12pc_set.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 9,
+    "publishDate": "Updated July 28, 2026",
+    "sections": [
+      {
+        "id": "what-is-sol-gel-ceramic",
+        "title": "What Is Sol-Gel Ceramic Cookware?",
+        "paragraphs": [
+          "True ceramic nonstick coatings are derived from natural sand and processed through a sol-gel solution into a glass-like silica surface. Unlike traditional nonstick, mineral ceramics require no PFAS, PTFE, PFOA, or toxic binders.",
+          "When subjected to high cooking temperatures, mineral ceramic glazes emit zero chemical fumes, making them the safest nonstick option for everyday cooking."
+        ]
+      },
+      {
+        "id": "the-granite-and-stone-illusion",
+        "title": "The Granite and Stone Marketing Illusion",
+        "paragraphs": [
+          "Many cookware brands use terms like 'granite' or 'stone' purely as aesthetic descriptors. In many cases, these pans are standard aluminum skillets finished with a decorative speckled pattern over traditional PTFE nonstick.",
+          "To ensure your cookware is genuinely toxin-free, always look for explicit 'PTFE-Free' and 'PFAS-Free' certifications rather than relying on stone-themed product names."
+        ],
+        "productId": "sensarte-granite"
+      },
+      {
+        "id": "uncoated-stainless-steel-alternative",
+        "title": "Uncoated Stainless Steel: The Indestructible Alternative",
+        "paragraphs": [
+          "For home cooks seeking a pan that never wears out, 3-ply stainless steel like the All-Clad D3 Frying Pan provides a completely inert, non-reactive cooking surface.",
+          "By preheating your stainless skillet properly, you can achieve natural food release for meats and vegetables without relying on synthetic or delicate surface glazes."
+        ],
+        "productId": "all-clad-d3-skillet"
+      },
+      {
+        "id": "safe-utensils-for-delicate-coatings",
+        "title": "Protecting Your Glaze: Organic Utensil Rules",
+        "paragraphs": [
+          "To preserve the nonstick slickness of ceramic glazes, avoid metal spatulas and harsh abrasives that can cause microscopic surface micro-scratches.",
+          "Using organic bamboo utensils like the Totally Bamboo 6-Piece Set or food-grade silicone tools ensures smooth flipping while protecting pan longevity."
+        ],
+        "productId": "totally-bamboo-utensils"
+      },
+      {
+        "id": "cookware-audit-checklist",
+        "title": "The 4-Point Kitchen Cookware Audit Checklist",
+        "paragraphs": [
+          "Auditing your kitchen is straightforward: verify zero PTFE/PFAS certifications, check for chipped or flaking surfaces, switch to non-scratch utensils, and choose proven brands like Caraway or GreenPan Valencia Pro."
+        ],
+        "productId": "greenpan-valencia"
+      }
+    ],
+    "relatedProductIds": [
+      "caraway-12pc",
+      "greenpan-valencia",
+      "sensarte-granite",
+      "all-clad-d3-skillet",
+      "totally-bamboo-utensils"
+    ],
+    "faqs": [
+      {
+        "question": "Is granite cookware safe and non-toxic?",
+        "answer": "Check certifications. Many pans labeled 'granite' are aluminum skillets with decorative speckled PTFE finishes. Look explicitly for PTFE-free and PFAS-free labels."
+      },
+      {
+        "question": "What is sol-gel ceramic cookware made of?",
+        "answer": "Sol-gel ceramic cookware is made from sand-derived silica transformed into a smooth glass-like mineral glaze through a liquid gel process."
+      },
+      {
+        "question": "Do ceramic nonstick pans lose their slickness over time?",
+        "answer": "Mineral ceramics maintain slickness when cooked on low-to-medium heat and hand washed with soft sponges. High heat accelerates wear."
+      },
+      {
+        "question": "Why avoid aerosol cooking sprays on ceramic pans?",
+        "answer": "Aerosol sprays contain chemical propellants that bake onto ceramic glazes, forming an invisible residue that destroys nonstick release."
+      }
+    ]
+  },
+  {
+    "slug": "space-saving-minimalist-baker",
+    "category": "Space-Saving & Detachable",
+    "categoryKey": "space-saving-detachable",
+    "title": "The Space-Saving Minimalist Baker: Non-Toxic Oven Essentials",
+    "excerpt": "Streamline your baking setup with non-toxic ceramic sheets, reusable silicone baking mats, and compact nesting organizers.",
+    "heroImage": "/assets/caraway_bakeware_set.jpg",
+    "authorName": "Sarah Jenkins",
+    "authorInitials": "SJ",
+    "authorRole": "Founder, Pantry & Pan",
+    "readMinutes": 7,
+    "publishDate": "Updated July 28, 2026",
+    "sections": [
+      {
+        "id": "the-problem-with-flaking-bakeware",
+        "title": "The Problem with Traditional Flaking Bakeware",
+        "paragraphs": [
+          "Conventional baking sheets often feature cheap dark coatings that warp under high heat and flake synthetic particles into baked goods over time.",
+          "Upgrading to non-toxic mineral ceramic baking sheets and platinum silicone mats ensures even heat distribution, easy cookie release, and zero chemical transfer."
+        ]
+      },
+      {
+        "id": "ceramic-bakeware-sets",
+        "title": "Non-Toxic Ceramic Bakeware: Complete Oven Safety",
+        "paragraphs": [
+          "The Caraway 11-Piece Ceramic Bakeware Set features an eco-friendly mineral glaze completely free of PFAS, PTFE, and heavy metals. Its aluminized steel core prevents warping up to 550°F.",
+          "Designed for minimalist kitchens, the set includes custom magnetic organizers that hold baking sheets and muffin pans upright inside standard lower cabinets."
+        ],
+        "productId": "caraway-bakeware-set"
+      },
+      {
+        "id": "reusable-silicone-baking-mats",
+        "title": "Ditching Parchment for Reusable Silicone Mats",
+        "paragraphs": [
+          "Eliminate single-use parchment paper rolls by pairing your cookie sheets with reusable Silpat silicone baking mats. Made from fiberglass mesh and food-grade silicone, they withstand temperatures up to 500°F.",
+          "Silpat mats deliver effortless release for delicate pastries, roasted vegetables, and sticky sugar work without requiring added oil spray or butter."
+        ],
+        "productId": "silpat-baking-mat"
+      },
+      {
+        "id": "frozen-dessert-alternative-prep",
+        "title": "Minimalist Dessert Prep Without a Full Oven",
+        "paragraphs": [
+          "You do not always need a preheated oven to craft wholesome treats. High-efficiency appliances like the Ninja CREAMi let you turn frozen fruit and almond milk into silky sorbets and ice cream in minutes."
+        ],
+        "productId": "ninja-creami"
+      }
+    ],
+    "relatedProductIds": [
+      "caraway-bakeware-set",
+      "silpat-baking-mat",
+      "ninja-creami",
+      "joyjolt-glass-containers"
+    ],
+    "faqs": [
+      {
+        "question": "Are traditional nonstick baking sheets safe at high heat?",
+        "answer": "PTFE nonstick baking sheets degrade above 500°F. Mineral ceramic baking sheets and aluminized steel provide safe high-heat baking up to 550°F."
+      },
+      {
+        "question": "What temperature are Silpat silicone baking mats rated for?",
+        "answer": "Silpat premium silicone baking mats are rated from -40°F to 500°F (-40°C to 260°C), making them safe for freezer prep and oven baking."
+      },
+      {
+        "question": "How do stackable bakeware sets save storage space?",
+        "answer": "Modular ceramic bakeware sets include vertical magnetic storage racks that hold baking sheets upright inside cabinets, saving 60% shelf volume."
+      },
+      {
+        "question": "Do silicone baking mats eliminate parchment paper?",
+        "answer": "Yes, food-grade silicone mats provide a nonstick surface requiring no parchment paper, butter, or oil spray for cookie release."
+      }
+    ]
+  }
 ];
 
 export function getGuide(slug: string) {
