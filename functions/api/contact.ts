@@ -83,7 +83,31 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
     const brevoApiKey = context.env.BREVO_API_KEY;
     const receiverEmail = context.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
 
-    // 2. Resend Email Dispatch
+    let isAlreadySubscribed = false;
+
+    // 2. Integration with Resend Contacts API if autoSubscribe is checked
+    if (resendApiKey && autoSubscribe) {
+      const contactRes = await fetch("https://api.resend.com/contacts", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          unsubscribed: false,
+        }),
+      });
+
+      if (!contactRes.ok) {
+        const contactErr = await contactRes.json().catch(() => ({}));
+        if (contactRes.status === 409 || (contactErr.name && contactErr.name.includes("already_exists"))) {
+          isAlreadySubscribed = true;
+        }
+      }
+    }
+
+    // 3. Resend Email Dispatch
     if (resendApiKey) {
       const adminPromise = fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -102,7 +126,7 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
               <p><strong>Name:</strong> ${sanitizedName}</p>
               <p><strong>Email:</strong> ${sanitizeHtml(email)}</p>
               <p><strong>Topic / Subject:</strong> ${sanitizedTopic}</p>
-              <p><strong>Auto-Subscribed to Digest:</strong> ${autoSubscribe ? "Yes" : "No"}</p>
+              <p><strong>Auto-Subscribed to Digest:</strong> ${autoSubscribe ? (isAlreadySubscribed ? "Yes (Already Subscribed)" : "Yes (New Subscriber)") : "No"}</p>
               <hr style="border: none; border-top: 1px solid #e5e5e5; margin: 20px 0;" />
               <p><strong>Message:</strong></p>
               <blockquote style="background: #F9F6F0; padding: 15px; border-left: 4px solid #D48C70; margin: 0;">
@@ -115,8 +139,8 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
       const promises: Promise<Response>[] = [adminPromise];
 
-      // Send Welcome Email if user checked autoSubscribe
-      if (autoSubscribe) {
+      // Send Welcome Email ONLY if autoSubscribe is checked AND contact is NEW!
+      if (autoSubscribe && !isAlreadySubscribed) {
         const welcomeHtml = `
           <!DOCTYPE html>
           <html>
@@ -246,7 +270,7 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
       await Promise.allSettled(promises);
     }
 
-    // 3. Brevo CRM Auto-Subscribe
+    // 4. Brevo CRM Auto-Subscribe
     if (autoSubscribe && brevoApiKey) {
       await fetch("https://api.brevo.com/v3/contacts", {
         method: "POST",

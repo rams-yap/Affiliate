@@ -1,7 +1,6 @@
 interface Env {
   RESEND_API_KEY?: string;
   BREVO_API_KEY?: string;
-  RESEND_AUDIENCE_ID?: string;
   CONTACT_RECEIVER_EMAIL?: string;
 }
 
@@ -57,43 +56,56 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
     const resendApiKey = context.env.RESEND_API_KEY;
     const brevoApiKey = context.env.BREVO_API_KEY;
-    const audienceId = context.env.RESEND_AUDIENCE_ID;
     const receiverEmail = context.env.CONTACT_RECEIVER_EMAIL || "creative@ramsyap.com";
 
     const sanitizedTopics = topics.map(sanitizeHtml);
 
     let isAlreadySubscribed = false;
 
-    // 2. Check if already subscribed in Brevo CRM
-    if (brevoApiKey) {
-      const checkRes = await fetch(`https://api.brevo.com/v3/contacts/${encodeURIComponent(email)}`, {
-        method: "GET",
-        headers: { "api-key": brevoApiKey },
+    // 2. Integration with Resend Contacts API & Audience Deduplication
+    if (resendApiKey) {
+      const contactRes = await fetch("https://api.resend.com/contacts", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          unsubscribed: false,
+        }),
       });
-      if (checkRes.ok) {
-        isAlreadySubscribed = true;
-      } else {
-        // Add new contact to Brevo
-        await fetch("https://api.brevo.com/v3/contacts", {
-          method: "POST",
-          headers: {
-            "api-key": brevoApiKey,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: email,
-            attributes: { INTERESTS: topics.join(", ") },
-            updateEnabled: true,
-          }),
-        });
+
+      if (!contactRes.ok) {
+        const contactErr = await contactRes.json().catch(() => ({}));
+        // If Resend returns 409 or contact_already_exists, user is already in your Audience list!
+        if (contactRes.status === 409 || (contactErr.name && contactErr.name.includes("already_exists"))) {
+          isAlreadySubscribed = true;
+        }
       }
     }
 
-    // 3. Resend Integration & Smart Welcome Email Dispatch
+    // 3. Integration with Brevo CRM (if BREVO_API_KEY exists)
+    if (brevoApiKey) {
+      await fetch("https://api.brevo.com/v3/contacts", {
+        method: "POST",
+        headers: {
+          "api-key": brevoApiKey,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          attributes: { INTERESTS: topics.join(", ") },
+          updateEnabled: true,
+        }),
+      });
+    }
+
+    // 4. Send Emails via Resend
     if (resendApiKey) {
       const promises: Promise<Response>[] = [];
 
-      // Always notify admin of signup action
+      // Always notify admin of subscriber action
       promises.push(
         fetch("https://api.resend.com/emails", {
           method: "POST",
@@ -110,29 +122,14 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
                 <h2 style="color: #8A9A86;">New Newsletter Subscriber!</h2>
                 <p><strong>Email:</strong> ${sanitizeHtml(email)}</p>
                 <p><strong>Selected Preferences:</strong> ${sanitizedTopics.join(", ")}</p>
-                <p><strong>First-time Welcome Sent:</strong> ${!isAlreadySubscribed ? "Yes" : "No (Already Subscribed)"}</p>
+                <p><strong>Status:</strong> ${!isAlreadySubscribed ? "New Subscriber (Welcome Sent)" : "Existing Subscriber (Preferences Updated)"}</p>
               </div>
             `,
           }),
         })
       );
 
-      // Add to Resend Audience if AUDIENCE_ID is configured
-      if (audienceId) {
-        const audRes = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${resendApiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email }),
-        });
-        if (!audRes.ok) {
-          isAlreadySubscribed = true;
-        }
-      }
-
-      // Only send Welcome Email if this is a NEW subscriber!
+      // Only send Welcome Email if this is a BRAND NEW subscriber!
       if (!isAlreadySubscribed) {
         const welcomeHtml = `
           <!DOCTYPE html>
