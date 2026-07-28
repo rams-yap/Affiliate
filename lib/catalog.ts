@@ -866,6 +866,130 @@ export const GUIDES: Article[] = [
     ],
     relatedProductIds: ["glass-rice-dispenser", "joyjolt-glass-containers", "vtopmart-bulk-containers"],
   },
+  {
+    slug: "cast-iron-vs-carbon-steel-vs-enameled",
+    category: "Heirloom Iron & Carbon Steel",
+    categoryKey: "carbon-steel-woks",
+    title: "Cast Iron vs. Carbon Steel vs. Enameled: Which Heirloom Pan Is Best?",
+    excerpt:
+      "A complete material science comparison of heat retention, seasoning care, and non-toxic searing performance across classic pan materials.",
+    heroImage: "/assets/lodge_skillet.jpg",
+    authorName: "Dr. Elena Vance",
+    authorInitials: "EV",
+    authorRole: "Materials Researcher & Home Chef",
+    readMinutes: 8,
+    publishDate: "Updated July 28, 2026",
+    sections: [
+      {
+        id: "ditching-ptfe-for-heirloom-metals",
+        title: "Ditching PTFE for Lifelong Heirloom Metals",
+        paragraphs: [
+          "Synthetic nonstick coatings have a short shelf life and carry risk of chemical off-gassing when overheated. In contrast, heirloom metals like raw cast iron, carbon steel, and enameled cast iron improve with age and provide lifetime non-toxic cooking.",
+          "Choosing the right heirloom metal comes down to your cooking technique: raw cast iron excels at extreme heat retention, carbon steel delivers high-heat agility, and enameled cast iron provides acid-safe braising without any seasoning maintenance.",
+        ],
+      },
+      {
+        id: "raw-cast-iron-thermal-mass",
+        title: "Raw Cast Iron: Unmatched Thermal Mass & Searing Power",
+        paragraphs: [
+          "Raw cast iron pans, such as the classic Lodge 10.25 Inch Skillet, possess immense thermal mass. Once heated, they hold their temperature remarkably well when cold steaks or vegetables enter the pan.",
+          "Over time, cooking with natural fats creates a slick polymer patina that releases fried eggs effortlessly while completely avoiding PTFE and PFAS chemicals.",
+        ],
+        productId: "lodge-cast-iron-skillet",
+      },
+      {
+        id: "carbon-steel-lightweight-agility",
+        title: "Carbon Steel: Lightweight Agility for Stir-Frying & Eggs",
+        paragraphs: [
+          "Carbon steel shares the natural seasoning chemistry of cast iron but contains less carbon, allowing it to be forged thinner and lighter. Pans like the De Buyer Mineral B carbon steel skillet heat up and cool down rapidly.",
+          "This responsiveness makes carbon steel the ideal choice for high-heat wok toss cooking, French omelets, and quick searing where precise temperature control is required.",
+        ],
+        productId: "de-buyer-carbon-steel-pan",
+      },
+      {
+        id: "enameled-cast-iron-low-maintenance",
+        title: "Enameled Cast Iron: Non-Reactive Braising Without Seasoning",
+        paragraphs: [
+          "For slow-simmered stews, tomato sauces, and acidic braises, vitreous enamel coatings offer the massive heat retention of cast iron without reacting to acidic ingredients.",
+          "Dutch ovens like the Lodge 6-Quart Enameled Dutch Oven feature a non-porous glass glaze that requires zero seasoning and transitions seamlessly from stovetop to high-heat ovens.",
+        ],
+        productId: "lodge-dutch-oven",
+      },
+      {
+        id: "heirloom-cookware-verdict",
+        title: "The Heirloom Pan Verdict: Which Surface Belongs in Your Kitchen?",
+        paragraphs: [
+          "If you want a budget-friendly indestructible pan for heavy searing, start with raw cast iron. If you prefer agile tossing and fast response, choose carbon steel like Yosukata or De Buyer. For soup and stew braises, enameled cast iron remains unbeatable.",
+        ],
+        productId: "yosukata-wok",
+      },
+    ],
+    relatedProductIds: [
+      "lodge-cast-iron-skillet",
+      "de-buyer-carbon-steel-pan",
+      "lodge-dutch-oven",
+      "yosukata-wok",
+      "caraway-12pc",
+    ],
+  },
+  {
+    slug: "plastic-free-sunday-meal-prep-workflow",
+    category: "Pantry & Aesthetic Storage",
+    categoryKey: "aesthetic-storage",
+    title: "The Plastic-Free Sunday Meal Prep Workflow",
+    excerpt:
+      "How to build a streamlined weekend batch cooking system using borosilicate glass, platinum silicone, and precision prep tools.",
+    heroImage: "/assets/joyjolt_glass_containers.jpg",
+    authorName: "Sarah Jenkins",
+    authorInitials: "SJ",
+    authorRole: "Founder, Pantry & Pan",
+    readMinutes: 7,
+    publishDate: "Updated July 28, 2026",
+    sections: [
+      {
+        id: "microplastics-in-kitchen-prep",
+        title: "The Microplastics Hazard: Why Heating Food in Plastic Is Risky",
+        paragraphs: [
+          "Reheating meals in soft plastic Tupperware accelerates chemical migration and microplastic shed directly into hot foods. Eliminating synthetic storage containers is one of the most effective non-toxic swaps a household can make.",
+          "By organizing a dedicated Sunday meal prep workflow centered on high-durability glass, stainless steel, and food-grade silicone, you keep prep clean while saving hours during busy weeknights.",
+        ],
+      },
+      {
+        id: "rapid-prep-chopping-station",
+        title: "Station 1: Rapid Prep, Uniform Dicing, and Controlled Misting",
+        paragraphs: [
+          "Vegetable prep is often the main bottleneck in meal prepping. Multi-blade tools like the Fullstar 4-in-1 Chopper dice onions, peppers, and zucchini in seconds into uniform pieces that cook evenly.",
+          "Pairing your prep station with a refillable glass oil mister allows precise oil coating over sheet pans without relying on propellant-laden commercial cooking sprays.",
+        ],
+        productId: "fullstar-veggie-chopper",
+      },
+      {
+        id: "batch-cooking-and-portioning",
+        title: "Station 2: Non-Toxic Batch Cooking & Precision Portioning",
+        paragraphs: [
+          "When mixing dressings, sauces, and grain bases, switch to tempered borosilicate glass measuring cups like Pyrex. They withstand boiling liquids without leaching chemicals or absorbing food odors.",
+          "Distribute batch-cooked grains and roasted vegetables into equal portions while hot, ensuring rapid cooling and safe food storage.",
+        ],
+        productId: "pyrex-glass-measuring-cups",
+      },
+      {
+        id: "airtight-cold-storage-solutions",
+        title: "Station 3: Airtight Glass & Platinum Silicone Cold Storage",
+        paragraphs: [
+          "Store cooked proteins and roasted vegetables in JoyJolt JoyFul borosilicate glass containers with leakproof silicone seals. Glass body containers transition directly from fridge to oven or microwave safely.",
+          "For cut fruits, snacks, and liquid marinades, platinum silicone bags like Stasher offer an airtight, reusable plastic-baggie alternative that stands up to dishwasher washing.",
+        ],
+        productId: "joyjolt-glass-containers",
+      },
+    ],
+    relatedProductIds: [
+      "joyjolt-glass-containers",
+      "fullstar-veggie-chopper",
+      "glass-oil-sprayer",
+      "stasher-silicone-bags",
+      "pyrex-glass-measuring-cups",
+    ],
+  },
 ];
 
 export function getGuide(slug: string) {
