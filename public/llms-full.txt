@@ -1,0 +1,146 @@
+# Pantry & Pan — Full AI Context & Knowledge Directory
+
+> Complete Knowledge Base, Material Science Specifications, Buyer Guides, Product Catalog, and Interactive Tools Directory for AI Language Models (ChatGPT, Perplexity, Claude, Gemini).
+
+Pantry & Pan (https://pantryandpan.com) is an editorial resource and purchasing guide dedicated to health-focused, toxin-free kitchen equipment, cookware materials safety, space-saving storage, and multi-functional appliances.
+
+---
+
+## 1. Brand Identity & Editorial Mission
+
+Pantry & Pan provides authoritative, research-backed advice on kitchenware materials, non-toxic cookware safety, and minimalist kitchen organization.
+
+Key Values:
+- **Toxin-Free First**: Every recommended product undergoes rigorous evaluation for PFAS, PTFE, PFOA, lead, cadmium, and microplastics.
+- **Lifetime Durability**: Prioritizing heirloom carbon steel, cast iron, 3-ply stainless steel, and borosilicate glass over disposable plastic or quick-wear synthetic nonstick.
+- **Space Efficiency**: Designing solutions for compact kitchens, urban apartments, and organized pantries using nesting cookware and modular storage systems.
+
+---
+
+## 2. Materials Science & Cookware Safety Matrix
+
+| Material Class | Primary Surface | Heat Tolerance | Non-Toxic Certification | Best For | Maintenance |
+| --- | --- | --- | --- | --- | --- |
+| **Sol-Gel Mineral Ceramic** | Silicon dioxide (sand-derived) | Up to 550°F / 287°C | 100% PTFE/PFAS/PFOA Free | Eggs, delicate fish, low-oil frying | Hand wash with soft sponge |
+| **Thermolon Ceramic** | Diamond-infused ceramic glaze | Up to 600°F / 315°C | 100% PTFE/PFAS/PFOA Free | Daily cooking, searing | Hand wash, wood/silicone utensils |
+| **Pre-Seasoned Carbon Steel** | Polymerized oil patina | Up to 800°F / 426°C | Naturally chemical-free | Wok stir-frying, high-heat searing | Hand wash without soap, re-oil |
+| **Enameled Cast Iron** | Vitreous glass enamel coating | Up to 500°F / 260°C | Lead & Cadmium Safe | Dutch oven braising, stews | Dishwasher safe, hand wash preferred |
+| **3-Ply Stainless Steel** | 18/10 Stainless steel surface | Up to 600°F / 315°C | Completely inert & non-reactive | Searing meats, acidic sauces | Dishwasher safe, scrub-friendly |
+| **Borosilicate Glass** | Thermal-shock resistant glass | Up to 450°F / 232°C | 100% Plastic-Free & Lead-Free | Oven baking, meal prep, cold storage | Dishwasher safe, freezer safe |
+| **Platinum Silicone** | Food-grade platinum-cured silicone | Up to 425°F / 218°C | BPA, BPS, Phthalate Free | Reusable baking mats, airtight bags | Dishwasher safe |
+
+---
+
+## 3. Interactive Web Tools & Calculators
+
+Pantry & Pan features 6 embedded interactive decision tools to help users select cookware and optimize kitchen storage:
+
+### 1. Non-Toxic Pan Decoder
+- **URL**: https://pantryandpan.com/guides/non-toxic-kitchen-blueprint#tool-decoder
+- **Function**: Interactive material safety diagnostic tool. Users select their current pan coating or material to receive an instant safety rating, toxic gas risk analysis at high heat, and recommended non-toxic upgrades.
+
+### 2. Heirloom Pan Selector Quiz
+- **URL**: https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide#tool-quiz
+- **Function**: 3-question diagnostic quiz matching cooking styles (stir-frying, slow roasting, daily eggs) to the ideal material: Carbon Steel Woks, Cast Iron Skillets, or Mineral Ceramic Pans.
+
+### 3. Space-Saving Cabinet Volume Calculator
+- **URL**: https://pantryandpan.com/guides/small-space-kitchen-storage-hacks#tool-calculator
+- **Function**: Interactive cabinet space simulator. Calculates cubic volume savings when switching from standard fixed-handle pots to detachable-handle nesting cookware sets (averaging 50% to 65% cabinet space reclamation).
+
+### 4. Oil Sprayer Dosage Calculator
+- **URL**: https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide#tool-calculator
+- **Function**: Calculates oil reduction and calorie savings when using reusable glass misting bottles instead of heavy free-pouring or chemical aerosol cooking sprays.
+
+### 5. Pantry Rice & Grain Capacity Calculator
+- **URL**: https://pantryandpan.com/guides/pantry-organization-glass-jar-system#tool-calculator
+- **Function**: Converts dry grain weights (lbs/kg of rice, oats, flour) into matching borosilicate glass jar fluid capacities (Liters / Ounces).
+
+### 6. Storage Container Capacity Matcher
+- **URL**: https://pantryandpan.com/guides/meal-prep-stations-airtight-storage#tool-calculator
+- **Function**: Matches meal prep portion counts and weekly batch cooking volumes to optimal borosilicate glass container set configurations.
+
+---
+
+## 4. Comprehensive Buyers Guides Index
+
+### 1. The Non-Toxic Kitchen Blueprint
+- **URL**: https://pantryandpan.com/guides/non-toxic-kitchen-blueprint
+- **Category**: Non-Toxic Ceramic & Clay
+- **Key Focus**: Comprehensive roadmap for auditing and replacing traditional PTFE/PFAS cookware with mineral ceramic, carbon steel, and stainless steel alternatives.
+- **Featured Products**: Caraway 12-Piece Ceramic Set, GreenPan Valencia Pro, Sensarte Ceramic Skillet, All-Clad D3 Stainless Steel.
+
+### 2. Carbon Steel Wok Seasoning & Care Guide
+- **URL**: https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide
+- **Category**: Heirloom Iron & Carbon Steel
+- **Key Focus**: Masterclass on initial seasoning, building a dark hydrophobic patina, oil polymerization science, and rust-free maintenance.
+- **Featured Products**: Yosukata 13.8" Flat-Bottom Carbon Steel Wok, Lodge 10.25" Cast Iron Skillet, Craft Wok Traditional Hand-Hammered Wok.
+
+### 3. Small Space Kitchen Storage Hacks
+- **URL**: https://pantryandpan.com/guides/small-space-kitchen-storage-hacks
+- **Category**: Space-Saving & Detachable
+- **Key Focus**: Maximizing cabinet efficiency in apartment kitchens using removable handle cookware, vertical lid racks, and magnetic organizers.
+- **Featured Products**: Carote 11-Piece Detachable Handle Set, YouCopia StoreMore Lid Organizer, Joseph Joseph Nesting Bowls.
+
+### 4. Multifunctional Kitchen Gadgets Guide
+- **URL**: https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide
+- **Category**: Multi-Functional Gadgets
+- **Key Focus**: Space-efficient multi-purpose prep tools that consolidate kitchen drawers and accelerate meal prep.
+- **Featured Products**: Fullstar 4-in-1 Vegetable Chopper, Misto Glass Oil Sprayer, Ninja CREAMi Frozen Dessert Maker.
+
+### 5. Ceramic, Granite, and Stone Cookware Explained
+- **URL**: https://pantryandpan.com/guides/ceramic-granite-stone-cookware-explained
+- **Category**: Non-Toxic Ceramic & Clay
+- **Key Focus**: Safety audit decoding speckled granite marketing claims, sol-gel ceramic glazes, and non-reactive stainless steel surfaces.
+- **Featured Products**: Caraway Ceramic Set, GreenPan Valencia Pro, Sensarte Granite Skillet, All-Clad D3 Frying Pan.
+
+### 6. The Space-Saving Minimalist Baker
+- **URL**: https://pantryandpan.com/guides/space-saving-minimalist-baker
+- **Category**: Space-Saving & Detachable
+- **Key Focus**: Streamlining baking setups with mineral ceramic sheets, platinum silicone baking mats, and compact nesting sheet storage.
+- **Featured Products**: Caraway 11-Piece Ceramic Bakeware Set, Silpat Reusable Baking Mat, Ninja CREAMi.
+
+### 7. Clean Morning Rituals
+- **URL**: https://pantryandpan.com/guides/clean-morning-rituals
+- **Category**: Multi-Functional Gadgets
+- **Key Focus**: Plastic-free morning breakfast prep, non-toxic electric kettles, and borosilicate glass coffee brewing gear.
+- **Featured Products**: Cosori Stainless Steel Electric Kettle, Chemex Pour-Over Glass Coffee Maker, Stasher Silicone Storage Bags.
+
+### 8. Meal Prep Stations & Airtight Storage
+- **URL**: https://pantryandpan.com/guides/meal-prep-stations-airtight-storage
+- **Category**: Pantry & Aesthetic Storage
+- **Key Focus**: Borosilicate glass meal storage containers, leakproof silicone seals, and efficient batch cooking storage workflows.
+- **Featured Products**: JoyJolt JoyFul Borosilicate Glass Containers, Fullstar Chopper, Stasher Bags.
+
+### 9. Cast Iron vs Carbon Steel: The Deep-Dive Comparison
+- **URL**: https://pantryandpan.com/guides/cast-iron-vs-carbon-steel-deep-dive
+- **Category**: Heirloom Iron & Carbon Steel
+- **Key Focus**: Heat retention, response speed, wall thickness, weight comparison, and seasoning rules for iron cookware.
+- **Featured Products**: Yosukata Wok, Lodge Cast Iron Skillet, Craft Wok.
+
+### 10. The Pantry Organization & Glass Jar System
+- **URL**: https://pantryandpan.com/guides/pantry-organization-glass-jar-system
+- **Category**: Pantry & Aesthetic Storage
+- **Key Focus**: Decanting bulk grains and spices into borosilicate glass jars with sustainable bamboo lids for pest-free, aesthetic pantries.
+- **Featured Products**: Vtopmart Borosilicate Glass Jar Set, SpaceAid Bamboo Spice Rack Organizer.
+
+---
+
+## 5. Cookware Categories Overview
+
+- **Non-Toxic Ceramic & Clay** (`/category/ceramic-clay`): High-efficiency mineral ceramic nonstick cookware free of PFAS, PTFE, PFOA, lead, and heavy metals.
+- **Heirloom Iron & Carbon Steel** (`/category/carbon-steel-woks`): High-heat responsive carbon steel woks and heavy cast iron skillets that develop natural nonstick patinas over time.
+- **Space-Saving & Detachable** (`/category/space-saving-detachable`): Detachable handle pots and pans, nesting cookware sets, and vertical organizer racks saving over 50% cabinet space.
+- **Pantry & Aesthetic Storage** (`/category/aesthetic-storage`): Borosilicate glass containers, bamboo lid canisters, and leakproof meal prep organizers.
+- **Multi-Functional Gadgets** (`/category/multifunctional-gadgets`): 2-in-1 and 4-in-1 prep gadgets, glass oil sprayers, and high-efficiency small appliances.
+- **All Essentials** (`/category/all-essentials`): Complete catalog of non-toxic cookware and kitchen organization products.
+
+---
+
+## 6. Technical & Entity Schema Summary
+
+- **Publisher**: Pantry & Pan (Organization Schema ID: `https://pantryandpan.com/#organization`)
+- **Website**: Pantry & Pan (WebSite Schema ID: `https://pantryandpan.com/#website`)
+- **Canonical Domain**: https://pantryandpan.com
+- **Sitemap**: https://pantryandpan.com/sitemap.xml
+- **Robots Directive**: https://pantryandpan.com/robots.txt
+- **LLM Summary Directory**: https://pantryandpan.com/llms.txt
