@@ -1,0 +1,28 @@
+# Pantry & Pan
+
+> Safe Cookware & Aesthetic Kitchen Essentials. Curated non-toxic, PFAS-free ceramic sets, carbon steel woks, and aesthetic pantry organization guides.
+
+Pantry & Pan (https://pantryandpan.com) is an editorial resource and purchasing guide dedicated to health-focused, toxin-free kitchen equipment, cookware materials safety, space-saving storage, and multi-functional appliances.
+
+## Primary Buyers Guides
+- [The Non-Toxic Kitchen Blueprint](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint): Comprehensive guide to replacing PFAS, PTFE, and heavy metal cookware with safe ceramic, carbon steel, and stainless steel alternatives.
+- [Carbon Steel Wok Seasoning & Care Guide](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide): Step-by-step masterclass on seasoning, cooking with, and maintaining non-toxic carbon steel woks and cast iron skillets.
+- [Small Space Kitchen Storage Hacks](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks): Modular organization, stackable cookware, and vertical pantry storage solutions for minimalist kitchens.
+- [Multifunctional Kitchen Gadgets Guide](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide): Space-efficient 2-in-1 and 3-in-1 kitchen appliances that replace clutter without sacrificing utility.
+- [Ceramic, Granite, and Stone Cookware Explained](https://pantryandpan.com/guides/ceramic-granite-stone-cookware-explained): Materials safety audit decoding sol-gel mineral glazes, stone marketing buzzwords, and non-reactive stainless steel.
+- [The Space-Saving Minimalist Baker](https://pantryandpan.com/guides/space-saving-minimalist-baker): Non-toxic ceramic bakeware, platinum silicone baking mats, and compact nesting sheet organizers.
+- [Clean Morning Rituals](https://pantryandpan.com/guides/clean-morning-rituals): Health-first breakfast prep, non-toxic electric kettles, and plastic-free glass coffee brewing essentials.
+- [Meal Prep Stations & Airtight Storage](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage): Borosilicate glass food storage, leakproof silicone seals, and efficient batch-cooking workflows.
+
+## Cookware & Kitchen Categories
+- [Non-Toxic Ceramic & Clay](https://pantryandpan.com/category/ceramic-clay): Sol-gel ceramic nonstick cookware free of PFAS, PTFE, PFOA, lead, and cadmium.
+- [Heirloom Iron & Carbon Steel](https://pantryandpan.com/category/carbon-steel-woks): Naturally nonstick carbon steel woks and cast iron skillets built for high-heat cooking.
+- [Space-Saving & Detachable](https://pantryandpan.com/category/space-saving-detachable): Removable-handle cookware sets, stackable nesting pots, and vertical lid storage.
+- [Pantry & Aesthetic Storage](https://pantryandpan.com/category/aesthetic-storage): Borosilicate glass containers, bamboo spice racks, and minimalist food prep organization.
+- [Multi-Functional Gadgets](https://pantryandpan.com/category/multifunctional-gadgets): High-yield, multi-purpose kitchen prep tools and compact appliances.
+
+## Interactive Tools
+- [Non-Toxic Pan Decoder](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint#tool-decoder): Interactive material safety diagnostic tool to evaluate cookware health standards.
+- [Heirloom Pan Quiz](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide#tool-quiz): Personalized quiz matching cooking habits to carbon steel, cast iron, or ceramic cookware.
+- [Space-Saving Calculator](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks#tool-calculator): Cabinet volume savings calculator for nesting cookware and detachable handle sets.
+- [Oil Sprayer Calculator](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide#tool-calculator): Spray dosage and oil usage savings calculator for glass misting bottles.
