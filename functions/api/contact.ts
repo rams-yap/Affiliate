@@ -86,7 +86,7 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
 
     let isAlreadySubscribed = false;
 
-    // 2. Integration with Resend Audiences API if autoSubscribe is checked
+    // 2. Integration with Resend Audiences API & GET-before-POST Deduplication
     if (resendApiKey && autoSubscribe) {
       let audienceId = context.env.RESEND_AUDIENCE_ID;
 
@@ -104,27 +104,34 @@ export const onRequestPost = async (context: CloudflarePagesContext): Promise<Re
       }
 
       if (audienceId) {
-        const contactRes = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${resendApiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: email,
-            unsubscribed: false,
-          }),
+        // Query existing contacts in Audience list
+        const getContactsRes = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+          headers: { Authorization: `Bearer ${resendApiKey}` },
         });
 
-        if (!contactRes.ok) {
-          const contactErr = (await contactRes.json().catch(() => ({}))) as { name?: string; message?: string };
-          if (
-            contactRes.status === 409 ||
-            (contactErr.name && contactErr.name.includes("already_exists")) ||
-            (contactErr.message && contactErr.message.toLowerCase().includes("already exists"))
-          ) {
-            isAlreadySubscribed = true;
-          }
+        if (getContactsRes.ok) {
+          const contactsData = (await getContactsRes.json().catch(() => ({}))) as {
+            data?: Array<{ email?: string }>;
+          };
+          const existingList = contactsData.data || [];
+          isAlreadySubscribed = existingList.some(
+            (c) => c.email && c.email.toLowerCase() === email
+          );
+        }
+
+        // Save contact to Audience table if new
+        if (!isAlreadySubscribed) {
+          await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${resendApiKey}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: email,
+              unsubscribed: false,
+            }),
+          });
         }
       }
     }
