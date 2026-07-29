@@ -6,6 +6,9 @@ import { SageBadge } from "@/components/site/SageBadge";
 export const metadata: Metadata = {
   title: "Privacy Policy : Pantry & Pan",
   description: "Learn how Pantry & Pan collects, uses, and protects user data and privacy across our website.",
+  alternates: {
+    canonical: "https://pantryandpan.com/privacy",
+  },
   openGraph: {
     title: "Privacy Policy : Pantry & Pan",
     description: "Learn how Pantry & Pan collects, uses, and protects user data and privacy across our website.",
@@ -71,11 +74,10 @@ export default function PrivacyPage() {
             <section>
               <h2 className="font-display text-xl font-semibold text-foreground mb-3">5. Contact Us</h2>
               <p className="text-muted-foreground">
-                If you have any questions or privacy concerns regarding this policy, please visit our{" "}
+                If you have any questions or privacy concerns regarding this policy, please reach out via our{" "}
                 <Link href="/contact" className="text-terracotta underline font-semibold">
                   Contact Page
-                </Link>{" "}
-                or email privacy@pantryandpan.com.
+                </Link>.
               </p>
             </section>
           </div>
