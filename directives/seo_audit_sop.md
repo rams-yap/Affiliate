@@ -27,10 +27,10 @@ Whenever a page requires client-side hooks (`useState`, `useEffect`, `onSubmit` 
    * Exports static `metadata` or `generateMetadata()` containing explicit canonical links:
      ```typescript
      export const metadata: Metadata = {
-       title: "Page Title : Pantry & Pan",
+       title: "Page Title : Site Name",
        description: "...",
        alternates: {
-         canonical: "https://pantryandpan.com/[route]",
+         canonical: "https://yourdomain.com/[route]",
        },
      };
      ```
@@ -47,11 +47,11 @@ Whenever a page requires client-side hooks (`useState`, `useEffect`, `onSubmit` 
 
 Before declaring an SEO task or new page complete, verify all 5 checklist items:
 
-- [ ] **1. Explicit Canonical:** Does the route have an explicit `alternates: { canonical: "https://pantryandpan.com/..." }` declared in its `Metadata`?
+- [ ] **1. Explicit Canonical:** Does the route have an explicit `alternates: { canonical: "https://yourdomain.com/..." }` declared in its `Metadata`?
 - [ ] **2. No `"use client"` in `page.tsx`:** Is `page.tsx` kept as a Server Component to ensure metadata renders into static HTML `<head>`?
-- [ ] **3. Absolute Domain Base:** Does `app/layout.tsx` maintain `metadataBase: new URL("https://pantryandpan.com")`?
+- [ ] **3. Absolute Domain Base:** Does `app/layout.tsx` maintain `metadataBase: new URL("https://yourdomain.com")`?
 - [ ] **4. Sitemap Sync:** Is the new route included in `app/sitemap.ts` (or `public/sitemap.xml`)?
-- [ ] **5. Cloudflare `.pages.dev` Staging Protection:** Verify that Cloudflare default hostnames rely on explicit HTML canonicals so search crawlers resolve canonical domain authority exclusively to `pantryandpan.com`.
+- [ ] **5. Cloudflare `.pages.dev` Staging Protection:** Verify that Cloudflare default hostnames rely on explicit HTML canonicals so search crawlers resolve canonical domain authority exclusively to your primary domain (`https://yourdomain.com`).
 
 ---
 
