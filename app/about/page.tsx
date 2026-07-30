@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "How We Test & About Us : Pantry & Pan",
   description:
     "Discover Pantry & Pan's rigorous non-toxic testing protocol, chemical-free cookware standards, and commitment to aesthetic kitchen essentials.",
+  alternates: {
+    canonical: "https://pantryandpan.com/about",
+  },
   openGraph: {
     title: "How We Test & About Us : Pantry & Pan",
     description:

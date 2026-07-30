@@ -6,6 +6,9 @@ import { SageBadge } from "@/components/site/SageBadge";
 export const metadata: Metadata = {
   title: "Terms of Service : Pantry & Pan",
   description: "Terms of Service and conditions governing the use of Pantry & Pan's website and editorial content.",
+  alternates: {
+    canonical: "https://pantryandpan.com/terms",
+  },
   openGraph: {
     title: "Terms of Service : Pantry & Pan",
     description: "Terms of Service and conditions governing the use of Pantry & Pan's website and editorial content.",

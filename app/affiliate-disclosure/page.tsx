@@ -6,6 +6,9 @@ import { SageBadge } from "@/components/site/SageBadge";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure : Pantry & Pan",
   description: "FTC-compliant affiliate partnership disclosure and editorial independence statement for Pantry & Pan.",
+  alternates: {
+    canonical: "https://pantryandpan.com/affiliate-disclosure",
+  },
   openGraph: {
     title: "Affiliate Disclosure : Pantry & Pan",
     description: "FTC-compliant affiliate partnership disclosure and editorial independence statement for Pantry & Pan.",
