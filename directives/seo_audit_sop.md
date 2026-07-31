@@ -1,6 +1,9 @@
-# Next.js & Cloudflare SEO Audit Directive (SOP)
+# [DEPRECATED FOR CONTENT STRATEGY] Next.js & Cloudflare SEO Audit Directive (SOP)
 
-This Standard Operating Procedure (SOP) outlines the mandatory SEO checklist and architecture rules for all Next.js App Router pages hosted on Cloudflare Pages or similar static/CDN environments.
+> [!WARNING]
+> **DEPRECATION NOTICE**: This SOP is DEPRECATED for overall SEO strategy and content workflow. Refer to [`directives/soro_seo_sop.md`](file:///d:/_Career/Workflow/Affiliate/directives/soro_seo_sop.md) for the active Soro SEO & AEO transactional content creation, keyword mapping, and copywriting directive.
+> 
+> *Note: Section 1 & 2 regarding Next.js App Router technical canonical metadata rules remain mandatory technical requirements.*
 
 ---
 
