@@ -56,7 +56,7 @@ Every article in this 14-day sprint follows a standardized 5-step lifecycle:
 ### Sprint 1: Non-Toxic Ceramic & Clay Comparisons (Days 1 – 5)
 *Target Parent Hub: `ceramic-granite-stone-cookware-explained`*
 
-- [ ] **Day 1**: `greenpan-valencia-vs-caraway`
+- [x] **Day 1**: `greenpan-valencia-vs-caraway` (Completed & Integrated July 31, 2026)
   - *Title*: GreenPan Valencia Pro vs Caraway Ceramic: Which Non-Toxic Pan Wins?
   - *Intent*: High Transactional Versus
 - [ ] **Day 2**: `best-caraway-pan-alternatives-under-100`
@@ -116,3 +116,19 @@ Before marking any article complete:
 3. **Brand Token Compliance**: **Zero em dashes (`—`)** anywhere in text or metadata.
 4. **Affiliate Links**: Amazon tag `pantryandpan-20` on all product CTA buttons.
 5. **Footer Disclosure**: Mandatory Amazon associate disclosure present.
+
+---
+
+## 5. Automated Content Drip & Scheduling Architecture
+
+To publish 50+ articles across an 18-week drip schedule while keeping `main` production-ready for UI and UX navigation updates:
+
+1. **Date-Filtered Query Strategy**:
+   - Every catalog entry receives a explicit ISO `publishDate` (e.g. `2026-08-01`).
+   - `getPublishedGuides()` in `lib/catalog.ts` filters out articles with `publishDate > current_date`.
+2. **50-Article Release Cadence**:
+   - **Weeks 1–2**: 1 article per day (14 articles total).
+   - **Week 3 Onward**: 2 articles per week (e.g., Tuesdays & Thursdays) until all 50 are released.
+3. **Decoupled UI & UX Maintenance**:
+   - Because future articles are safely hidden behind date-filtering in `main`, UX/UI changes (landing page navigation, headers, lead magnets) can be merged directly to `main` and deployed to Cloudflare Pages at any time without releasing scheduled articles prematurely.
+

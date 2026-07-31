@@ -167,6 +167,7 @@ export function GuideArticleClient({ guide: g }: { guide: Article }) {
             {g.slug === "ceramic-granite-stone-cookware-explained" && <NonToxicPanDecoder />}
             {g.slug === "non-toxic-kitchen-blueprint" && <NonToxicPanDecoder />}
             {g.slug === "clean-morning-rituals" && <NonToxicPanDecoder />}
+            {g.slug === "greenpan-valencia-vs-caraway" && <NonToxicPanDecoder />}
             {g.slug === "multifunctional-kitchen-gadgets-guide" && <OilSprayerCalculator />}
             {g.slug === "space-saving-cookware-guide" && <SpaceSavingCalculator />}
 
