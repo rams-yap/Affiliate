@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, Moon, Search, ShieldCheck, Sun, X, BookOpen, Mail, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -9,6 +10,7 @@ import { useDarkMode } from "@/hooks/use-dark-mode";
 import { SearchOverlay } from "./SearchOverlay";
 
 export function SiteHeader() {
+  const pathname = usePathname();
   const { dark, toggle } = useDarkMode();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -18,6 +20,11 @@ export function SiteHeader() {
     setInitialQuery(q);
     setSearchOpen(true);
   };
+
+  const isCategoryActive = pathname.startsWith("/category/");
+  const isGuidesActive = pathname.startsWith("/guides");
+  const isAboutActive = pathname === "/about";
+  const isHowWeTestActive = pathname === "/how-we-test";
 
   return (
     <>
@@ -39,8 +46,8 @@ export function SiteHeader() {
             <span className="font-display text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
               Pantry & Pan
             </span>
-            <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground sm:inline">
-              // Curated Living
+            <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-terracotta sm:inline">
+              Curated Living
             </span>
           </Link>
 
@@ -90,19 +97,100 @@ export function SiteHeader() {
         </div>
 
         {/* Primary Desktop Navigation */}
-        <nav aria-label="Main Category Navigation" className="hidden border-t border-hairline md:block">
-          <div className="flex justify-center px-4 py-2 sm:px-6 lg:px-8">
-            <ul className="flex flex-wrap justify-center gap-1.5 sm:gap-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              {CATEGORIES.map((c) => (
-                <li key={c.key}>
-                  <Link
-                    href={`/category/${c.slug}`}
-                    className="whitespace-nowrap rounded-lg px-2.5 py-1.5 text-sm font-semibold text-muted-foreground transition-all duration-300 hover:bg-terracotta hover:text-terracotta-foreground active:opacity-90 xl:px-3.5 xl:py-2 xl:text-base"
-                  >
-                    {c.label}
-                  </Link>
-                </li>
-              ))}
+        <nav aria-label="Main Navigation" className="hidden border-t border-hairline md:block">
+          <div className="flex justify-center px-4 py-2.5 sm:px-6 lg:px-8">
+            <ul className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-sm font-semibold">
+              <li>
+                <Link
+                  href="/"
+                  className={`rounded-xl px-3.5 py-2 transition-all duration-200 ${
+                    pathname === "/"
+                      ? "bg-terracotta text-terracotta-foreground shadow-xs"
+                      : "text-foreground hover:bg-surface-tint hover:text-terracotta"
+                  }`}
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/about"
+                  className={`rounded-xl px-3.5 py-2 transition-all duration-200 ${
+                    isAboutActive
+                      ? "bg-terracotta text-terracotta-foreground shadow-xs"
+                      : "text-foreground hover:bg-surface-tint hover:text-terracotta"
+                  }`}
+                >
+                  Our Story
+                </Link>
+              </li>
+
+              {/* Shop Categories Hover Dropdown */}
+              <li className="group relative">
+                <button
+                  type="button"
+                  className={`flex items-center gap-1 rounded-xl px-3.5 py-2 transition-all duration-200 focus:outline-none ${
+                    isCategoryActive
+                      ? "bg-terracotta text-terracotta-foreground shadow-xs"
+                      : "text-foreground hover:bg-surface-tint hover:text-terracotta"
+                  }`}
+                >
+                  <span>Shop Categories</span>
+                  <span className="text-xs transition-transform group-hover:rotate-180">▾</span>
+                </button>
+
+                {/* Dropdown Menu Panel */}
+                <div className="absolute left-0 top-full z-50 hidden pt-1 group-hover:block">
+                  <div className="w-64 rounded-2xl border border-hairline bg-background p-2 soft-shadow">
+                    <ul className="flex flex-col gap-0.5">
+                      {CATEGORIES.map((c) => {
+                        const isSubActive = pathname === `/category/${c.slug}`;
+                        return (
+                          <li key={c.key}>
+                            <Link
+                              href={`/category/${c.slug}`}
+                              className={`block rounded-xl px-3.5 py-2.5 text-xs font-semibold transition-colors ${
+                                isSubActive
+                                  ? "bg-surface-tint text-terracotta font-bold"
+                                  : "text-muted-foreground hover:bg-surface-tint hover:text-foreground"
+                              }`}
+                            >
+                              {c.label}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <Link
+                  href="/guides"
+                  className={`rounded-xl px-3.5 py-2 transition-all duration-200 ${
+                    isGuidesActive
+                      ? "bg-terracotta text-terracotta-foreground shadow-xs"
+                      : "text-foreground hover:bg-surface-tint hover:text-terracotta"
+                  }`}
+                >
+                  Blueprint
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/how-we-test"
+                  className={`rounded-xl px-3.5 py-2 transition-all duration-200 ${
+                    isHowWeTestActive
+                      ? "bg-terracotta text-terracotta-foreground shadow-xs"
+                      : "text-foreground hover:bg-surface-tint hover:text-terracotta"
+                  }`}
+                >
+                  How We Test
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -135,6 +223,53 @@ export function SiteHeader() {
 
           {/* Scrollable Navigation Body */}
           <nav aria-label="Mobile Navigation" className="flex-1 overflow-y-auto p-5 space-y-6">
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-terracotta">
+                Story & Brand
+              </p>
+              <ul className="flex flex-col gap-1">
+                <li>
+                  <Link
+                    href="/about"
+                    onClick={() => setMobileOpen(false)}
+                    className={`flex items-center justify-between rounded-2xl px-4 py-2.5 text-sm font-semibold transition-colors ${
+                      isAboutActive
+                        ? "bg-terracotta text-terracotta-foreground"
+                        : "text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    <span>Our Story</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/guides"
+                    onClick={() => setMobileOpen(false)}
+                    className={`flex items-center justify-between rounded-2xl px-4 py-2.5 text-sm font-semibold transition-colors ${
+                      isGuidesActive
+                        ? "bg-terracotta text-terracotta-foreground"
+                        : "text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    <span>Blueprint</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/how-we-test"
+                    onClick={() => setMobileOpen(false)}
+                    className={`flex items-center justify-between rounded-2xl px-4 py-2.5 text-sm font-semibold transition-colors ${
+                      isHowWeTestActive
+                        ? "bg-terracotta text-terracotta-foreground"
+                        : "text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    <span>How We Test</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-terracotta">
                 Categories
