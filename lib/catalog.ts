@@ -1471,7 +1471,7 @@ export const GUIDES: Article[] = [
     "authorInitials": "MK",
     "authorRole": "Co-Founder & Pantry Curation Lead",
     "readMinutes": 8,
-    "publishDate": "August 2, 2026",
+    "publishDate": "August 3, 2026",
     "sections": [
       {
         "id": "quick-verdict-summary",
