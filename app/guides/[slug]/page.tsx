@@ -136,7 +136,7 @@ export default async function GuidePage({ params }: Props) {
     },
   } : null;
 
-  const decoderSchema = (g.slug === "ceramic-granite-stone-cookware-explained" || g.slug === "non-toxic-kitchen-blueprint" || g.slug === "clean-morning-rituals" || g.slug === "greenpan-valencia-vs-caraway") ? {
+  const decoderSchema = (g.slug === "ceramic-granite-stone-cookware-explained" || g.slug === "non-toxic-kitchen-blueprint" || g.slug === "clean-morning-rituals" || g.slug === "greenpan-valencia-vs-caraway" || g.slug === "best-caraway-pan-alternatives-under-100") ? {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Is My Pan Safe? Non-Toxic Marketing Decoder & Safety Audit",
