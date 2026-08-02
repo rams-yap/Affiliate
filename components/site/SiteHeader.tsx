@@ -175,7 +175,7 @@ export function SiteHeader() {
                       : "text-foreground hover:bg-surface-tint hover:text-terracotta"
                   }`}
                 >
-                  Blueprint
+                  Guides
                 </Link>
               </li>
 
@@ -251,7 +251,7 @@ export function SiteHeader() {
                         : "text-foreground hover:bg-secondary"
                     }`}
                   >
-                    <span>Blueprint</span>
+                    <span>Guides</span>
                   </Link>
                 </li>
                 <li>

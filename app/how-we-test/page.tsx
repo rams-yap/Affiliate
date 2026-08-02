@@ -30,7 +30,7 @@ export default function HowWeTestPage() {
               How We Test: Pure Materials, Zero Fumes, Built to Last.
             </h1>
             <p className="font-sans text-base leading-relaxed text-muted-foreground sm:text-xl">
-              At Pantry & Pan, every skillet, storage container, and baking dish must undergo rigorous independent evaluation before receiving our non-toxic seal of approval. We combine materials science, chemical safety checks, and real-world high-heat kitchen testing.
+              At Pantry & Pan, every cookware piece, storage container, and baking dish undergoes independent research and spec evaluation before receiving our non-toxic curation mark. We combine material science analysis, verified third-party lab safety reports, and hands-on user feedback.
             </p>
           </div>
 

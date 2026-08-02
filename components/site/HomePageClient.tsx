@@ -251,7 +251,7 @@ export function HomePageClient() {
               href={`/guides/${featuredGuide.slug}`}
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background transition-all hover:opacity-90"
             >
-              Read the full blueprint <ArrowUpRight className="h-4 w-4" />
+              Read the full guide <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
 

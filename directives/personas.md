@@ -48,8 +48,8 @@ Hyper-realistic portrait photography of Mina Kim, a Korean woman in her early th
 - **Base Color Palette**: Terracotta (`#D48C70`), Brushed Gold (`#C5A059`).
 
 ### Active Base Reference Image Paths
-- **Front Portrait**: `public/assets/maya_chen_front_1785511887614.jpg`
-- **Side Profile**: `public/assets/maya_chen_side_1785511901733.jpg`
+- **Front Portrait**: `public/assets/maya_chen_front_v2.jpg`
+- **Side Profile**: `public/assets/maya_chen_side_v2.jpg`
 
 ### Reusable Image Generation Prompt
 ```text

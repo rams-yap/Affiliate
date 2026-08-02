@@ -50,8 +50,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "6,600+ reviews",
     priceRange: "$395 - $495",
-    asin: "B08XLT1YD8",
-    amazonUrl: "https://www.amazon.com/s?k=Caraway+12-Piece+Non-Stick+Ceramic+Cookware+Set&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Caraway+12+Piece+Non+Toxic+Ceramic+Cookware+Set",
     specs: ["Includes 4 magnetic pan organizers", "Canvas lid holder included"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -77,7 +77,6 @@ export const PRODUCTS: Product[] = [
       { label: "Set Pieces", value: "12 Pieces (Pots, Pans & Organizers)" },
       { label: "Oven Safe", value: "Up to 550°F" },
       { label: "Induction Safe", value: "Yes" },
-      { label: "ASIN", value: "B08XLT1YD8" },
     ],
   },
   {
@@ -90,8 +89,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.6,
     reviewsCount: "4,850+ reviews",
     priceRange: "$349 - $399",
-    asin: "B07G4MTK3W",
-    amazonUrl: "https://www.amazon.com/s?k=GreenPan+Valencia+Pro+11-Piece+Healthy+Ceramic+Cookware+Set&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=GreenPan+Valencia+Pro+11+Piece+Healthy+Ceramic+Cookware+Set",
     specs: ["Diamond-reinforced ceramic coating", "Magneto induction base tech"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -117,7 +116,6 @@ export const PRODUCTS: Product[] = [
       { label: "Pieces Included", value: "11-Piece Set" },
       { label: "Oven Safe", value: "Up to 600°F" },
       { label: "Induction Safe", value: "Yes (Magneto Tech)" },
-      { label: "ASIN", value: "B07G4MTK3W" },
     ],
   },
   {
@@ -130,8 +128,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.6,
     reviewsCount: "14,200+ reviews",
     priceRange: "$69 - $89",
-    asin: "B09Z2FBLKC",
-    amazonUrl: "https://www.amazon.com/s?k=CAROTE+11-Piece+Stackable+Cookware+Set+with+Removable+Handles&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=CAROTE+11+Piece+Stackable+Cookware+Set+Removable+Handles",
     specs: ["Oven to table to fridge transition", "Silicone fridge lids included"],
     featuredInSlug: "space-saving-cookware-guide",
     featuredInTitle: "Modular Cooking: Space-Saving Guide",
@@ -154,7 +152,6 @@ export const PRODUCTS: Product[] = [
       { label: "Pieces", value: "11-Piece Modular Set" },
       { label: "Oven Safe", value: "Up to 480°F (without handle)" },
       { label: "Induction Safe", value: "Yes" },
-      { label: "ASIN", value: "B09Z2FBLKC" },
     ],
   },
   {
@@ -167,8 +164,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "32,100+ reviews",
     priceRange: "$39 - $59",
-    asin: "B08CH2D6T4",
-    amazonUrl: "https://www.amazon.com/s?k=Sensarte+Nonstick+Frying+Pan+Set+Swiss+Granite&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Sensarte+Nonstick+Frying+Pan+Set+Swiss+Granite",
     specs: ["Dual pour spouts for mess-free draining", "Cast aluminum heat core"],
     featuredInSlug: "clean-morning-rituals",
     featuredInTitle: "Clean Morning Rituals Guide",
@@ -190,7 +187,6 @@ export const PRODUCTS: Product[] = [
       { label: "Material", value: "Granite Ceramic & Aluminum" },
       { label: "Handle Type", value: "Wood-grain Bakelite" },
       { label: "Induction Compatible", value: "Yes" },
-      { label: "ASIN", value: "B08CH2D6T4" },
     ],
   },
   {
@@ -203,8 +199,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "38,400+ reviews",
     priceRange: "$69 - $89",
-    asin: "B000N48206",
-    amazonUrl: "https://www.amazon.com/dp/B000N48206?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Lodge+6+Quart+Enameled+Cast+Iron+Dutch+Oven",
     specs: ["Smooth porcelain enamel finish", "Unmatched heat retention & distribution"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -227,7 +223,6 @@ export const PRODUCTS: Product[] = [
       { label: "Capacity", value: "6 Quarts" },
       { label: "Weight", value: "13.7 lbs" },
       { label: "Oven Safe", value: "Up to 500°F" },
-      { label: "ASIN", value: "B000N48206" },
     ],
   },
   {
@@ -240,8 +235,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "6,150+ reviews",
     priceRange: "$59 - $79",
-    asin: "B0836Z4ZBW",
-    amazonUrl: "https://www.amazon.com/dp/B0836Z4ZBW?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Yosukata+14+Pre+Seasoned+Carbon+Steel+Wok",
     specs: ["Natural patina non-stick", "High-heat stir fry searing"],
     featuredInSlug: "wok-cooking-toxin-free",
     featuredInTitle: "Wok Cooking Toxin-Free",
@@ -263,7 +258,6 @@ export const PRODUCTS: Product[] = [
       { label: "Material", value: "Heavy Carbon Steel" },
       { label: "Diameter", value: '14" Flat-Bottom' },
       { label: "Weight", value: "3.8 lbs" },
-      { label: "ASIN", value: "B0836Z4ZBW" },
     ],
   },
   {
@@ -276,8 +270,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "11,500+ reviews",
     priceRange: "$49 - $69",
-    asin: "B07Z8G51Y6",
-    amazonUrl: "https://www.amazon.com/dp/B07Z8G51Y6?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=JoyJolt+JoyFul+24+Piece+Borosilicate+Glass+Food+Storage+Containers",
     specs: ["Oven, microwave, and freezer safe", "BPA-free snap locking lids"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -298,7 +292,6 @@ export const PRODUCTS: Product[] = [
       { label: "Material", value: "Borosilicate Glass" },
       { label: "Set Count", value: "24 Pieces (12 Containers + 12 Lids)" },
       { label: "Oven Safe", value: "Up to 1040°F" },
-      { label: "ASIN", value: "B07Z8G51Y6" },
     ],
   },
   {
@@ -311,8 +304,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "2,350+ reviews",
     priceRange: "$49 - $65",
-    asin: "B09H2S8W4Q",
-    amazonUrl: "https://www.amazon.com/s?k=5L+Glass+Rice+Dispenser+with+Bamboo+Stand&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=5L+Glass+Rice+Dispenser+with+Bamboo+Stand",
     specs: ["Air-tight moisture seal", "Manual valve release & glass cup"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -333,7 +326,6 @@ export const PRODUCTS: Product[] = [
     specsTable: [
       { label: "Material", value: "Borosilicate Glass & Bamboo" },
       { label: "Capacity", value: "5 Liters (approx. 10 lbs rice)" },
-      { label: "ASIN", value: "B09H2S8W4Q" },
     ],
   },
   {
@@ -346,8 +338,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "28,900+ reviews",
     priceRange: "$32 - $42",
-    asin: "B089456R7V",
-    amazonUrl: "https://www.amazon.com/dp/B089456R7V?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Vtopmart+4+Piece+Large+5.2L+Airtight+Bulk+Storage+Containers",
     specs: ["Holds 5lb bags of flour or sugar", "Side-locking airtight lids"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -366,7 +358,6 @@ export const PRODUCTS: Product[] = [
     specsTable: [
       { label: "Capacity", value: "5.2 Liters (175.8 oz) per canister" },
       { label: "Count", value: "4 Canisters + Labels + Scoops" },
-      { label: "ASIN", value: "B089456R7V" },
     ],
   },
   {
@@ -379,8 +370,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "19,800+ reviews",
     priceRange: "$199 - $229",
-    asin: "B09B59M2N1",
-    amazonUrl: "https://www.amazon.com/dp/B09B59M2N1?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Ninja+CREAMi+NC301+Ice+Cream+Maker",
     specs: ["7 one-touch programs", "Includes 2 pint containers"],
     featuredInSlug: "multifunctional-kitchen-gadgets-guide",
     featuredInTitle: "Multi-Functional Kitchen Gadgets Guide",
@@ -399,7 +390,6 @@ export const PRODUCTS: Product[] = [
     specsTable: [
       { label: "Programs", value: "7 One-Touch Functions" },
       { label: "Power", value: "800 Watts" },
-      { label: "ASIN", value: "B09B59M2N1" },
     ],
   },
   {
@@ -412,8 +402,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.6,
     reviewsCount: "8,400+ reviews",
     priceRange: "$24 - $34",
-    asin: "B0C1N7G51S",
-    amazonUrl: "https://www.amazon.com/s?k=2-in-1+Glass+Oil+Sprayer+and+Dispenser+Bottle&tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=2+in+1+Glass+Oil+Sprayer+and+Dispenser+Bottle",
     specs: ["Press for fan mist or tilt to pour", "Clog-free brass nozzle"],
     featuredInSlug: "multifunctional-kitchen-gadgets-guide",
     featuredInTitle: "Multi-Functional Kitchen Gadgets Guide",
@@ -432,7 +422,6 @@ export const PRODUCTS: Product[] = [
     specsTable: [
       { label: "Capacity", value: "470 ml / 16 oz" },
       { label: "Material", value: "Borosilicate Glass & Stainless Steel" },
-      { label: "ASIN", value: "B0C1N7G51S" },
     ],
   },
   {
@@ -445,8 +434,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.6,
     reviewsCount: "105,000+ reviews",
     priceRange: "$29 - $39",
-    asin: "B07WBXRBMN",
-    amazonUrl: "https://www.amazon.com/dp/B07WBXRBMN?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Fullstar+4+in+1+Vegetable+Chopper",
     specs: ["Small/large dice blades", "Spiralizer and ribbon blades"],
     featuredInSlug: "multifunctional-kitchen-gadgets-guide",
     featuredInTitle: "Multi-Functional Kitchen Gadgets Guide",
@@ -465,7 +454,6 @@ export const PRODUCTS: Product[] = [
     specsTable: [
       { label: "Blades", value: "4 Interchangeable Stainless Steel" },
       { label: "Capacity", value: "1.2 Liter Catch Tray" },
-      { label: "ASIN", value: "B07WBXRBMN" },
     ],
   },
   {
@@ -478,8 +466,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "135,000+ reviews",
     priceRange: "$19 - $29",
-    asin: "B00006JSUA",
-    amazonUrl: "https://www.amazon.com/dp/B00006JSUA?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Lodge+10.25+Inch+Pre+Seasoned+Cast+Iron+Skillet",
     specs: ["Pre-seasoned with 100% natural vegetable oil", "Unparalleled heat retention"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -487,7 +475,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "Cast Iron" }],
     pros: ["Naturally non-stick when seasoned", "Virtually indestructible"],
     cons: ["Heavy weight", "Requires special cleaning care"],
-    specsTable: [{ label: "Size", value: "10.25 Inch" }, { label: "Oven Safe", value: "Yes" }, { label: "ASIN", value: "B00006JSUA" }]
+    specsTable: [{ label: "Size", value: "10.25 Inch" }, { label: "Oven Safe", value: "Yes" }]
   },
   {
     id: "de-buyer-carbon-steel-pan",
@@ -499,8 +487,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "8,500+ reviews",
     priceRange: "$79 - $99",
-    asin: "B00462QP0W",
-    amazonUrl: "https://www.amazon.com/dp/B00462QP0W?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=De+Buyer+Mineral+B+Carbon+Steel+Frying+Pan",
     specs: ["Beeswax finish against oxidation", "Signature French handle"],
     featuredInSlug: "wok-cooking-toxin-free",
     featuredInTitle: "Wok Cooking Toxin-Free",
@@ -508,7 +496,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "Carbon Steel" }],
     pros: ["Heats rapidly", "Becomes better with use"],
     cons: ["Needs seasoning", "Not dishwasher safe"],
-    specsTable: [{ label: "Material", value: "Carbon Steel" }, { label: "Coating", value: "Beeswax" }, { label: "ASIN", value: "B00462QP0W" }]
+    specsTable: [{ label: "Material", value: "Carbon Steel" }, { label: "Coating", value: "Beeswax" }]
   },
   {
     id: "stasher-silicone-bags",
@@ -520,8 +508,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "35,000+ reviews",
     priceRange: "$45 - $65",
-    asin: "B01DZQT9CU",
-    amazonUrl: "https://www.amazon.com/dp/B01DZQT9CU?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Stasher+Platinum+Reusable+Silicone+Storage+Bags",
     specs: ["Pinch-Loc seal", "Dishwasher and microwave safe"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -529,7 +517,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "Platinum Silicone" }],
     pros: ["Durable and reusable", "Completely plastic-free"],
     cons: ["Can be difficult to dry completely"],
-    specsTable: [{ label: "Material", value: "Platinum Silicone" }, { label: "ASIN", value: "B01DZQT9CU" }]
+    specsTable: [{ label: "Material", value: "Platinum Silicone" }]
   },
   {
     id: "pyrex-glass-measuring-cups",
@@ -541,8 +529,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.9,
     reviewsCount: "60,000+ reviews",
     priceRange: "$20 - $25",
-    asin: "B00M2J7PCI",
-    amazonUrl: "https://www.amazon.com/dp/B00M2J7PCI?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Pyrex+3+Piece+Glass+Measuring+Cup+Set",
     specs: ["Easy-to-read measurements", "Non-porous glass"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -550,7 +538,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "Tempered Glass" }],
     pros: ["Microwave and dishwasher safe", "Extremely durable"],
     cons: ["Glass can chip if dropped"],
-    specsTable: [{ label: "Pieces", value: "3" }, { label: "ASIN", value: "B00M2J7PCI" }]
+    specsTable: [{ label: "Pieces", value: "3" }]
   },
   {
     id: "all-clad-d3-skillet",
@@ -562,8 +550,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "9,000+ reviews",
     priceRange: "$120 - $150",
-    asin: "B00FUF5K8W",
-    amazonUrl: "https://www.amazon.com/dp/B00FUF5K8W?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=All+Clad+D3+3+Ply+Stainless+Steel+Frying+Pan",
     specs: ["Tri-ply construction", "Flared edges for pouring"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -571,7 +559,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Construction", detail: "Aluminum core with stainless steel exterior" }],
     pros: ["Exceptional heat distribution", "Oven and broiler safe"],
     cons: ["Higher price point", "Requires technique to prevent sticking"],
-    specsTable: [{ label: "Material", value: "Stainless Steel" }, { label: "ASIN", value: "B00FUF5K8W" }]
+    specsTable: [{ label: "Material", value: "Stainless Steel" }]
   },
   {
     id: "totally-bamboo-utensils",
@@ -583,8 +571,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: "12,000+ reviews",
     priceRange: "$15 - $25",
-    asin: "B07P7JQQMV",
-    amazonUrl: "https://www.amazon.com/dp/B07P7JQQMV?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Totally+Bamboo+6+Piece+Organic+Wooden+Cooking+Utensil+Set",
     specs: ["Safe for non-stick", "Sustainably sourced"],
     featuredInSlug: "non-toxic-kitchen-blueprint",
     featuredInTitle: "The Non-Toxic Kitchen Blueprint",
@@ -592,7 +580,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "100% Organic Bamboo" }],
     pros: ["Will not scratch cookware", "Eco-friendly material"],
     cons: ["Hand wash only"],
-    specsTable: [{ label: "Pieces", value: "6 Utensils" }, { label: "ASIN", value: "B07P7JQQMV" }]
+    specsTable: [{ label: "Pieces", value: "6 Utensils" }]
   },
   {
     id: "caraway-bakeware-set",
@@ -604,8 +592,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: "4,500+ reviews",
     priceRange: "$395 - $445",
-    asin: "B0B1G82L3J",
-    amazonUrl: "https://www.amazon.com/dp/B0B1G82L3J?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Caraway+Non+Toxic+Ceramic+Bakeware+11+Piece+Set",
     specs: ["Free of PFAS and PTFE", "Includes magnetic organizers"],
     featuredInSlug: "space-saving-cookware-guide",
     featuredInTitle: "Modular Cooking: Space-Saving Guide",
@@ -613,7 +601,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Coating", detail: "Mineral-based ceramic" }],
     pros: ["Incredible non-stick performance", "Beautiful aesthetic colors"],
     cons: ["Can stain over time if not cleaned properly"],
-    specsTable: [{ label: "Oven Safe", value: "Up to 550°F" }, { label: "ASIN", value: "B0B1G82L3J" }]
+    specsTable: [{ label: "Oven Safe", value: "Up to 550°F" }]
   },
   {
     id: "silpat-baking-mat",
@@ -625,8 +613,8 @@ export const PRODUCTS: Product[] = [
     rating: 4.9,
     reviewsCount: "25,000+ reviews",
     priceRange: "$25 - $35",
-    asin: "B00008T960",
-    amazonUrl: "https://www.amazon.com/dp/B00008T960?tag=pantryandpan-20",
+    asin: "",
+    amazonUrl: "https://www.amazon.com/s?k=Silpat+Premium+Non+Stick+Silicone+Baking+Mat",
     specs: ["Woven fiberglass core", "Even heat transfer"],
     featuredInSlug: "aesthetic-pantry-organization-guide",
     featuredInTitle: "Aesthetic Pantry Organization Guide",
@@ -634,7 +622,7 @@ export const PRODUCTS: Product[] = [
     materials: [{ label: "Material", detail: "Silicone and Fiberglass" }],
     pros: ["Reusable thousands of times", "Consistent baking results"],
     cons: ["Retains greasy feel if not washed with strong soap"],
-    specsTable: [{ label: "Oven Safe", value: "Up to 480°F" }, { label: "ASIN", value: "B00008T960" }]
+    specsTable: [{ label: "Oven Safe", value: "Up to 480°F" }]
   }
 ];
 

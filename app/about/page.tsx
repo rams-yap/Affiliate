@@ -34,53 +34,19 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Right Image / Co-Founders Team Preview Block */}
-          <div className="lg:col-span-5">
-            <div className="relative overflow-hidden rounded-2xl border border-hairline bg-surface-tint p-4 soft-shadow">
-              <div className="mb-3 flex items-center justify-between border-b border-hairline pb-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-terracotta">The Team</span>
-                <span className="text-xs font-medium text-muted-foreground">Co-Founders & Editorial</span>
-              </div>
-              <div className="grid grid-cols-2 gap-2.5">
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/assets/mina_kim_front_1785512206331.jpg"
-                    alt="Mina Kim"
-                    className="h-full w-full object-cover"
-                  />
-                  <span className="absolute bottom-1.5 left-1.5 rounded-md bg-background/85 px-2 py-0.5 text-[10px] font-bold text-foreground backdrop-blur-xs">
-                    Mina
-                  </span>
-                </div>
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/assets/maya_chen_front_1785511887614.jpg"
-                    alt="Maya Chen"
-                    className="h-full w-full object-cover"
-                  />
-                  <span className="absolute bottom-1.5 left-1.5 rounded-md bg-background/85 px-2 py-0.5 text-[10px] font-bold text-foreground backdrop-blur-xs">
-                    Maya
-                  </span>
-                </div>
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/assets/elena_vance_front_1785511912703.jpg"
-                    alt="Dr. Elena Vance"
-                    className="h-full w-full object-cover"
-                  />
-                  <span className="absolute bottom-1.5 left-1.5 rounded-md bg-background/85 px-2 py-0.5 text-[10px] font-bold text-foreground backdrop-blur-xs">
-                    Dr. Vance
-                  </span>
-                </div>
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/assets/kristy_weber_front_1785512170423.jpg"
-                    alt="Kristy Weber"
-                    className="h-full w-full object-cover"
-                  />
-                  <span className="absolute bottom-1.5 left-1.5 rounded-md bg-background/85 px-2 py-0.5 text-[10px] font-bold text-foreground backdrop-blur-xs">
-                    Kristy
-                  </span>
+          {/* Right Image / Aesthetic Kitchenware Tabletop Hero Card */}
+          <div className="lg:col-span-5 h-full">
+            <div className="relative h-full overflow-hidden rounded-2xl border border-hairline bg-surface-tint p-2.5 soft-shadow flex flex-col">
+              <div className="relative aspect-[16/10] lg:aspect-[4/5] w-full flex-1 overflow-hidden rounded-xl bg-muted">
+                <img
+                  src="/assets/about_hero_tabletop.jpg"
+                  alt="Aesthetic home kitchen table set with non-toxic ceramic Dutch oven and carbon steel cookware"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-xs font-bold uppercase tracking-wider text-terracotta-light">The Kitchen Table</p>
+                  <p className="text-xs font-medium text-white/90">Curated non-toxic cookware, tested for everyday home living.</p>
                 </div>
               </div>
             </div>
@@ -117,10 +83,10 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-terracotta">Co-Founder & Lifestyle Lead</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-terracotta">Co-Founder & Pantry Curation Lead</span>
               <h3 className="font-display text-xl font-semibold text-foreground">Mina Kim</h3>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Drawing from Korean well-being principles, Mina shapes our mindful aesthetic curation. She guides our organic visual palettes like Warm Oat and Terracotta, focusing on peaceful pantry organization and creating kitchen spaces that feel as good as they look.
+                Inspired by Korean well-being principles, Mina focuses on practical kitchen organization, space-saving storage, and everyday usability. She vets organizers, glass containers, and daily cookware essentials to share honest picks and tips for keeping a clutter-free, non-toxic pantry.
               </p>
             </div>
           </div>
@@ -129,7 +95,7 @@ export default function AboutPage() {
           <div className="flex flex-col rounded-2xl border border-hairline bg-background p-6 space-y-4">
             <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-muted">
               <img
-                src="/assets/maya_chen_front_1785511887614.jpg"
+                src="/assets/maya_chen_front_v2.jpg"
                 alt="Maya Chen portrait"
                 className="h-full w-full object-cover object-center"
               />
@@ -138,7 +104,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold uppercase tracking-wider text-amber">Co-Founder & Culinary Lead</span>
               <h3 className="font-display text-xl font-semibold text-foreground">Maya Chen</h3>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Anchored in Chinese culinary heritage, Maya leads our wok care, carbon steel, and cast-iron testing protocols. She evaluates high-heat searing performance and natural seasoning techniques to ensure every pan we recommend can become a true family heirloom.
+                Growing up in a busy family kitchen, Maya learned culinary care directly from her mother. She brings deep hands-on experience to how different pans handle heat, knowing which materials scorch delicate foods, how to prevent sticking without chemical sprays, and how to season heirloom iron and carbon steel.
               </p>
             </div>
           </div>
@@ -156,7 +122,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold uppercase tracking-wider text-sage">Co-Founder & Materials Science Lead</span>
               <h3 className="font-display text-xl font-semibold text-foreground">Dr. Elena Vance</h3>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                As a European materials scientist enforcing strict EU REACH standards, Dr. Vance oversees our rigorous lab testing reports. She validates zero-PFAS ceramic coatings and conducts heavy metal purity checks to guarantee that no hidden toxins reach your dinner table.
+                As a European materials science specialist focusing on strict EU REACH standards, Dr. Vance oversees our material verification criteria. She scrutinizes third-party laboratory safety reports, validates zero-PFAS ceramic coatings, and checks heavy metal disclosures to help ensure your kitchen stays clean.
               </p>
             </div>
           </div>
@@ -176,7 +142,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold uppercase tracking-wider text-terracotta">Editorial Lead & Community Voice</span>
               <h3 className="font-display text-2xl font-semibold text-foreground">Kristy Weber</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Kristy is an enthusiastic home cook and a healthy-lifestyle dreamer who deeply admires our founders' expertise. As the passionate voice behind our platform, she translates Dr. Vance's complex lab data and Mina and Maya's thoughtful curation notes into warm, accessible testing guides and newsletters. She is dedicated to helping you make informed, confident choices for your kitchen.
+                Kristy thrives in the heart of our test kitchen environment. As our Editorial Lead and Community Voice, she connects directly with home cooks, translating complex safety specs and curation insights into warm, practical buying guides and weekly newsletters. She loves taking the confusion out of non-toxic living so families can shop with complete confidence.
               </p>
             </div>
           </div>

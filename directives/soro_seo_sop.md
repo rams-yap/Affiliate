@@ -12,6 +12,7 @@ This Standard Operating Procedure (SOP) details the active **Soro SEO & AEO (Ans
 1. **NO EM DASHES**: Per [`brand_identity.md`](file:///d:/_Career/Workflow/Affiliate/directives/brand_identity.md), do NOT use em dashes (`—`) anywhere in headings, body copy, metadata, or schema. Use colons (`:`), commas (`,`), or periods (`.`) instead.
 2. **Amazon Affiliate Disclosure**: Every article page must contain the mandatory footer disclosure: *"As an Amazon Associate I earn from qualifying purchases."*
 3. **Next.js Technical Architecture**: Never place `"use client"` directly in `app/[route]/page.tsx`. Keep `page.tsx` as a React Server Component (RSC) exporting static `Metadata` with explicit canonicals and JSON-LD schema.
+4. **Phase 1 Traffic & Affiliate Strategy**: During Phase 1 (organic traffic building via SEO/AEO before Amazon Associates registration), all product CTA buttons must use clean Amazon search queries (e.g., `https://www.amazon.com/s?k=Caraway+12+Piece+Cookware`) without hardcoded ASINs or affiliate tracking tags (`tag=...`). Once organic traffic reaches sufficient volume, submit the application to Amazon Associates and update the catalog with registered affiliate tags.
 
 ---
 
