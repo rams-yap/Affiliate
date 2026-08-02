@@ -1387,9 +1387,9 @@ export const GUIDES: Article[] = [
     "heroImage": "/assets/greenpan_valencia_set.jpg",
     "authorName": "Dr. Elena Vance",
     "authorInitials": "EV",
-    "authorRole": "Materials Researcher & Home Chef",
+    "authorRole": "Co-Founder & Materials Science Lead",
     "readMinutes": 7,
-    "publishDate": "Updated July 31, 2026",
+    "publishDate": "August 2, 2026",
     "sections": [
       {
         "id": "quick-verdict-summary",

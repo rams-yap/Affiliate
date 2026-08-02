@@ -22,9 +22,9 @@ This directive standardizes the active **14-day continuous daily content sprint 
 
 | Day | Date | Target Article (Slug) | Article Title & Search Intent | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Day 1** | **Aug 2 (Today)** | `best-caraway-pan-alternatives-under-100` | **5 Best Caraway Pan Alternatives Under $100** *(Buyer Transition)* | ✅ Published |
-| **Day 2** | Aug 3 | `is-hexclad-worth-it-non-toxic-audit` | **Is HexClad Worth It? A Non-Toxic Ceramic & Hybrid Audit** *(Product Audit)* | 📅 Scheduled |
-| **Day 3** | Aug 4 | `made-in-ceramic-vs-caraway` | **Made In Ceramic vs Caraway: Real Thermal Test** *(Transactional Versus)* | 📅 Scheduled |
+| **Day 1** | **Aug 2 (Today)** | `greenpan-valencia-vs-caraway` | **GreenPan Valencia Pro vs Caraway Ceramic** *(Transactional Versus)* | ✅ Published |
+| **Day 2** | **Aug 3 (Tomorrow)** | `best-caraway-pan-alternatives-under-100` | **5 Best Caraway Pan Alternatives Under $100** *(Buyer Transition)* | 📅 Scheduled |
+| **Day 3** | Aug 4 | `is-hexclad-worth-it-non-toxic-audit` | **Is HexClad Worth It? A Non-Toxic Ceramic & Hybrid Audit** *(Product Audit)* | 📅 Scheduled |
 | **Day 4** | Aug 5 | `greenpan-valencia-vs-carote-ceramic` | **GreenPan Valencia Pro vs CAROTE Ceramic Showdown** *(Transactional Versus)* | 📅 Scheduled |
 | **Day 5** | Aug 6 | **Sprint 1 Review & Hub Sync** | Internal Linking Audit for Non-Toxic Ceramic Hub | 📅 Scheduled |
 | **Day 6** | Aug 7 | `carote-vs-tefal-ingenio-detachable` | **CAROTE vs Tefal Ingenio: Best Removable Handle Set** *(Transactional Versus)* | 📅 Scheduled |
