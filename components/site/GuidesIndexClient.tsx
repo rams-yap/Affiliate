@@ -4,17 +4,19 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, ChevronRight, Clock, Flame, Sparkles } from "lucide-react";
 import { SageBadge } from "@/components/site/SageBadge";
-import { GUIDES, CATEGORIES, type CategoryKey } from "@/lib/catalog";
+import { getPublishedGuides, CATEGORIES, type CategoryKey } from "@/lib/catalog";
 
 export function GuidesIndexClient() {
   const [activeFilter, setActiveFilter] = useState<CategoryKey>("all-essentials");
 
+  const publishedGuides = getPublishedGuides();
+
   const filteredGuides =
     activeFilter === "all-essentials"
-      ? GUIDES
-      : GUIDES.filter((g) => g.categoryKey === activeFilter);
+      ? publishedGuides
+      : publishedGuides.filter((g) => g.categoryKey === activeFilter);
 
-  const featuredGuide = GUIDES[0];
+  const featuredGuide = publishedGuides[0];
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6 lg:px-8">

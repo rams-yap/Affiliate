@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu, Moon, Search, ShieldCheck, Sun, X, BookOpen, Mail, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { CATEGORIES, GUIDES } from "@/lib/catalog";
+import { CATEGORIES, getPublishedGuides } from "@/lib/catalog";
 import { useDarkMode } from "@/hooks/use-dark-mode";
 import { SearchOverlay } from "./SearchOverlay";
 
@@ -303,7 +303,7 @@ export function SiteHeader() {
                 </Link>
               </div>
               <ul className="flex flex-col gap-1">
-                {GUIDES.slice(0, 3).map((g) => (
+                {getPublishedGuides().slice(0, 3).map((g) => (
                   <li key={g.slug}>
                     <Link
                       href={`/guides/${g.slug}`}

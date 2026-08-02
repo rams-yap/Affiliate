@@ -1546,12 +1546,27 @@ export const GUIDES: Article[] = [
   }
 ];
 
+export function isGuidePublished(publishDateStr: string): boolean {
+  const cleanDate = publishDateStr.replace(/^Updated\s+/i, "");
+  const dateObj = new Date(cleanDate);
+  if (isNaN(dateObj.getTime())) return true;
+  const now = new Date();
+  return dateObj <= now;
+}
+
+export function getPublishedGuides() {
+  return GUIDES.filter((g) => isGuidePublished(g.publishDate));
+}
+
 export function getGuide(slug: string) {
-  return GUIDES.find((g) => g.slug === slug);
+  const g = GUIDES.find((g) => g.slug === slug);
+  if (!g) return undefined;
+  if (!isGuidePublished(g.publishDate)) return undefined;
+  return g;
 }
 
 export function getGuideBySlug(slug: string) {
-  return GUIDES.find((g) => g.slug === slug);
+  return getGuide(slug);
 }
 
 export type SearchResult =
