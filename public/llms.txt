@@ -1,0 +1,43 @@
+# Pantry & Pan
+
+> Safe Cookware & Aesthetic Kitchen Essentials. Curated non-toxic, PFAS-free ceramic sets, carbon steel woks, and aesthetic pantry organization guides.
+
+Pantry & Pan (https://pantryandpan.com) is an authoritative editorial resource and purchasing guide dedicated to health-focused, toxin-free kitchen equipment, cookware materials safety, space-saving storage, and multi-functional appliances.
+
+## Primary Buyers Guides
+- [The Non-Toxic Kitchen Blueprint](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint): Comprehensive guide to replacing PFAS, PTFE, and heavy metal cookware with safe ceramic, carbon steel, and stainless steel alternatives. Includes the interactive Non-Toxic Pan Decoder tool.
+- [Carbon Steel Wok Seasoning & Care Guide](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide): Step-by-step masterclass on seasoning, cooking with, and maintaining non-toxic carbon steel woks and cast iron skillets. Features the Heirloom Pan Selector Quiz.
+- [Small Space Kitchen Storage Hacks](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks): Modular organization, stackable cookware, and vertical pantry storage solutions for minimalist kitchens. Includes the Cabinet Volume Savings Calculator.
+- [Multifunctional Kitchen Gadgets Guide](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide): Space-efficient 2-in-1 and 3-in-1 kitchen appliances that replace clutter without sacrificing utility. Features the Oil Sprayer Dosage Calculator.
+- [Ceramic, Granite, and Stone Cookware Explained](https://pantryandpan.com/guides/ceramic-granite-stone-cookware-explained): Materials safety audit decoding sol-gel mineral glazes, stone marketing buzzwords, and non-reactive stainless steel.
+- [The Space-Saving Minimalist Baker](https://pantryandpan.com/guides/space-saving-minimalist-baker): Non-toxic ceramic bakeware, platinum silicone baking mats, and compact nesting sheet organizers.
+- [Clean Morning Rituals](https://pantryandpan.com/guides/clean-morning-rituals): Health-first breakfast prep, non-toxic electric kettles, and plastic-free glass coffee brewing essentials.
+- [Meal Prep Stations & Airtight Storage](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage): Borosilicate glass food storage, leakproof silicone seals, and efficient batch-cooking workflows. Includes the Pantry Storage Capacity Matcher.
+- [Cast Iron vs Carbon Steel: The Deep-Dive Comparison](https://pantryandpan.com/guides/cast-iron-vs-carbon-steel-deep-dive): Molecular weight, heat retention, responsiveness, and seasoning comparison between cast iron and carbon steel cookware.
+- [The Pantry Organization & Glass Jar System](https://pantryandpan.com/guides/pantry-organization-glass-jar-system): Step-by-step system for building an aesthetic, plastic-free pantry using borosilicate glass jars and bamboo lids. Includes the Rice & Grain Capacity Calculator.
+
+## Cookware & Kitchen Categories
+- [Non-Toxic Ceramic & Clay](https://pantryandpan.com/category/ceramic-clay): Sol-gel ceramic nonstick cookware free of PFAS, PTFE, PFOA, lead, and cadmium. Features Caraway and GreenPan Valencia Pro.
+- [Heirloom Iron & Carbon Steel](https://pantryandpan.com/category/carbon-steel-woks): Naturally nonstick carbon steel woks and cast iron skillets built for high-heat cooking and lifetime durability.
+- [Space-Saving & Detachable](https://pantryandpan.com/category/space-saving-detachable): Removable-handle cookware sets, stackable nesting pots, and vertical lid storage designed for compact kitchens.
+- [Pantry & Aesthetic Storage](https://pantryandpan.com/category/aesthetic-storage): Borosilicate glass containers, bamboo spice racks, and minimalist food prep organization.
+- [Multi-Functional Gadgets](https://pantryandpan.com/category/multifunctional-gadgets): High-yield, multi-purpose kitchen prep tools, veggie choppers, and compact appliances.
+- [All Essentials](https://pantryandpan.com/category/all-essentials): Curated index of top-rated non-toxic cookware, kitchenware, and storage products.
+
+## Interactive Tools & Calculators
+- [Non-Toxic Pan Decoder](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint#tool-decoder): Interactive material safety diagnostic tool to evaluate cookware health standards (PTFE, PFAS, PFOA, Lead, Cadmium).
+- [Heirloom Pan Selector Quiz](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide#tool-quiz): Personalized quiz matching cooking habits to carbon steel, cast iron, or ceramic cookware.
+- [Space-Saving Cabinet Volume Calculator](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks#tool-calculator): Cabinet volume savings calculator for nesting cookware and detachable handle sets.
+- [Oil Sprayer Dosage Calculator](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide#tool-calculator): Spray dosage and oil calorie savings calculator for glass misting bottles vs aerosol sprays.
+- [Pantry Rice & Grain Calculator](https://pantryandpan.com/guides/pantry-organization-glass-jar-system#tool-calculator): Grain volume to glass jar capacity converter for pantry planning.
+- [Storage Container Capacity Matcher](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage#tool-calculator): Meal prep batch size matcher for borosilicate glass container sets.
+
+## Non-Toxic Materials Science & Standards
+- **PTFE/PFAS Safety Standard**: Traditional PTFE coatings degrade above 500°F (260°C), releasing polymer fume fever toxins. All recommended ceramic cookware uses sol-gel silica technology.
+- **Sol-Gel Mineral Ceramic Glazes**: Derived from natural sand, silicon dioxide glazes create smooth, inert nonstick surfaces requiring zero fluoropolymers.
+- **Borosilicate Glass**: High thermal shock resistance (-40°F to 450°F), non-reactive, 100% lead-free food storage.
+- **Platinum Silicone**: Food-grade silicone cured with platinum catalysts, free of BPA, BPS, phthalates, and fillers.
+- **Natural Carbon Steel Seasoning**: High-smoke-point oil polymerization forming a naturally slippery hydrophobic patina without synthetic chemicals.
+
+## Optional Extended Context
+- For complete extended context, detailed material tables, and full dataset for AI retrieval, see [llms-full.txt](https://pantryandpan.com/llms-full.txt).

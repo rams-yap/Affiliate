@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-plus-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-display: var(--font-fraunces), "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-tint: var(--surface-tint);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-sage: var(--sage);
+  --color-sage-foreground: var(--sage-foreground);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-foreground: var(--terracotta-foreground);
+  --color-amber: var(--amber);
+  --color-amber-foreground: var(--amber-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-hairline: var(--hairline);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 1rem;
+
+  /* Warm Oat Cream background, ivory surfaces */
+  --background: #F9F6F0;
+  --foreground: #2C3531;              /* Deep Slate Charcoal */
+  --surface: #ffffff;
+  --surface-tint: #f2ece4;            /* Soft oat tint */
+
+  --card: #ffffff;
+  --card-foreground: #2C3531;
+  --popover: #ffffff;
+  --popover-foreground: #2C3531;
+
+  /* Primary = deep charcoal */
+  --primary: #2C3531;
+  --primary-foreground: #F9F6F0;
+
+  --secondary: #f2ece4;
+  --secondary-foreground: #2C3531;
+
+  --muted: #f2ece4;
+  --muted-foreground: #5a6460;        /* Muted slate taupe */
+
+  --accent: #f2ece4;
+  --accent-foreground: #2C3531;
+
+  /* Non-Toxic Sage Green — safety / trust accent */
+  --sage: #8A9A86;
+  --sage-foreground: #ffffff;
+
+  /* Ceramic Spice / Terracotta — primary CTA */
+  --terracotta: #D48C70;
+  --terracotta-foreground: #ffffff;
+
+  /* Brushed Brass Gold */
+  --amber: #C5A059;
+  --amber-foreground: #ffffff;
+
+  --destructive: #c14a3a;
+  --destructive-foreground: #ffffff;
+
+  /* Subtle warm hairline */
+  --border: #e6dfd5;
+  --hairline: #e6dfd5;
+  --input: #e6dfd5;
+  --ring: #D48C70;
+}
+
+.dark {
+  --background: #1c211f;
+  --foreground: #F9F6F0;
+  --surface: #252c29;
+  --surface-tint: #2d3632;
+  --card: #252c29;
+  --card-foreground: #F9F6F0;
+  --popover: #252c29;
+  --popover-foreground: #F9F6F0;
+  --primary: #F9F6F0;
+  --primary-foreground: #1c211f;
+  --secondary: #2d3632;
+  --secondary-foreground: #F9F6F0;
+  --muted: #2d3632;
+  --muted-foreground: #a3b0aa;
+  --accent: #2d3632;
+  --accent-foreground: #F9F6F0;
+  --sage: #8A9A86;
+  --sage-foreground: #1c211f;
+  --terracotta: #D48C70;
+  --terracotta-foreground: #1c211f;
+  --amber: #C5A059;
+  --amber-foreground: #1c211f;
+  --destructive: #d96a5a;
+  --destructive-foreground: #F9F6F0;
+  --border: #35403b;
+  --hairline: #35403b;
+  --input: #35403b;
+  --ring: #D48C70;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "ss01", "cv02", "cv11";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+  }
+}
+
+@utility soft-shadow {
+  box-shadow:
+    0 1px 2px rgba(44, 42, 41, 0.04),
+    0 8px 24px -12px rgba(44, 42, 41, 0.08);
+}
+
+@utility soft-shadow-md {
+  box-shadow:
+    0 2px 6px rgba(44, 42, 41, 0.06),
+    0 20px 40px -20px rgba(44, 42, 41, 0.14);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility fade-in-up {
+  animation: fade-up 0.7s ease-out both;
+}
