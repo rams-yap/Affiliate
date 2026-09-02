@@ -4,40 +4,99 @@
 
 Pantry & Pan (https://pantryandpan.com) is an authoritative editorial resource and purchasing guide dedicated to health-focused, toxin-free kitchen equipment, cookware materials safety, space-saving storage, and multi-functional appliances.
 
-## Primary Buyers Guides
-- [The Non-Toxic Kitchen Blueprint](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint): Comprehensive guide to replacing PFAS, PTFE, and heavy metal cookware with safe ceramic, carbon steel, and stainless steel alternatives. Includes the interactive Non-Toxic Pan Decoder tool.
-- [Carbon Steel Wok Seasoning & Care Guide](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide): Step-by-step masterclass on seasoning, cooking with, and maintaining non-toxic carbon steel woks and cast iron skillets. Features the Heirloom Pan Selector Quiz.
-- [Small Space Kitchen Storage Hacks](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks): Modular organization, stackable cookware, and vertical pantry storage solutions for minimalist kitchens. Includes the Cabinet Volume Savings Calculator.
-- [Multifunctional Kitchen Gadgets Guide](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide): Space-efficient 2-in-1 and 3-in-1 kitchen appliances that replace clutter without sacrificing utility. Features the Oil Sprayer Dosage Calculator.
-- [Ceramic, Granite, and Stone Cookware Explained](https://pantryandpan.com/guides/ceramic-granite-stone-cookware-explained): Materials safety audit decoding sol-gel mineral glazes, stone marketing buzzwords, and non-reactive stainless steel.
-- [The Space-Saving Minimalist Baker](https://pantryandpan.com/guides/space-saving-minimalist-baker): Non-toxic ceramic bakeware, platinum silicone baking mats, and compact nesting sheet organizers.
-- [Clean Morning Rituals](https://pantryandpan.com/guides/clean-morning-rituals): Health-first breakfast prep, non-toxic electric kettles, and plastic-free glass coffee brewing essentials.
-- [Meal Prep Stations & Airtight Storage](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage): Borosilicate glass food storage, leakproof silicone seals, and efficient batch-cooking workflows. Includes the Pantry Storage Capacity Matcher.
-- [Cast Iron vs Carbon Steel: The Deep-Dive Comparison](https://pantryandpan.com/guides/cast-iron-vs-carbon-steel-deep-dive): Molecular weight, heat retention, responsiveness, and seasoning comparison between cast iron and carbon steel cookware.
-- [The Pantry Organization & Glass Jar System](https://pantryandpan.com/guides/pantry-organization-glass-jar-system): Step-by-step system for building an aesthetic, plastic-free pantry using borosilicate glass jars and bamboo lids. Includes the Rice & Grain Capacity Calculator.
+## Core Site Pages
+- [Homepage](https://pantryandpan.com): Curated non-toxic cookware and aesthetic kitchen essentials index.
+- [About & Our Origin Story](https://pantryandpan.com/about): Our founding story, culinary heritage, and leadership team blending Korean curation, Chinese wok heritage, and European materials science.
+- [How We Test](https://pantryandpan.com/how-we-test): 4-Pillar non-toxic testing protocol, thermal stress standards, and third-party laboratory verification criteria.
+- [Affiliate Disclosure](https://pantryandpan.com/affiliate-disclosure): Editorial independence policy and transparent monetization disclosures.
+- [All Guides Index](https://pantryandpan.com/guides): Full library of buying guides, head-to-head comparisons, and care tutorials.
+- [Contact](https://pantryandpan.com/contact): Direct editorial contact and product vetting submissions.
+
+## Editorial & Scientific Leadership
+- **Dr. Elena Vance (Materials Science Lead)**: Oversees material verification criteria, enforcing strict EU REACH standards, zero-PFAS certification, and third-party laboratory test validation.
+- **Mina Kim (Co-Founder & Pantry Curation Lead)**: Mindful kitchen organization specialist focusing on space-saving nesting systems, glass decanting, and modular storage usability.
+- **Maya Chen (Co-Founder & Culinary Lead)**: Culinary technique specialist bringing deep generational experience in thermal conduction, heat responsiveness, and natural seasoning for cast iron and carbon steel.
+- **Kristy Weber (Editorial Lead & Community Voice)**: Test kitchen communicator translating complex lab data and materials specifications into practical, accessible buyer guides.
+
+## 4-Pillar Non-Toxic Testing Protocol
+1. **Pillar 01 — Chemical & Heavy Metal Purity**: Verification of zero PFAS, PFOA, PTFE, GenX, lead, and cadmium via third-party laboratory safety audits.
+2. **Pillar 02 — High-Heat Thermal Performance**: Uniform heat distribution, resistance to thermal shock/warping, and zero toxic off-gassing at high searing temperatures.
+3. **Pillar 03 — Heirloom Durability & Care**: Selection of long-lasting materials (hot-forged carbon steel, thick borosilicate glass, solid bamboo) that avoid disposable synthetic cycles.
+4. **Pillar 04 — Aesthetic Integration**: Ergonomic balance, tactile comfort, and organic neutral palettes designed for calm, beautiful open kitchen shelving.
+
+## Zero-Compromise Chemical Blacklist
+Pantry & Pan permanently bans products containing:
+- **PFAS / PFOA / PFOS**: Fluorinated "forever chemicals" associated with bioaccumulation and endocrine disruption.
+- **PTFE / Teflon**: Fluoropolymer synthetic coatings that degrade above 500°F (260°C), releasing polymer fume toxins.
+- **Lead & Cadmium**: Toxic heavy metals historically used in low-grade ceramic glazes and decorative enamel pigments.
+- **GenX Chemicals & Short-Chain PFAS**: Fluorinated replacement chemistries with similar toxicological profiles.
+- **BPA, BPS & Phthalates**: Harmful plasticizers and synthetic chemical additives.
+- **Chemical Aerosol Propellants**: Hydrocarbon and nitrous oxide propellants found in commercial aerosol cooking sprays.
 
 ## Cookware & Kitchen Categories
-- [Non-Toxic Ceramic & Clay](https://pantryandpan.com/category/ceramic-clay): Sol-gel ceramic nonstick cookware free of PFAS, PTFE, PFOA, lead, and cadmium. Features Caraway and GreenPan Valencia Pro.
-- [Heirloom Iron & Carbon Steel](https://pantryandpan.com/category/carbon-steel-woks): Naturally nonstick carbon steel woks and cast iron skillets built for high-heat cooking and lifetime durability.
-- [Space-Saving & Detachable](https://pantryandpan.com/category/space-saving-detachable): Removable-handle cookware sets, stackable nesting pots, and vertical lid storage designed for compact kitchens.
-- [Pantry & Aesthetic Storage](https://pantryandpan.com/category/aesthetic-storage): Borosilicate glass containers, bamboo spice racks, and minimalist food prep organization.
-- [Multi-Functional Gadgets](https://pantryandpan.com/category/multifunctional-gadgets): High-yield, multi-purpose kitchen prep tools, veggie choppers, and compact appliances.
+- [Non-Toxic Ceramic & Clay](https://pantryandpan.com/category/ceramic-clay): Sol-gel silica ceramic nonstick cookware completely free of PFAS, PTFE, PFOA, lead, and cadmium.
+- [Heirloom Iron & Carbon Steel](https://pantryandpan.com/category/carbon-steel-woks): Naturally nonstick carbon steel woks and enameled cast iron skillets built for lifetime durability and high-heat cooking.
+- [Space-Saving & Detachable](https://pantryandpan.com/category/space-saving-detachable): Removable-handle cookware sets, nesting pots, and vertical lid storage engineered to reclaim up to 70% cabinet space.
+- [Pantry & Aesthetic Storage](https://pantryandpan.com/category/aesthetic-storage): Borosilicate glass containers, bamboo spice racks, and airtight grain dispensers for plastic-free food storage.
+- [Multi-Functional Gadgets](https://pantryandpan.com/category/multifunctional-gadgets): High-yield multi-purpose prep tools, vegetable choppers, and non-aerosol glass oil misters.
 - [All Essentials](https://pantryandpan.com/category/all-essentials): Curated index of top-rated non-toxic cookware, kitchenware, and storage products.
 
 ## Interactive Tools & Calculators
-- [Non-Toxic Pan Decoder](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint#tool-decoder): Interactive material safety diagnostic tool to evaluate cookware health standards (PTFE, PFAS, PFOA, Lead, Cadmium).
-- [Heirloom Pan Selector Quiz](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide#tool-quiz): Personalized quiz matching cooking habits to carbon steel, cast iron, or ceramic cookware.
-- [Space-Saving Cabinet Volume Calculator](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks#tool-calculator): Cabinet volume savings calculator for nesting cookware and detachable handle sets.
-- [Oil Sprayer Dosage Calculator](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide#tool-calculator): Spray dosage and oil calorie savings calculator for glass misting bottles vs aerosol sprays.
-- [Pantry Rice & Grain Calculator](https://pantryandpan.com/guides/pantry-organization-glass-jar-system#tool-calculator): Grain volume to glass jar capacity converter for pantry planning.
-- [Storage Container Capacity Matcher](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage#tool-calculator): Meal prep batch size matcher for borosilicate glass container sets.
+- [Non-Toxic Pan Decoder](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint#tool-decoder): Interactive material safety diagnostic evaluating pan coatings against health and chemical emission standards.
+- [Heirloom Pan Selector Quiz](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide#tool-quiz): Diagnostic quiz matching cooking styles to carbon steel, cast iron, or ceramic cookware.
+- [Space-Saving Cabinet Volume Calculator](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks#tool-calculator): Calculates cubic volume and percentage cabinet savings for nesting and detachable handle cookware.
+- [Oil Sprayer Dosage Calculator](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide#tool-calculator): Calculates oil usage reduction and calorie savings from glass misting sprayers vs aerosol cans.
+- [Pantry Rice & Grain Calculator](https://pantryandpan.com/guides/pantry-organization-glass-jar-system#tool-calculator): Converts dry grain weights into exact glass jar capacity requirements.
+- [Storage Container Capacity Matcher](https://pantryandpan.com/guides/meal-prep-stations-airtight-storage#tool-calculator): Recommends optimal borosilicate glass set configurations based on weekly meal prep batch size.
 
-## Non-Toxic Materials Science & Standards
-- **PTFE/PFAS Safety Standard**: Traditional PTFE coatings degrade above 500°F (260°C), releasing polymer fume fever toxins. All recommended ceramic cookware uses sol-gel silica technology.
-- **Sol-Gel Mineral Ceramic Glazes**: Derived from natural sand, silicon dioxide glazes create smooth, inert nonstick surfaces requiring zero fluoropolymers.
-- **Borosilicate Glass**: High thermal shock resistance (-40°F to 450°F), non-reactive, 100% lead-free food storage.
-- **Platinum Silicone**: Food-grade silicone cured with platinum catalysts, free of BPA, BPS, phthalates, and fillers.
-- **Natural Carbon Steel Seasoning**: High-smoke-point oil polymerization forming a naturally slippery hydrophobic patina without synthetic chemicals.
+## Primary Buyers Guides & Head-to-Head Comparisons
+
+### Foundational Blueprints & Material Science
+- [The Non-Toxic Kitchen Blueprint](https://pantryandpan.com/guides/non-toxic-kitchen-blueprint): Comprehensive guide to replacing PFAS/PTFE cookware with ceramic, carbon steel, and stainless steel.
+- [Carbon Steel Wok Seasoning & Care Guide](https://pantryandpan.com/guides/carbon-steel-wok-seasoning-care-guide): Step-by-step masterclass on oil polymerization, seasoning, and maintenance.
+- [Wok Cooking, Toxin-Free: A Beginner's Blueprint](https://pantryandpan.com/guides/wok-cooking-toxin-free): Natural seasoning and wok cooking without synthetic chemical non-stick coatings.
+- [Cast Iron vs Carbon Steel vs Enameled](https://pantryandpan.com/guides/cast-iron-vs-carbon-steel-vs-enameled): Comparative thermal retention, weight, and longevity audit.
+- [Is Granite Cookware Safe?](https://pantryandpan.com/guides/is-granite-cookware-safe-toxic-chemical-audit): Decoding speckled granite marketing buzzwords and sol-gel glaze safety.
+- [PTFE vs Ceramic Off-Gassing Safety Audit](https://pantryandpan.com/guides/ptfe-vs-ceramic-off-gassing-safety-audit): Thermal fume thresholds and chemical breakdown analysis.
+- [Ceramic Cookware Thermal Degradation Test](https://pantryandpan.com/guides/ceramic-cookware-thermal-degradation-test): Evaluating heat limits and nonstick longevity of mineral coatings.
+- [How to Restore a Ceramic Nonstick Pan](https://pantryandpan.com/guides/how-to-restore-ceramic-nonstick-pan): Deep-clean protocol for removing microscopic burnt oil residues.
+
+### Head-to-Head Cookware Comparisons
+- [Caraway vs GreenPan Valencia Pro Showdown](https://pantryandpan.com/guides/caraway-vs-greenpan-valencia-pro-cookware-showdown): Aesthetics, coating durability, and thermal performance comparison.
+- [CAROTE vs T-fal Ingenio Detachable Cookware Test](https://pantryandpan.com/guides/carote-vs-tfal-ingenio-detachable-cookware-test): Removable handle safety, clamping load, and nesting efficiency face-off.
+- [CAROTE vs Sensarte: Nonstick Budget Face-Off](https://pantryandpan.com/guides/carote-vs-sensarte-nonstick-cookware-comparison): Swiss granite vs granite ceramic budget pan comparison.
+- [Our Place Always Pan vs Caraway vs GreenPan 3-Way Test](https://pantryandpan.com/guides/our-place-always-pan-vs-caraway-vs-greenpan): Multi-functionality, longevity, and thermal lab test.
+- [5 Best Non-Toxic HexClad Alternatives](https://pantryandpan.com/guides/best-hexclad-alternatives-non-toxic): Evaluating hybrid laser-etched coatings vs 100% PTFE-free alternatives.
+- [Caraway vs Made In vs GreenPan 3-Way Test](https://pantryandpan.com/guides/caraway-vs-made-in-vs-greenpan): Ceramic nonstick vs 5-ply stainless steel performance.
+- [Yosukata vs De Buyer Carbon Steel](https://pantryandpan.com/guides/yosukata-vs-de-buyer-carbon-steel): Flat-bottom pre-seasoned wok vs French carbon steel skillet test.
+
+### Storage, Meal Prep & Kitchen Organization
+- [Glass vs Plastic Food Storage: The Non-Toxic Health Audit](https://pantryandpan.com/guides/glass-vs-plastic-food-storage-health-audit): Microplastics, BPA/phthalate leaching, and glass safety guide.
+- [Borosilicate vs Soda-Lime Glass: Food Storage Safety Guide](https://pantryandpan.com/guides/borosilicate-vs-soda-lime-glass-food-storage): Thermal shock resistance and freezer-to-oven durability.
+- [5 Best Glass Meal Prep Containers](https://pantryandpan.com/guides/best-glass-meal-prep-containers-airtight): Leakproof testing and oven-safe borosilicate container rankings.
+- [Stasher Bags vs Zip Top Containers](https://pantryandpan.com/guides/stasher-silicone-bags-vs-zip-top): Platinum silicone ease-of-cleaning and dishwasher usability test.
+- [Aesthetic Pantry Blueprint](https://pantryandpan.com/guides/aesthetic-pantry-organization-guide): Decanting system using borosilicate glass jars and bamboo lids.
+- [Small Space Kitchen Storage Hacks](https://pantryandpan.com/guides/small-space-kitchen-storage-hacks): Modular organizers, nesting cookware, and vertical shelf solutions.
+- [Plastic-Free Sunday Meal Prep Workflow](https://pantryandpan.com/guides/plastic-free-sunday-meal-prep-workflow): Batch cooking and airtight glass storage routines.
+
+### Small Appliances & Multi-Functional Tools
+- [Multifunctional Kitchen Gadgets Guide](https://pantryandpan.com/guides/multifunctional-kitchen-gadgets-guide): Space-saving tools that replace clutter without losing utility.
+- [Best Glass Oil Sprayer Misters](https://pantryandpan.com/guides/best-glass-oil-sprayer-misters-for-cooking): Non-aerosol fan misters for air fryers and non-toxic cooking.
+- [Fullstar 4-in-1 Veggie Chopper Review](https://pantryandpan.com/guides/fullstar-veggie-chopper-review-kitchen-workflow): Prep time efficiency, blade sharpness, and dishwasher cleaning audit.
+- [Clean Morning Rituals](https://pantryandpan.com/guides/clean-morning-rituals): Plastic-free electric kettles, pour-over glass coffee, and non-toxic breakfast prep.
+
+## Flagship Vetted Products Reference
+- **Caraway 12-Piece Ceramic Cookware Set**: Sol-gel mineral coating free of PFAS/PTFE; includes magnetic rack and canvas lid holder; oven safe to 550°F.
+- **GreenPan Valencia Pro 11-Piece Set**: Hard-anodized aluminum with diamond-infused Thermolon ceramic; Magneto induction base; oven safe to 600°F.
+- **CAROTE 11-Piece Stackable Cookware Set**: Modular detachable click handles saving up to 70% cabinet space; PFOA/lead-free granite ceramic coating.
+- **Sensarte Swiss Granite Nonstick Frying Pan Set**: Heavy-duty die-cast aluminum core with Swiss mineral nonstick coating and wood-grain Bakelite handle.
+- **Lodge 6-Quart Enameled Cast Iron Dutch Oven**: Vitreous porcelain enamel eliminates synthetic nonstick; massive heat retention for braising and sourdough baking.
+- **Yosukata 14" Pre-Seasoned Carbon Steel Wok**: Pre-treated at 1000°F with natural oil; high-heat wok hei searing with zero synthetic sealants.
+- **JoyJolt JoyFul 24-Piece Borosilicate Glass Container Set**: Thermal shock-resistant borosilicate glass with airtight silicone snap lids; oven safe to 1040°F.
+- **5L Glass Rice Dispenser with Bamboo Stand**: Borosilicate glass canister with 304 stainless steel manual release valve and airtight bamboo lid.
+- **Stasher Platinum Reusable Silicone Storage Bags**: 100% pure platinum food-grade silicone; Pinch-Loc seal safe for freezer, microwave, and dishwasher.
+- **Silpat Premium Non-Stick Silicone Baking Mat**: French pastry chef standard featuring platinum silicone reinforced with woven fiberglass mesh; oven safe to 500°F.
+- **All-Clad D3 3-Ply Stainless Steel Frying Pan**: Tri-ply stainless steel with encapsulated aluminum core; 100% inert, non-reactive, and heirloom durable.
 
 ## Optional Extended Context
-- For complete extended context, detailed material tables, and full dataset for AI retrieval, see [llms-full.txt](https://pantryandpan.com/llms-full.txt).
+- For complete extended context, detailed materials science tables, full database schema, and all 51 guide abstracts, see [llms-full.txt](https://pantryandpan.com/llms-full.txt).
