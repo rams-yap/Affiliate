@@ -8,7 +8,11 @@ type Props = {
 };
 
 export function AmazonButton({ href, className, label = "Check Price on Amazon" }: Props) {
-  const formattedHref = href;
+  let formattedHref = href;
+  if (formattedHref && formattedHref.includes("amazon.com") && !formattedHref.includes("tag=")) {
+    const separator = formattedHref.includes("?") ? "&" : "?";
+    formattedHref = `${formattedHref}${separator}tag=pantryandpan-20`;
+  }
 
   return (
     <a
