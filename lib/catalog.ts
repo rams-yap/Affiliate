@@ -702,31 +702,30 @@ export type Article = {
 
 export const GUIDES: Article[] = [
   {
-    slug: "modular-pantry-drawer-organization-blueprint",
-    category: "Pantry & Aesthetic Storage",
-    categoryKey: "aesthetic-storage",
-    title: "How to Organize Deep Pantry Drawers: Modular Dividers",
-    excerpt:
-      "Transform deep lower cabinets into functional pull-out pantries. We test slide weight limits, spring-loaded bamboo dividers, and non-slip drawer mats.",
-    heroImage: "/assets/modular_pantry_drawer_organization_blueprint.jpg",
-    authorName: "Mina Kim",
-    authorInitials: "MK",
-    authorRole: "Co-Founder & Pantry Curation Lead",
-    readMinutes: 9,
-    publishDate: "October 9, 2026",
-    sections: [
+    "slug": "modular-pantry-drawer-organization-blueprint",
+    "category": "Pantry & Aesthetic Storage",
+    "categoryKey": "aesthetic-storage",
+    "title": "How to Organize Deep Pantry Drawers: Modular Dividers",
+    "excerpt": "Transform deep lower cabinets into functional pull-out pantries. We test slide weight limits, spring-loaded bamboo dividers, and non-slip drawer mats.",
+    "heroImage": "/assets/modular_pantry_drawer_organization_blueprint.jpg",
+    "authorName": "Mina Kim",
+    "authorInitials": "MK",
+    "authorRole": "Co-Founder & Pantry Curation Lead",
+    "readMinutes": 9,
+    "publishDate": "October 9, 2026",
+    "sections": [
       {
-        id: "quick-verdict-summary",
-        title: "Quick Verdict: Deep Drawer Pantry Mastery",
-        paragraphs: [
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: Deep Drawer Pantry Mastery",
+        "paragraphs": [
           "Deep pull-out kitchen drawers paired with expandable natural bamboo dividers and angled spice inserts offer 40% greater accessibility than traditional dark shelf pantries. By converting vertical drop-zones into organized modular grids, you eliminate lost expired food while keeping heavy bulk glass containers safely below counter height."
         ],
-        productId: "joyjolt-glass-containers"
+        "productId": "joyjolt-glass-containers"
       },
       {
-        id: "drawer-geometry-depth-and-slide-ratings",
-        title: "Drawer Geometry: Slide Ratings & Weight Distribution",
-        paragraphs: [
+        "id": "drawer-geometry-depth-and-slide-ratings",
+        "title": "Drawer Geometry: Slide Ratings & Weight Distribution",
+        "paragraphs": [
           "Standard kitchen lower cabinets measure 24 inches deep, accommodating pull-out drawers ranging from 8 to 14 inches in height.",
           "Filling a deep drawer with 100-ounce glass canisters loaded with flour, rice, and oats can easily exceed 45 pounds of static weight.",
           "Check underneath your drawer boxes for full-extension undermount slides rated for at least 75 to 100 pounds before loading heavy glassware.",
@@ -735,21 +734,21 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "modular-bamboo-dividers-vs-acrylic-bins",
-        title: "Bamboo Tension Dividers vs Clear Acrylic Bins",
-        paragraphs: [
+        "id": "modular-bamboo-dividers-vs-acrylic-bins",
+        "title": "Bamboo Tension Dividers vs Clear Acrylic Bins",
+        "paragraphs": [
           "Spring-loaded bamboo tension dividers allow you to customize drawer width down to the exact millimeter.",
           "Natural bamboo complements warm white-oak cabinetry, creating an organic farmhouse look when opened.",
           "Clear BPA-free acrylic bins provide leak protection for decanted liquids, oils, and vinegar bottles.",
           "Combining bamboo dividers for dry grains and an acrylic catch-tray for cruets provides the ideal hybrid setup.",
           "To choose leakproof oil cruets for your drawer caddy, read our [Glass vs Ceramic Olive Oil Dispenser Guide](/guides/glass-vs-ceramic-olive-oil-dispenser)."
         ],
-        productId: "vtopmart-bulk-containers"
+        "productId": "vtopmart-bulk-containers"
       },
       {
-        id: "angled-spice-drawer-tier-inserts",
-        title: "Angled In-Drawer Tier Inserts for Uniform Spices",
-        paragraphs: [
+        "id": "angled-spice-drawer-tier-inserts",
+        "title": "Angled In-Drawer Tier Inserts for Uniform Spices",
+        "paragraphs": [
           "Upper shallow drawers (3 to 4 inches deep) are the most ergonomic location in the entire kitchen for spices.",
           "Three-tier expandable bamboo inserts hold square spice jars at a 30-degree incline, making top labels visible instantly.",
           "Unlike rotating countertop carousels that clutter workspace, in-drawer spice inserts preserve wide food prep zones.",
@@ -758,9 +757,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "non-slip-liners-and-noise-dampening",
-        title: "Heavy Silicone Grip Liners & Sound Dampening",
-        paragraphs: [
+        "id": "non-slip-liners-and-noise-dampening",
+        "title": "Heavy Silicone Grip Liners & Sound Dampening",
+        "paragraphs": [
           "Bare melamine or wood drawer bottoms allow glass jars to slide and clatter every time a drawer opens.",
           "Install woven or textured food-grade silicone grip mats cut precisely to drawer interior dimensions.",
           "Silicone liners absorb inertia, dampen glass-on-wood clicking, and protect bottom finishes from micro-scratches.",
@@ -769,9 +768,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "who-is-this-not-for",
-        title: "Who Is This NOT For?",
-        paragraphs: [
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
           "Renters whose kitchen cabinetry features fixed front doors with shallow non-adjustable interior shelving.",
           "Homeowners with antique cabinets utilizing 3/4-extension roller slides that leave the back 6 inches of the drawer hidden.",
           "Bakers who prefer keeping primary ingredients in open ceramic crocks on the countertop for immediate pinch-access.",
@@ -779,9 +778,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "maintenance-and-slide-lubrication",
-        title: "Drawer Maintenance & Hardware Care Routine",
-        paragraphs: [
+        "id": "maintenance-and-slide-lubrication",
+        "title": "Drawer Maintenance & Hardware Care Routine",
+        "paragraphs": [
           "Vacuum out loose seeds or flour dust from drawer corners every quarter to keep slides operating smoothly.",
           "Wipe bamboo dividers with a lightly damp microfiber cloth; do not soak them or wash them with harsh detergents.",
           "If drawer slides feel stiff under heavy glass loads, apply a drop of food-safe dry lubricant along the ball bearings.",
@@ -789,68 +788,64 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "buying-verdict-pantry-drawers",
-        title: "The Buying Verdict: Building Your Modular Pantry",
-        paragraphs: [
+        "id": "buying-verdict-pantry-drawers",
+        "title": "The Buying Verdict: Building Your Modular Pantry",
+        "paragraphs": [
           "Transitioning dry goods from upper wall cabinets to lower full-extension drawers reduces eye-level clutter and strain.",
           "Invest in heavy-duty spring tension bamboo dividers and angled spice inserts to create a durable, tranquil kitchen hub.",
           "Organized drawers make inventory checks effortless and bring true culinary joy to everyday cooking."
         ]
       }
     ],
-    relatedProductIds: [
+    "relatedProductIds": [
       "joyjolt-glass-containers",
       "vtopmart-bulk-containers"
     ],
-    faqs: [
+    "faqs": [
       {
-        question: "How deep should a kitchen drawer be to hold bulk glass containers?",
-        answer:
-          "A deep pantry drawer requires a minimum interior clearance of 10 to 12 inches to comfortably accommodate 100-ounce bulk jars with their lids."
+        "question": "How deep should a kitchen drawer be to hold bulk glass containers?",
+        "answer": "A deep pantry drawer requires a minimum interior clearance of 10 to 12 inches to comfortably accommodate 100-ounce bulk jars with their lids."
       },
       {
-        question: "Can standard drawer slides support heavy glass jars and flour?",
-        answer:
-          "Standard slides are often rated for 50 pounds, which is easily reached with glassware. Upgrade to full-extension undermount slides rated for 75 to 100 pounds."
+        "question": "Can standard drawer slides support heavy glass jars and flour?",
+        "answer": "Standard slides are often rated for 50 pounds, which is easily reached with glassware. Upgrade to full-extension undermount slides rated for 75 to 100 pounds."
       },
       {
-        question: "How do you stop glass jars from sliding when opening kitchen drawers?",
-        answer:
-          "Line drawer bottoms with thick, textured food-grade silicone grip mats and use snug bamboo tension dividers to compartmentalize jars into tight rows."
+        "question": "How do you stop glass jars from sliding when opening kitchen drawers?",
+        "answer": "Line drawer bottoms with thick, textured food-grade silicone grip mats and use snug bamboo tension dividers to compartmentalize jars into tight rows."
       },
       {
-        question: "Is it better to store spices in a drawer or on a wall rack?",
-        answer:
-          "Drawers are superior because they shield delicate ground herbs from sunlight exposure, heat from the stove, and open countertop dust."
+        "question": "Is it better to store spices in a drawer or on a wall rack?",
+        "answer": "Drawers are superior because they shield delicate ground herbs from sunlight exposure, heat from the stove, and open countertop dust."
       }
-    ]
+    ],
+    "rawDate": "2026-10-09T01:00:00"
   },
   {
-    slug: "best-airtight-bulk-flour-and-sugar-glass-containers",
-    category: "Pantry & Aesthetic Storage",
-    categoryKey: "aesthetic-storage",
-    title: "Best Glass Jars for 5lb Flour & Sugar: Airtight Test",
-    excerpt:
-      "Looking to store a full 5-pound bag of flour? We test 100-ounce borosilicate glass canisters against pantry moths, heavy metal scoops, and moisture.",
-    heroImage: "/assets/best_airtight_bulk_flour_and_sugar_glass_containers.jpg",
-    authorName: "Mina Kim",
-    authorInitials: "MK",
-    authorRole: "Co-Founder & Pantry Curation Lead",
-    readMinutes: 8,
-    publishDate: "October 6, 2026",
-    sections: [
+    "slug": "best-airtight-bulk-flour-and-sugar-glass-containers",
+    "category": "Pantry & Aesthetic Storage",
+    "categoryKey": "aesthetic-storage",
+    "title": "Best Glass Jars for 5lb Flour & Sugar: Airtight Test",
+    "excerpt": "Looking to store a full 5-pound bag of flour? We test 100-ounce borosilicate glass canisters against pantry moths, heavy metal scoops, and moisture.",
+    "heroImage": "/assets/best_airtight_bulk_flour_and_sugar_glass_containers.jpg",
+    "authorName": "Mina Kim",
+    "authorInitials": "MK",
+    "authorRole": "Co-Founder & Pantry Curation Lead",
+    "readMinutes": 8,
+    "publishDate": "October 6, 2026",
+    "sections": [
       {
-        id: "quick-verdict-summary",
-        title: "Quick Verdict: The Best Bulk Baking Jars",
-        paragraphs: [
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: The Best Bulk Baking Jars",
+        "paragraphs": [
           "Large wide-mouth borosilicate glass containers with food-grade silicone clamp lids provide the safest, most durable bulk storage for baking staples. Unlike plastic canisters that absorb rancid wheat oils or thin soda-lime glass that chips during heavy 1-cup metal scooping, borosilicate delivers absolute chemical neutrality and airtight moth protection."
         ],
-        productId: "vtopmart-bulk-containers"
+        "productId": "vtopmart-bulk-containers"
       },
       {
-        id: "borosilicate-vs-soda-lime-glass-durability",
-        title: "Borosilicate vs Soda-Lime Glass: The 5-Pound Flour Test",
-        paragraphs: [
+        "id": "borosilicate-vs-soda-lime-glass-durability",
+        "title": "Borosilicate vs Soda-Lime Glass: The 5-Pound Flour Test",
+        "paragraphs": [
           "Standard supermarket glass jars use soda-lime glass, which contains micro-bubbles and develops internal stress under heavy static loads.",
           "When you fill a 100-ounce jar with five pounds of unbleached bread flour, the downward hydrostatic pressure on the base is substantial.",
           "Repeatedly digging a heavy stainless steel measuring cup against the sidewalls of soda-lime glass can create microscopic fissures.",
@@ -859,21 +854,21 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "airtight-mechanisms-clamp-vs-push-bamboo-lids",
-        title: "Clamp Seals vs Push Bamboo Lids for Pest Defense",
-        paragraphs: [
+        "id": "airtight-mechanisms-clamp-vs-push-bamboo-lids",
+        "title": "Clamp Seals vs Push Bamboo Lids for Pest Defense",
+        "paragraphs": [
           "Pantry pests like flour beetles and Indianmeal moths can crawl through microscopic gaps under 0.5 millimeters.",
           "Push-fit bamboo lids with ribbed silicone gaskets look gorgeous, as shown in our [Bamboo & Glass Spice Jar Organization System](/guides/bamboo-glass-spice-jar-organization-system).",
           "For massive 5-pound flour reservoirs, however, stainless steel wire bail clamp lids create mechanical downward tension across a thick food-grade silicone gasket.",
           "This mechanical clamping guarantees zero moisture ingress, preventing brown sugar from turning into rock-hard bricks.",
           "For liquid baking fat decanting options, see our [Glass vs Ceramic Olive Oil Dispenser Guide](/guides/glass-vs-ceramic-olive-oil-dispenser)."
         ],
-        productId: "joyjolt-glass-containers"
+        "productId": "joyjolt-glass-containers"
       },
       {
-        id: "mouth-diameter-and-scoop-ergonomics",
-        title: "Wide-Mouth Ergonomics: The 1-Cup Measuring Sweep",
-        paragraphs: [
+        "id": "mouth-diameter-and-scoop-ergonomics",
+        "title": "Wide-Mouth Ergonomics: The 1-Cup Measuring Sweep",
+        "paragraphs": [
           "Nothing ruins a peaceful baking morning faster than flour dusting your counters because a jar neck is too narrow.",
           "A functional bulk baking canister requires a minimum mouth opening of 4.5 inches across.",
           "A 4.5-inch diameter allows a standard 1-cup dry measuring cup to dip straight down and level off cleanly against the rim.",
@@ -882,9 +877,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "countertop-weight-and-deep-drawer-safety",
-        title: "Weight Considerations: Countertop Load vs Deep Drawers",
-        paragraphs: [
+        "id": "countertop-weight-and-deep-drawer-safety",
+        "title": "Weight Considerations: Countertop Load vs Deep Drawers",
+        "paragraphs": [
           "A 100-ounce borosilicate glass jar weighs roughly 2.2 pounds empty and over 7.5 pounds when packed with granulated sugar.",
           "Storing four bulk jars on open floating shelves places 30 pounds of concentrated static weight across your wall anchors.",
           "Ensure your floating shelf brackets are screwed directly into wall studs before installing heavy glass storage.",
@@ -893,9 +888,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "who-is-this-not-for",
-        title: "Who Is This NOT For?",
-        paragraphs: [
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
           "Bakers living in earthquake-prone zones who store dry goods on open overhead shelving without seismic lip guards.",
           "Households with young toddlers who frequently pull kitchen canisters down from lower island drawers.",
           "Cooks with arthritis who struggle to open high-tension stainless steel wire bail clamps without discomfort.",
@@ -903,9 +898,9 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "cleaning-and-silicone-gasket-care",
-        title: "Sanitization & Gasket Longevity Routine",
-        paragraphs: [
+        "id": "cleaning-and-silicone-gasket-care",
+        "title": "Sanitization & Gasket Longevity Routine",
+        "paragraphs": [
           "Never wash natural wood accents in the dishwasher, as detailed in our [Detachable Handle Cookware Care Guide](/guides/detachable-handle-cookware-care-and-maintenance).",
           "Remove the silicone gasket from your glass jar lid every six months to clean out trapped flour starch residue.",
           "Submerge silicone gaskets in warm soapy water, rinse thoroughly, and let them dry 100% before reassembly to prevent musty odors.",
@@ -913,41 +908,38 @@ export const GUIDES: Article[] = [
         ]
       },
       {
-        id: "buying-verdict-bulk-glass-containers",
-        title: "The Buying Verdict: The Best Bulk Glass Storage",
-        paragraphs: [
+        "id": "buying-verdict-bulk-glass-containers",
+        "title": "The Buying Verdict: The Best Bulk Glass Storage",
+        "paragraphs": [
           "Invest in wide-mouth borosilicate glass containers with wire clamp or thick silicone suction seals for your primary baking staples.",
           "You will keep pantry pests out permanently, eliminate microplastic exposure from scratched polypropylene bins, and enjoy a warm, cohesive kitchen aesthetic.",
           "Quality glassware turns bulk grocery staples into a timeless, calming pantry display."
         ]
       }
     ],
-    relatedProductIds: [
+    "relatedProductIds": [
       "vtopmart-bulk-containers",
       "joyjolt-glass-containers"
     ],
-    faqs: [
+    "faqs": [
       {
-        question: "Why choose borosilicate glass over regular glass for bulk flour?",
-        answer:
-          "Borosilicate glass resists thermal and physical shocks better than standard soda-lime glass, preventing chips when scraping metal measuring cups against the interior."
+        "question": "Why choose borosilicate glass over regular glass for bulk flour?",
+        "answer": "Borosilicate glass resists thermal and physical shocks better than standard soda-lime glass, preventing chips when scraping metal measuring cups against the interior."
       },
       {
-        question: "Can pantry moths penetrate silicone sealed glass containers?",
-        answer:
-          "No. Flour beetles and pantry moths cannot chew through borosilicate glass or penetrate airtight silicone friction gaskets."
+        "question": "Can pantry moths penetrate silicone sealed glass containers?",
+        "answer": "No. Flour beetles and pantry moths cannot chew through borosilicate glass or penetrate airtight silicone friction gaskets."
       },
       {
-        question: "How large should a glass container be to hold a 5-pound bag of flour?",
-        answer:
-          "A 5-pound bag of all-purpose flour requires approximately 130 to 140 fluid ounces (3.8 to 4.2 liters) of storage capacity due to aeration."
+        "question": "How large should a glass container be to hold a 5-pound bag of flour?",
+        "answer": "A 5-pound bag of all-purpose flour requires approximately 130 to 140 fluid ounces (3.8 to 4.2 liters) of storage capacity due to aeration."
       },
       {
-        question: "How do you keep brown sugar soft in glass jars?",
-        answer:
-          "Use a container with a true airtight silicone gasket, and place a soaked terracotta brown sugar saver disc inside with the sugar."
+        "question": "How do you keep brown sugar soft in glass jars?",
+        "answer": "Use a container with a true airtight silicone gasket, and place a soaked terracotta brown sugar saver disc inside with the sugar."
       }
-    ]
+    ],
+    "rawDate": "2026-10-06T01:00:00"
   },
   {
     "slug": "bamboo-glass-spice-jar-organization-system",
@@ -1056,7 +1048,8 @@ export const GUIDES: Article[] = [
         "question": "Can you wash bamboo spice jar lids in the dishwasher?",
         "answer": "No. Dishwasher heat and prolonged water soaking will warp natural bamboo. Wipe lids clean with a damp cloth and wash glass bodies separately."
       }
-    ]
+    ],
+    "rawDate": "2026-10-02T01:00:00"
   },
   {
     "slug": "glass-vs-ceramic-olive-oil-dispenser",
@@ -1165,7 +1158,8 @@ export const GUIDES: Article[] = [
         "question": "Can I store olive oil in clear glass bottles on the counter?",
         "answer": "Clear glass exposes oil to ambient light, which triggers photo-oxidation and turns olive oil rancid within a few weeks."
       }
-    ]
+    ],
+    "rawDate": "2026-09-29T01:00:00"
   },
   {
     "slug": "cast-iron-wok-vs-carbon-steel-wok",
@@ -1275,7 +1269,8 @@ export const GUIDES: Article[] = [
         "question": "Can I use metal utensils in cast iron and carbon steel woks?",
         "answer": "Yes. Both metals are durable and scratch-resistant, allowing you to use stainless steel wok spatulas and ladles without damaging the pan."
       }
-    ]
+    ],
+    "rawDate": "2026-09-25T01:00:00"
   },
   {
     "slug": "yosukata-vs-craft-wok-carbon-steel-comparison",
@@ -1383,7 +1378,8 @@ export const GUIDES: Article[] = [
         "question": "How do you wash these woks after cooking?",
         "answer": "Rinse under hot tap water, gently scrub with a natural bamboo brush, dry over a low stovetop flame, and wipe with a single drop of oil."
       }
-    ]
+    ],
+    "rawDate": "2026-09-22T01:00:00"
   },
   {
     "slug": "flat-bottom-vs-round-bottom-wok-induction",
@@ -1491,7 +1487,8 @@ export const GUIDES: Article[] = [
         "question": "Will a carbon steel wok scratch my induction cooktop?",
         "answer": "Flat-bottom carbon steel woks are safe for induction glass when lifted vertically during tossing and kept free of rough metal burrs on the base."
       }
-    ]
+    ],
+    "rawDate": "2026-09-18T01:00:00"
   },
   {
     "slug": "carbon-steel-wok-seasoning-guide-non-toxic",
@@ -1600,7 +1597,8 @@ export const GUIDES: Article[] = [
         "question": "Can I use soap to clean a seasoned carbon steel wok?",
         "answer": "A drop of mild dish soap will not damage a fully polymerized oil patina, but harsh alkaline detergents and dishwasher tablets must be avoided."
       }
-    ]
+    ],
+    "rawDate": "2026-09-15T01:00:00"
   },
   {
     "slug": "detachable-handle-cookware-care-and-maintenance",
