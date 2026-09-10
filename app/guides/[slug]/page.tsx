@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   const cleanTitle = g.title.replace(/\s*:\s*Pantry\s*&\s*Pan$/i, "").trim();
   return {
-    title: `${cleanTitle} : Pantry & Pan`,
+    title: cleanTitle,
     description: g.excerpt,
     alternates: {
       canonical: `https://pantryandpan.com/guides/${g.slug}`,
