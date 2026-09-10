@@ -232,11 +232,20 @@ export default async function GuidePage({ params }: Props) {
   } : null;
 
   const allGuides = await getWPGuides();
-  const sameCategory = allGuides.filter(
-    (o) => o.slug !== g.slug && o.categoryKey && g.categoryKey && o.categoryKey === g.categoryKey
+  const currentGuideTime = (g.rawDate ? new Date(g.rawDate).getTime() : 0) || (new Date(g.publishDate.replace(/^Updated\s+/i, "")).getTime() || 0);
+
+  // Filter out any articles scheduled for future publication dates after this guide
+  const eligibleGuides = allGuides.filter((o) => {
+    if (o.slug === g.slug) return false;
+    const oTime = (o.rawDate ? new Date(o.rawDate).getTime() : 0) || (new Date(o.publishDate.replace(/^Updated\s+/i, "")).getTime() || 0);
+    return oTime <= currentGuideTime;
+  });
+
+  const sameCategory = eligibleGuides.filter(
+    (o) => o.categoryKey && g.categoryKey && o.categoryKey === g.categoryKey
   );
-  const otherCategory = allGuides.filter(
-    (o) => o.slug !== g.slug && (!g.categoryKey || o.categoryKey !== g.categoryKey)
+  const otherCategory = eligibleGuides.filter(
+    (o) => !g.categoryKey || o.categoryKey !== g.categoryKey
   );
   const relatedGuides = [...sameCategory, ...otherCategory].slice(0, 3);
 

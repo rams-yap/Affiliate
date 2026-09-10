@@ -702,6 +702,441 @@ export type Article = {
 
 export const GUIDES: Article[] = [
   {
+    "slug": "cast-iron-wok-vs-carbon-steel-wok",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Cast Iron Wok vs Carbon Steel Wok: Weight, Heat Retention & Maintenance",
+    "excerpt": "A deep metallurgical comparison analyzing thermal mass, single-handed tossing agility, burner recovery speeds, and long-term patina maintenance.",
+    "heroImage": "/assets/cast_iron_wok_vs_carbon_steel_wok.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 9,
+    "publishDate": "September 25, 2026",
+    "sections": [
+      {
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: Cast Iron vs Carbon Steel Woks",
+        "paragraphs": [
+          "Carbon steel woks are the clear winner for fast-action stir-frying, offering rapid temperature response and a lightweight 3.8-pound body for easy tossing. Cast iron woks excel at high-mass heat retention for deep frying, braising, and low-power electric stoves that struggle to maintain temperature."
+        ],
+        "productId": "yosukata-wok"
+      },
+      {
+        "id": "thermal-physics-and-heat-responsiveness",
+        "title": "Thermal Dynamics: Heat Retention vs Rapid Flame Responsiveness",
+        "paragraphs": [
+          "The fundamental difference between cast iron and carbon steel lies in their thermal mass and crystal grain structure.",
+          "Cast iron contains 2% to 4% carbon, creating a thick, heavy pan wall that absorbs massive amounts of heat energy.",
+          "When cold raw ingredients hit cast iron, the pan temperature barely drops, preventing unwanted food steaming during stir-fries.",
+          "Carbon steel contains roughly 1% carbon and is rolled thin (1.5mm to 2mm), allowing it to heat up or cool down instantly when you adjust the burner flame.",
+          "This dynamic response gives home cooks precise control over delicate garlic, scallions, and glazes without burning.",
+          "For testing data on iron alloy stability, explore our [Heirloom Carbon Steel Guide](/guides/cast-iron-vs-carbon-steel-vs-enameled)."
+        ]
+      },
+      {
+        "id": "weight-ergonomics-and-tossing-agility",
+        "title": "Ergonomics & Agility: 3.8 lbs Wok Tossing vs 10 lbs Stationary Cooking",
+        "paragraphs": [
+          "A traditional 14-inch carbon steel wok weighs between 3.5 and 4.2 pounds, allowing fluid one-handed tossing to aerate ingredients through hot rising steam.",
+          "A comparable 14-inch cast iron wok weighs between 8.5 and 11 pounds, making single-handed lifting virtually impossible for home cooks.",
+          "Cast iron woks function as stationary vessels where food must be stirred using spatulas and ladles rather than tossed in the air.",
+          "For home cooks preparing quick weeknight dinners, carbon steel dramatically reduces wrist strain and kitchen fatigue.",
+          "To compare specific models, read our [Yosukata vs Craft Wok Comparison](/guides/yosukata-vs-craft-wok-carbon-steel-comparison)."
+        ],
+        "productId": "lodge-dutch-oven"
+      },
+      {
+        "id": "stovetop-and-heat-source-compatibility",
+        "title": "Stovetop Matching: High-BTU Gas vs Electric & Induction Burners",
+        "paragraphs": [
+          "Your cooktop type plays a massive role in determining which wok material delivers better culinary results.",
+          "On high-power gas ranges, carbon steel takes full advantage of direct flame contact to produce authentic restaurant wok hei.",
+          "On standard electric coil or glass-top radiant stoves with low wattage, cast iron massive heat storage compensates for slow burner recovery.",
+          "On induction cooktops, both materials couple efficiently, but flat-bottom carbon steel provides the best balance of speed and control.",
+          "For details on induction coupling physics, review our [Flat Bottom vs Round Bottom Wok Guide](/guides/flat-bottom-vs-round-bottom-wok-induction)."
+        ]
+      },
+      {
+        "id": "patina-formation-and-seasoning-durability",
+        "title": "Patina Chemistry: Microscopic Porosity and Nonstick Slickness",
+        "paragraphs": [
+          "Both cast iron and carbon steel form a naturally non-toxic, nonstick cooking surface through oil polymerization.",
+          "Cast iron rough pebbled texture holds initial seasoning layers tightly, creating a rugged protective crust.",
+          "Carbon steel smooth spun surface builds a slicker, glass-like patina that offers superior release for delicate fried eggs and starch noodles.",
+          "Neither material contains synthetic PTFE, chemicals, or PFAS toxins, ensuring 100% safe cooking for your family.",
+          "To learn how to blue and season carbon steel properly, follow our [Non-Toxic Carbon Steel Wok Seasoning Guide](/guides/carbon-steel-wok-seasoning-guide-non-toxic)."
+        ]
+      },
+      {
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
+          "Neither wok is suitable for cooks seeking dishwasher-safe convenience; for dishwasher-safe sets, explore our [CAROTE vs GreenPan Comparison](/guides/carote-vs-greenpan-ceramic-cookware-comparison) and [CAROTE vs Sensarte Comparison](/guides/carote-vs-sensarte-nonstick-cookware-comparison).",
+          "Cast iron woks are not recommended for elderly cooks or anyone with wrist arthritis due to heavy 10-pound lifting requirements.",
+          "For compact studio apartments with limited cabinet clearance, explore our [Space Saving Cookware Sets Guide](/guides/best-space-saving-cookware-sets-small-kitchens).",
+          "For chemical safety verification across nonstick cookware surfaces, review our [PTFE vs Ceramic Off-Gassing Audit](/guides/ptfe-vs-ceramic-off-gassing-safety-audit)."
+        ]
+      },
+      {
+        "id": "buying-verdict-final-recommendation",
+        "title": "The Buying Verdict: Which Wok Material Is Right for You?",
+        "paragraphs": [
+          "Choose a carbon steel wok if you want authentic stir-fry tossing agility, rapid flame control, and lightweight weeknight versatility.",
+          "Choose a cast iron wok if you prioritize heavy heat retention for braising, deep frying, or cooking on low-output electric coils.",
+          "Both heirloom metals provide chemical-free, non-toxic cooking that improves with every meal and lasts for generations."
+        ]
+      }
+    ],
+    "relatedProductIds": [
+      "yosukata-wok",
+      "lodge-dutch-oven"
+    ],
+    "faqs": [
+      {
+        "question": "Is cast iron or carbon steel better for a wok?",
+        "answer": "Carbon steel is better for traditional stir-frying because it is light enough to toss and responds instantly to heat changes on the burner."
+      },
+      {
+        "question": "Does cast iron get hotter than carbon steel?",
+        "answer": "Both reach the same maximum temperatures, but cast iron holds significantly more heat energy, preventing temperature drops when cold food is added."
+      },
+      {
+        "question": "Which wok is easier to maintain and clean?",
+        "answer": "Both follow the same maintenance routine: wash with hot water, dry completely over low stovetop heat, and wipe with a light drop of oil."
+      },
+      {
+        "question": "Can I use metal utensils in cast iron and carbon steel woks?",
+        "answer": "Yes. Both metals are durable and scratch-resistant, allowing you to use stainless steel wok spatulas and ladles without damaging the pan."
+      }
+    ]
+  },
+  {
+    "slug": "yosukata-vs-craft-wok-carbon-steel-comparison",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Yosukata vs Craft Wok: Which Carbon Steel Wok Wins for Home Cooks?",
+    "excerpt": "A head-to-head lab comparison evaluating pre-seasoned black carbon steel, hand-hammered traditional gauge, handle ergonomics, and high-heat stir-fry performance.",
+    "heroImage": "/assets/yosukata_vs_craft_wok_carbon_steel_comparison.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 9,
+    "publishDate": "September 22, 2026",
+    "sections": [
+      {
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: Yosukata vs Craft Wok",
+        "paragraphs": [
+          "Yosukata wins for most modern home kitchens with its factory pre-seasoning, versatile flat-bottom stability on induction and electric stoves, and lighter 3.8-pound tossing weight. Craft Wok is the authentic choice for dedicated gas cooks who want heavy 15-gauge hand-hammered heritage steel."
+        ],
+        "productId": "yosukata-wok"
+      },
+      {
+        "id": "metallurgy-and-manufacturing-craftsmanship",
+        "title": "Manufacturing & Metallurgy: Factory Pre-Seasoned vs Traditional Hand-Hammered",
+        "paragraphs": [
+          "The primary difference between these two top-rated carbon steel woks lies in their manufacturing technique and metal thickness.",
+          "Yosukata woks are spun from 1.5mm high-grade black carbon steel and pre-treated in commercial ovens at 1000°F to create an initial protective blue-black oxide layer.",
+          "Craft Wok woks are shaped by hand-hammering 1.8mm heavy 15-gauge commercial carbon steel, creating thousands of microscopic hammer dimples that hold oil securely.",
+          "Craft Wok arrives coated in protective anti-rust machine oil that requires thorough high-heat stripping before initial kitchen seasoning.",
+          "To learn the exact steps for heat-blueing bare steel, read our [Non-Toxic Carbon Steel Wok Seasoning Guide](/guides/carbon-steel-wok-seasoning-guide-non-toxic)."
+        ]
+      },
+      {
+        "id": "stovetop-compatibility-and-base-geometry",
+        "title": "Stovetop Dynamics: Flat Bottom Versatility vs Round Bottom Heat Focus",
+        "paragraphs": [
+          "Base geometry determines which stovetops each wok can operate on safely and effectively.",
+          "Yosukata features a flat 5.5-inch base that rests flush on induction glass, smooth electric cooktops, and standard gas grates.",
+          "Craft Wok classic model is a pure round-bottom wok designed strictly for gas burners equipped with a sturdy wok ring.",
+          "On induction cooktops, Yosukata transfers 90% of electromagnetic energy directly into food, while round-bottom woks fail to heat.",
+          "For technical testing on base geometry and heat transfer physics, explore our [Flat Bottom vs Round Bottom Wok Guide](/guides/flat-bottom-vs-round-bottom-wok-induction)."
+        ]
+      },
+      {
+        "id": "handle-ergonomics-weight-and-tossing-comfort",
+        "title": "Ergonomics & Handling: 3.8 lbs Tossing Comfort vs 4.6 lbs Heavy Duty",
+        "paragraphs": [
+          "Weight and handle design directly impact wrist fatigue during rapid high-heat stir-fry tossing.",
+          "Yosukata weighs 3.8 pounds and features an ergonomic natural beechwood handle secured by heavy-duty welded brackets that stay cool during cooking.",
+          "Craft Wok weighs a substantial 4.6 pounds, pairing a steel helper handle with a traditional wooden grip secured by dual steel rivets.",
+          "While Craft Wok extra mass retains heat longer for large batches, Yosukata lighter balance allows effortless single-handed tossing for home cooks.",
+          "To compare overall pan weights against enameled cookware, check our [Heirloom Carbon Steel Guide](/guides/cast-iron-vs-carbon-steel-vs-enameled)."
+        ]
+      },
+      {
+        "id": "nonstick-patina-longevity-and-cleaning",
+        "title": "Patina Formation: How Both Pans Build Non-Toxic Nonstick Release",
+        "paragraphs": [
+          "Both woks are 100% free of synthetic PTFE, Teflon, PFAS, and chemical coatings, relying purely on natural polymerized cooking oils for food release.",
+          "Yosukata factory pre-treatment allows home cooks to fry delicate eggs and fish within two to three cooking sessions.",
+          "Craft Wok raw hammered surface takes five to seven cooking sessions with high-smoke point oils to establish a completely smooth, jet-black patina.",
+          "Once seasoned, both pans deliver lifetime non-stick performance that easily outperforms disposable synthetic pans.",
+          "For chemical safety verification on non-toxic cookware surfaces, review our [PTFE vs Ceramic Off-Gassing Audit](/guides/ptfe-vs-ceramic-off-gassing-safety-audit)."
+        ]
+      },
+      {
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
+          "Neither wok is intended for cooks who want dishwasher-safe cleaning; for dishwasher-safe sets, explore our [CAROTE vs GreenPan Comparison](/guides/carote-vs-greenpan-ceramic-cookware-comparison) and [CAROTE vs Sensarte Comparison](/guides/carote-vs-sensarte-nonstick-cookware-comparison).",
+          "Craft Wok round bottom is not suitable for home cooks with flat electric or induction glass stoves.",
+          "Cooks with minimal cabinet storage may prefer flat-nesting modular pans; see our [Space Saving Cookware Sets Guide](/guides/best-space-saving-cookware-sets-small-kitchens).",
+          "For mineral granite nonstick alternatives, explore [Is Granite Cookware Safe?](/guides/is-granite-cookware-safe-toxic-chemical-audit)."
+        ]
+      },
+      {
+        "id": "buying-verdict-final-recommendation",
+        "title": "The Buying Verdict: Which Carbon Steel Wok Should You Buy?",
+        "paragraphs": [
+          "Choose Yosukata ($59–$79) if you cook on induction, electric, or gas stoves and want quick pre-seasoned performance with manageable tossing weight.",
+          "Choose Craft Wok ($60–$75) if you have an open gas burner, love traditional hand-hammered Asian craftsmanship, and want heavy-gauge steel built to last decades.",
+          "Both heirloom woks provide exceptional non-toxic cooking performance that eliminates synthetic chemicals from your kitchen."
+        ]
+      }
+    ],
+    "relatedProductIds": [
+      "yosukata-wok",
+      "lodge-dutch-oven"
+    ],
+    "faqs": [
+      {
+        "question": "Is Yosukata wok really pre-seasoned out of the box?",
+        "answer": "Yes. Yosukata undergoes high-temperature commercial heat-treatment, but applying one quick layer of oil before your first cook enhances nonstick release."
+      },
+      {
+        "question": "Can I use Craft Wok on a glass-top induction stove?",
+        "answer": "Craft Wok traditional round-bottom model cannot be used on induction stoves. You must choose a flat-bottom model like Yosukata for induction glass."
+      },
+      {
+        "question": "Why does Craft Wok feel heavier than Yosukata?",
+        "answer": "Craft Wok is forged from thicker 1.8mm (15-gauge) carbon steel weighing 4.6 lbs, compared to Yosukata 1.5mm steel weighing 3.8 lbs."
+      },
+      {
+        "question": "How do you wash these woks after cooking?",
+        "answer": "Rinse under hot tap water, gently scrub with a natural bamboo brush, dry over a low stovetop flame, and wipe with a single drop of oil."
+      }
+    ]
+  },
+  {
+    "slug": "flat-bottom-vs-round-bottom-wok-induction",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Flat Bottom vs Round Bottom Wok: Induction & Electric Stovetop Guide",
+    "excerpt": "A technical stovetop comparison evaluating flat vs round bottom carbon steel wok stability, magnetic contact efficiency on induction, and wok ring thermodynamics on electric coils.",
+    "heroImage": "/assets/flat_bottom_vs_round_bottom_wok_induction.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 8,
+    "publishDate": "September 18, 2026",
+    "sections": [
+      {
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: Flat Bottom vs Round Bottom Woks",
+        "paragraphs": [
+          "Flat-bottom carbon steel woks are essential for American induction, glass-top, and electric coil stoves because they maximize direct surface contact for rapid heat transfer. Round-bottom woks require high-BTU open gas flames and wok rings, which cause severe heat loss and sensor shutoffs on flat induction glass."
+        ],
+        "productId": "yosukata-wok"
+      },
+      {
+        "id": "stovetop-physics-and-heat-transfer-mechanics",
+        "title": "Stovetop Physics: Direct Contact vs Wok Ring Heat Loss",
+        "paragraphs": [
+          "Heat transfer efficiency on electric and induction cooktops depends entirely on continuous physical contact between the pan base and the glass surface.",
+          "A flat-bottom wok provides a 5 to 6-inch direct contact zone that absorbs concentrated heat and radiates it smoothly up the flared curved sides.",
+          "Round-bottom woks balance on a small central tangent point, requiring an external metal wok ring for mechanical stability.",
+          "Elevating a round wok inside a ring creates a 1 to 2-inch air gap that prevents electromagnetic induction coupling and loses up to 60% of radiant electric heat.",
+          "For testing data on electromagnetic base efficiency, explore our [Induction Safe Ceramic Cookware Guide](/guides/induction-safe-ceramic-cookware-magnetic-base-guide)."
+        ]
+      },
+      {
+        "id": "induction-cooktop-compatibility-and-magnetic-coupling",
+        "title": "Induction Performance: Why Carbon Steel Excels on Magnetic Burners",
+        "paragraphs": [
+          "Carbon steel is naturally ferromagnetic, making flat-bottom woks among the most responsive pans available for modern induction burners.",
+          "Unlike multi-ply aluminum pans that require bonded steel plates, solid 1.5mm carbon steel converts 90% of electromagnetic field energy directly into thermal heat.",
+          "On a standard 1800W induction element, a flat-bottom carbon steel wok reaches 450°F stir-fry searing temperatures in under 90 seconds.",
+          "Because the flat base sits flush against the cooktop, induction safety sensors register the pan immediately without clicking or buzzing.",
+          "To learn how to blue and season a new carbon steel pan properly, follow our [Non-Toxic Carbon Steel Wok Seasoning Guide](/guides/carbon-steel-wok-seasoning-guide-non-toxic)."
+        ]
+      },
+      {
+        "id": "culinary-mechanics-stir-frying-and-wok-hei",
+        "title": "Culinary Mechanics: Tossing, Searing & Heat Zone Control",
+        "paragraphs": [
+          "While round-bottom woks offer a continuous seamless curve for effortless spatula scooping on gas flames, modern flat-bottom woks are engineered with gentle transitions.",
+          "The flat center creates a dedicated high-heat searing zone for caramelizing proteins, while the sloping walls allow delicate greens to steam and rest away from intense heat.",
+          "Using a wooden helper handle allows easy two-handed tossing without scratching delicate ceramic glass cooktops.",
+          "Pairing high heat with natural high-smoke point oils produces authentic restaurant-style wok hei flavor without synthetic chemical nonstick coatings.",
+          "For non-toxic oil smoke point breakdowns, check our [PTFE vs Ceramic Off-Gassing Audit](/guides/ptfe-vs-ceramic-off-gassing-safety-audit)."
+        ]
+      },
+      {
+        "id": "protecting-glass-and-induction-cooktops",
+        "title": "Cooktop Care: Preventing Scratches and Thermal Shock on Glass",
+        "paragraphs": [
+          "Heavy cookware moved aggressively across ceramic glass can cause micro-scratches if the pan bottom has rough manufacturing burrs.",
+          "Always inspect the flat bottom of a new carbon steel wok and gently smooth any stamping edges with fine steel wool before initial kitchen use.",
+          "Lift the wok vertically when tossing ingredients rather than sliding the base back and forth across induction glass.",
+          "Never place a scorching hot wok directly into a cold sink, which can cause thermal shock and warp the flat base.",
+          "For modular kitchen pans with smooth base plates, review our [Space Saving Cookware Sets Guide](/guides/best-space-saving-cookware-sets-small-kitchens)."
+        ]
+      },
+      {
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
+          "Flat-bottom carbon steel woks are not necessary for cooks who already have professional 25,000+ BTU outdoor wok burners designed specifically for round-bottom pans.",
+          "They are also not ideal for cooks who want dishwasher-safe convenience; for dishwasher-safe sets, explore our [CAROTE vs GreenPan Comparison](/guides/carote-vs-greenpan-ceramic-cookware-comparison) and [CAROTE vs Sensarte Comparison](/guides/carote-vs-sensarte-nonstick-cookware-comparison).",
+          "Cooks looking for heavy thermal braising rather than rapid flash frying should consider enameled iron; see our [Heirloom Carbon Steel Guide](/guides/cast-iron-vs-carbon-steel-vs-enameled).",
+          "For chemical safety across mineral nonstick options, review [Is Granite Cookware Safe?](/guides/is-granite-cookware-safe-toxic-chemical-audit)."
+        ]
+      },
+      {
+        "id": "buying-verdict-top-flat-bottom-picks",
+        "title": "The Buying Verdict: The Best Flat-Bottom Wok for Modern Stoves",
+        "paragraphs": [
+          "Yosukata 14-Inch Pre-Seasoned Flat-Bottom Wok is the clear winner for home cooks on induction and electric stoves, delivering optimal magnetic contact and heavy-duty stability.",
+          "If you cook exclusively on a commercial gas flame, traditional round-bottom woks remain an authentic heritage choice.",
+          "For standard home kitchens, a quality flat-bottom carbon steel wok provides the ultimate balance of heat speed, non-toxic safety, and culinary versatility."
+        ]
+      }
+    ],
+    "relatedProductIds": [
+      "yosukata-wok",
+      "lodge-dutch-oven"
+    ],
+    "faqs": [
+      {
+        "question": "Can you use a round-bottom wok on a flat glass induction stove?",
+        "answer": "No. Round-bottom woks do not make sufficient contact with induction glass and will trigger cooktop error codes or heat unevenly."
+      },
+      {
+        "question": "Does a flat bottom affect authentic wok hei flavor?",
+        "answer": "Not significantly. High heat and rapid tossing across the sloping sides create authentic wok hei, and flat bases ensure maximum heat transfer on electric stoves."
+      },
+      {
+        "question": "What thickness is best for a flat-bottom carbon steel wok?",
+        "answer": "A thickness of 1.5mm to 1.8mm is ideal. It provides enough thermal mass to prevent warping while remaining light enough for single-handed tossing."
+      },
+      {
+        "question": "Will a carbon steel wok scratch my induction cooktop?",
+        "answer": "Flat-bottom carbon steel woks are safe for induction glass when lifted vertically during tossing and kept free of rough metal burrs on the base."
+      }
+    ]
+  },
+  {
+    "slug": "carbon-steel-wok-seasoning-guide-non-toxic",
+    "category": "Heirloom Iron & Carbon Steel",
+    "categoryKey": "carbon-steel-woks",
+    "title": "Non-Toxic Carbon Steel Wok Seasoning: Step-by-Step Blueing Guide",
+    "excerpt": "A master culinary tutorial detailing factory oil stripping, thermal blueing over high flame, and natural oil polymerization for a permanent chemical-free nonstick patina.",
+    "heroImage": "/assets/carbon_steel_wok_seasoning_guide_non_toxic.jpg",
+    "authorName": "Dr. Elena Vance",
+    "authorInitials": "EV",
+    "authorRole": "Materials Researcher & Home Chef",
+    "readMinutes": 9,
+    "publishDate": "September 15, 2026",
+    "sections": [
+      {
+        "id": "quick-verdict-summary",
+        "title": "Quick Verdict: The Non-Toxic Wok Seasoning Protocol",
+        "paragraphs": [
+          "Seasoning raw carbon steel requires scrubbing away factory anti-rust oils, heat-blueing the bare metal over high flame at 600°F, and building micro-thin layers of polymerized grapeseed or avocado oil. This natural process creates a glass-smooth nonstick patina without synthetic PTFE, chemicals, or PFAS toxins."
+        ],
+        "productId": "yosukata-wok"
+      },
+      {
+        "id": "why-carbon-steel-requires-seasoning",
+        "title": "Metallurgy Basics: Why Raw Carbon Steel Needs Heat Blueing",
+        "paragraphs": [
+          "Raw carbon steel is an alloy of iron and carbon that reacts immediately with moisture and oxygen in the air, causing surface oxidation and rust.",
+          "Heating bare carbon steel to approximately 600°F transforms iron into black iron oxide (magnetite), creating a corrosion-resistant protective foundation.",
+          "This thermal transformation produces a visible shift from shiny silver to deep gunmetal blue, a process professional chefs call blueing.",
+          "Once blued, microscopic pores in the metal expand and bind with cooking oils through polymerization, creating a slick non-toxic cooking surface.",
+          "For technical data on iron alloy stability, explore our [Heirloom Carbon Steel Guide](/guides/cast-iron-vs-carbon-steel-vs-enameled)."
+        ]
+      },
+      {
+        "id": "choosing-the-right-non-toxic-seasoning-oil",
+        "title": "Oil Selection: Best High-Smoke Point Oils vs Toxic Aerosols",
+        "paragraphs": [
+          "Selecting the right oil is critical for building a durable polymer layer that will not flake or turn gummy under high stir-fry temperatures.",
+          "Pure unrefined grapeseed oil (smoke point 420°F) and refined avocado oil (smoke point 520°F) are the gold standards for non-toxic seasoning.",
+          "These natural fats contain optimal ratios of unsaturated fatty acids that cross-link into a resilient, hard finish under intense heat.",
+          "Avoid commercial nonstick cooking sprays, which contain propellant gases, lecithin additives, and synthetic emulsifiers that scorch and leave sticky residue.",
+          "To learn how synthetic coatings compare against mineral surfaces, check our [PTFE vs Ceramic Off-Gassing Audit](/guides/ptfe-vs-ceramic-off-gassing-safety-audit)."
+        ]
+      },
+      {
+        "id": "step-by-step-wok-blueing-and-seasoning-tutorial",
+        "title": "Step-by-Step Tutorial: From Raw Silver to Black Nonstick Patina",
+        "paragraphs": [
+          "Follow this four-phase workshop procedure to properly blue and season your new carbon steel wok:",
+          "Phase 1: Scrub the raw wok vigorously inside and out with hot water, mild dish soap, and a scouring pad to remove factory transit grease, then wipe completely dry.",
+          "Phase 2: Place the dry wok over maximum burner heat, rotating the sides across the flame until the entire bowl turns from silver to a dark iridescent blue.",
+          "Phase 3: Turn off the heat, allow the metal to cool for two minutes, and apply a quarter-teaspoon of grapeseed oil using a folded lint-free cotton cloth.",
+          "Phase 4: Buff the oil so thoroughly that the metal appears almost dry, then reheat over medium-high until the oil smokes gently and bonds to the steel.",
+          "Repeat Phases 3 and 4 three times to establish a reliable foundation before your first stir-fry session."
+        ]
+      },
+      {
+        "id": "daily-cleaning-and-patina-maintenance",
+        "title": "Post-Cook Maintenance: How to Clean Without Stripping Your Seasoning",
+        "paragraphs": [
+          "Never wash seasoned carbon steel cookware with harsh detergents, green abrasive scouring pads, or automatic dishwashers.",
+          "After cooking, rinse the warm pan under hot tap water and gently loosen food particles using a natural bamboo wok brush or soft sponge.",
+          "Dry the wok thoroughly over a low burner flame for 60 seconds to evaporate all surface moisture.",
+          "Wipe a single drop of cooking oil across the interior while still warm to shield the metal from humidity until your next meal.",
+          "For proper care techniques across removable modular handles, see our [Detachable Handle Cookware Care Guide](/guides/detachable-handle-cookware-care-and-maintenance)."
+        ]
+      },
+      {
+        "id": "who-is-this-not-for",
+        "title": "Who Is This NOT For?",
+        "paragraphs": [
+          "Raw carbon steel woks are not suitable for cooks looking for zero-maintenance dishwasher-safe convenience; for dishwasher-safe sets, explore our [CAROTE vs GreenPan Comparison](/guides/carote-vs-greenpan-ceramic-cookware-comparison).",
+          "They are not recommended for simmering acidic tomato sauces or vinegar-heavy braises, which dissolve thin polymerized oil layers.",
+          "Cooks with standard low-power flat radiant electric stoves may struggle with round-bottom woks; see our [Space Saving Cookware Sets Guide](/guides/best-space-saving-cookware-sets-small-kitchens) for flat-base alternatives.",
+          "For chemical safety verification across mineral nonstick options, review [Is Granite Cookware Safe?](/guides/is-granite-cookware-safe-toxic-chemical-audit)."
+        ]
+      },
+      {
+        "id": "buying-verdict-best-pre-seasoned-woks",
+        "title": "The Buying Verdict: Best Carbon Steel Woks for Home Kitchens",
+        "paragraphs": [
+          "Yosukata 14-Inch Pre-Seasoned Flat-Bottom Wok is our top pick for home cooks, featuring factory heat-treatment that cuts initial prep time in half.",
+          "Craft Wok Traditional Hand-Hammered Wok delivers heirloom durability for gas burners, offering authentic heavy-gauge steel for intense wok hei tossing.",
+          "Properly seasoned carbon steel provides a lifetime of non-toxic, chemical-free cooking that improves with every single meal you make."
+        ]
+      }
+    ],
+    "relatedProductIds": [
+      "yosukata-wok",
+      "lodge-dutch-oven"
+    ],
+    "faqs": [
+      {
+        "question": "What is the best oil to season a carbon steel wok?",
+        "answer": "Pure grapeseed oil and refined avocado oil are best because of their high smoke points and fatty acid profiles that cross-link into a smooth, durable patina."
+      },
+      {
+        "question": "Why did my carbon steel wok turn black after seasoning?",
+        "answer": "A dark blue or black color is the intended outcome of heat blueing and oil polymerization, indicating a strong, rust-resistant nonstick layer."
+      },
+      {
+        "question": "How do you fix a carbon steel wok if food starts sticking?",
+        "answer": "Scrub away carbonized food with hot water and coarse salt, dry thoroughly over medium heat, and apply a fresh micro-layer of oil over high heat."
+      },
+      {
+        "question": "Can I use soap to clean a seasoned carbon steel wok?",
+        "answer": "A drop of mild dish soap will not damage a fully polymerized oil patina, but harsh alkaline detergents and dishwasher tablets must be avoided."
+      }
+    ]
+  },
+  {
     "slug": "detachable-handle-cookware-care-and-maintenance",
     "category": "Space-Saving & Detachable",
     "categoryKey": "space-saving-detachable",
